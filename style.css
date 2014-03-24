@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "titles";
+    src: url("fonts/LinLibertine_aBS.ttf") format("truetype");
+}
+@font-face {
+    font-family: "contents";
+    src: url("fonts/LinLibertine_R.ttf") format("truetype");
+}
+
+body {
+    color: #222222;
+    font-family: "contents", serif;
+    text-align: justify;
+    background-image: url("img/ricepaper_v3.png");
+}
+
+h1 {
+    font-family: "titles", serif;
+}
+
+h2 {
+    font-family: "titles", serif;
+}
+
+h3 {
+    font-family: "titles", serif;
+}
+
+a:link {text-decoration:none;}      /* unvisited link */
+a:visited {text-decoration:none;}  /* visited link */
+a:hover {text-decoration:underline;}  /* mouse over link */
+a:active {text-decoration:underline;}  /* selected link */
+
+hr {
+    height: 1px;
+} 
