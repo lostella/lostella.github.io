@@ -1,15 +1,18 @@
 @font-face {
     font-family: "titles";
-    src: url("fonts/LinLibertine_aBS.ttf") format("truetype");
+/*    src: url("fonts/LinLibertine_aBS.ttf") format("truetype");*/
+    src: url("fonts/Minecraftia.ttf") format("truetype");
 }
 @font-face {
     font-family: "contents";
-    src: url("fonts/LinLibertine_R.ttf") format("truetype");
+/*    src: url("fonts/LinLibertine_R.ttf") format("truetype");*/
+    src: url("fonts/Minecraftia.ttf") format("truetype");
 }
 
 body {
     color: #222222;
     font-family: "contents", serif;
+    font-size: 16px;
     text-align: justify;
     background-color: #F0F0E0;
 }
@@ -32,5 +35,11 @@ a:hover {text-decoration:underline;}  /* mouse over link */
 a:active {text-decoration:underline;}  /* selected link */
 
 hr {
-    height: 1px;
+    height: 3px;
+    color: #222222;
+    background-color: #222222;
 } 
+
+blinking {
+    text-decoration:blink;
+}
