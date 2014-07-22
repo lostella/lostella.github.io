@@ -1,70 +1,65 @@
-<html>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en'>
     <head>
         <title>Lorenzo Stella</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
-        <script type="text/javascript">
-            function blink() {
-                var blinks = document.getElementsByTagName('blink');
-                for (var i = blinks.length - 1; i >= 0; i--) {
-                    var s = blinks[i];
-                    s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
-                }
-                window.setTimeout(blink, 1000);
-            }
-            if (document.addEventListener) document.addEventListener("DOMContentLoaded", blink, false);
-            else if (window.addEventListener) window.addEventListener("load", blink, false);
-            else if (window.attachEvent) window.attachEvent("onload", blink);
-            else window.onload = blink;
-        </script>
+        <link href="prova.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div style="max-width: 900px; margin: 0 auto;">
-            <h1 id="title" align="right">Lorenzo Stella</h1>
-            <hr>
-            <h3 id="about">About me</h3>
-            <p>
-                <img style="padding: 0px 0px 15px 15px;" src="resources/mepix2.jpg" alt="16 bit-old me" title="16 bit-old me" align="right" width="145" height="145">
-                I am currently a Ph.D. student at <a href="http://imtlucca.it/">
-                IMT Institute for Advanced Studies Lucca</a> (Italy).
-                My research interests are in the field of convex optimization,
-                and my focus is currently on splitting methods for nonsmooth
-                composite problems.
-            </p>
-            <p>
-                I obtained my B.Sc. and M.Sc. in Computer Science from the
-                University of Florence, where I graduated <blink>cum laude</blink>
-                in 2011, with a thesis on numerical methods for Hamiltonian initial value
-                problems, under the supervision of
-                <a href="http://web.math.unifi.it/users/brugnano/">
-                Prof. Luigi Brugnano</a>.
-            </p>
-            <p>
-                More details about me can be found in my
-                <a href="resources/cv.pdf">
-                curriculum vitae</a>.
-            </p>
-            <h3 id="publications">List of publications</h3>
-            <p> [3] Panagiotis Patrinos, Lorenzo Stella, and Alberto Bemporad.
-            ``Douglas-Rachford splitting: complexity estimates and accelerated variants''.
-            Accepted at 53rd IEEE Conference on Decision and Control, 2014. </p>
-            <p> [2] Panagiotis Patrinos, Lorenzo Stella, and Alberto Bemporad.
-            ``Forward-backward truncated Newton methods for convex composite optimization''.
-            Submitted, arXiv:1402.6655 [math.OC], 2014. </p>
-            <p> [1] Marco Scotti, Lorenzo Stella, Emily J. Shearer, and Patrick J. Stover.
-            ``Modeling cellular compartmentation in one-carbon metabolism''.
-            Wiley Interdisciplinary Reviews: Systems Biology and Medicine, 2013. </p>
-            <!--
-            <h3 id="projects">Personal projects</h3>
-            <p>Here is a list of some personal projects I've been working on...</p>
-            -->
-            <h3 id="contacts">Contacts</h3>
-            Address: IMT Institute for Advanced Studies Lucca, Piazza San Francesco 19, 55100 Lucca (LU) Italy.<br>
-            E-mail: my-first-name . my-last-name ~at~ imtlucca.it
-            <hr>
+        <div id='header'>
+            <h1>Lorenzo Stella</h1>
         </div>
-        <div style="max-width: 900px; margin: 0 auto; color: #C0C0B0;">
+        <hr>
+        <div id='main'>
+            <div id='content'>
+                <h3 id="about">About me</h3>
+                <p>
+                    I am currently a Ph.D. student at <a href="http://imtlucca.it/">
+                    IMT Institute for Advanced Studies Lucca</a> (Italy).
+                    My research interests are in the field of convex optimization,
+                    and my focus is currently on splitting methods for nonsmooth
+                    composite problems.
+                </p>
+                <p>
+                    I obtained my B.Sc. and M.Sc. in Computer Science from the
+                    University of Florence, where I graduated
+                    in 2011, with a thesis on numerical methods for Hamiltonian initial value
+                    problems, under the supervision of
+                    <a href="http://web.math.unifi.it/users/brugnano/">
+                    Prof. Luigi Brugnano</a>.
+                </p>
+                <p>
+                    More details about me can be found in my
+                    <a href="resources/cv.pdf">
+                    curriculum vitae</a>.
+                </p>
+                <h3 id="publications">List of publications</h3>
+                <p> [3] Panagiotis Patrinos, Lorenzo Stella, and Alberto Bemporad.
+                "Douglas-Rachford splitting: complexity estimates and accelerated variants".
+                Accepted at 53rd IEEE Conference on Decision and Control, 2014. </p>
+                <p> [2] Panagiotis Patrinos, Lorenzo Stella, and Alberto Bemporad.
+                "Forward-backward truncated Newton methods for convex composite optimization".
+                Submitted, arXiv:1402.6655 [math.OC], 2014. </p>
+                <p> [1] Marco Scotti, Lorenzo Stella, Emily J. Shearer, and Patrick J. Stover.
+                "Modeling cellular compartmentation in one-carbon metabolism".
+                Wiley Interdisciplinary Reviews: Systems Biology and Medicine, 2013. </p>
+            </div>
+            <div id='side'>
+                <img style="display: block; margin-left: auto; margin-right: auto;" src="resources/mepix2.jpg" alt="16 bit-old me" title="16 bit-old me" width="200" height="200">
+                <h4>Address</h4>
+                <p>
+                    IMT Institute for Advanced Studies Lucca<br>
+                    Piazza San Francesco 19<br>
+                    55100 Lucca (LU) Italy
+                </p>
+                <h4>E-mail</h4>
+                <p>firstname . lastname ~at~ imtlucca.it</p>
+            </div>
+        </div>
+        <hr>
+        <div id='footer'>
             This web page was realized with &hearts; by Lorenzo Stella<br>
-            Font: Minecraftia @ <a style="color: #C0C0B0;" href="http://www.dafont.com">dafont.com</a>
+            Font: <a style="color: #C0C0B0;" href="http://www.dafont.com/it/linux-libertine.font">Linux Libertine</a>
+            @ <a style="color: #C0C0B0;" href="http://www.dafont.com">dafont.com</a>
         </div>
     </body>
 </html>
+

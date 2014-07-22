@@ -1,12 +1,12 @@
 @font-face {
     font-family: "titles";
-/*    src: url("fonts/LinLibertine_aBS.ttf") format("truetype");*/
-    src: url("fonts/Minecraftia.ttf") format("truetype");
+    src: url("fonts/LinLibertine_aBS.ttf") format("truetype");
+/*    src: url("fonts/Minecraftia.ttf") format("truetype");*/
 }
 @font-face {
     font-family: "contents";
-/*    src: url("fonts/LinLibertine_R.ttf") format("truetype");*/
-    src: url("fonts/Minecraftia.ttf") format("truetype");
+    src: url("fonts/LinLibertine_R.ttf") format("truetype");
+/*    src: url("fonts/Minecraftia.ttf") format("truetype");*/
 }
 
 body {
@@ -15,6 +15,49 @@ body {
     font-size: 16px;
     text-align: left;
     background-color: #F0F0E0;
+}
+
+div#header,
+div#main,
+div#footer {
+    max-width: 900px;
+    min-width: 600px;
+    margin: auto;
+}
+
+div#main {
+    position: relative;
+}
+
+div#header {
+    text-align: left;
+}
+
+div#header h1 {
+}
+
+div#side {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    padding: 0px 0px 0px 20px;
+}
+
+div#content {
+    margin-right: 300px;
+    text-align: justify;
+    padding: 0px 20px 0px 0px;
+}
+
+div#footer {
+    text-align: center;
+    max-width: 900px;
+    color: #C0C0B0;
+}
+
+div#footer p {
 }
 
 h1 {
@@ -29,17 +72,6 @@ h3 {
     font-family: "titles", serif;
 }
 
-a:link {text-decoration:none;}      /* unvisited link */
-a:visited {text-decoration:none;}  /* visited link */
-a:hover {text-decoration:underline;}  /* mouse over link */
-a:active {text-decoration:underline;}  /* selected link */
-
-hr {
-    height: 3px;
-    color: #222222;
-    background-color: #222222;
-} 
-
-blinking {
-    text-decoration:blink;
+h4 {
+    font-family: "titles", serif;
 }
