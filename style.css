@@ -43,6 +43,7 @@ div#side {
     right: 0;
     width: 300px;
     padding: 0px 0px 0px 20px;
+    text-align: left;
 }
 
 div#content {
@@ -55,9 +56,6 @@ div#footer {
     text-align: center;
     max-width: 900px;
     color: #C0C0B0;
-}
-
-div#footer p {
 }
 
 h1 {
