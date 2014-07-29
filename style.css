@@ -39,17 +39,16 @@ div#header h1 {
 }
 
 div#side {
-    overflow: hidden;
     float: right;
-    padding: 0px 0px 0px 10px;
-    width: 300px;
+    padding: 0px 0px 0px 1%;
+    width: 24%;
     text-align: left;
 }
 
 div#content {
     float: left;
-    padding: 0px 10px 0px 0px;
-    max-width: 600px;
+    padding: 0px 1% 0px 0px;
+    width: 74%;
     text-align: justify;
 }
 
