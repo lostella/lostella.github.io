@@ -1,18 +1,20 @@
 @font-face {
     font-family: "titles";
+/*    src: url("fonts/LiberationSans-Bold.ttf") format("truetype");*/
     src: url("fonts/LinLibertine_aBS.ttf") format("truetype");
 /*    src: url("fonts/Minecraftia.ttf") format("truetype");*/
 }
 @font-face {
     font-family: "contents";
+/*    src: url("fonts/LiberationSans-Regular.ttf") format("truetype");*/
     src: url("fonts/LinLibertine_R.ttf") format("truetype");
 /*    src: url("fonts/Minecraftia.ttf") format("truetype");*/
 }
 
 body {
     color: #222222;
-    font-family: "contents", serif;
-    font-size: 18px;
+    font-family: "contents", sans;
+    font-size: 16px;
     text-align: left;
     background-color: #F0F0E0;
     max-width: 1000px;
