@@ -1,13 +1,22 @@
 @font-face {
     font-family: "titles";
-/*    src: url("fonts/LiberationSans-Bold.ttf") format("truetype");*/
-    src: url("fonts/LinLibertine_aBS.ttf") format("truetype");
+/*    src: url("fonts/Neuton-Extrabold.ttf") format("truetype");*/
+    src: url("fonts/OpenSans-Bold.ttf") format("truetype");
+/*    src: url("fonts/LinLibertine_aBS.ttf") format("truetype");*/
 /*    src: url("fonts/Minecraftia.ttf") format("truetype");*/
 }
 @font-face {
     font-family: "contents";
-/*    src: url("fonts/LiberationSans-Regular.ttf") format("truetype");*/
-    src: url("fonts/LinLibertine_R.ttf") format("truetype");
+/*    src: url("fonts/Neuton-Regular.ttf") format("truetype");*/
+    src: url("fonts/OpenSans-Light.ttf") format("truetype");
+/*    src: url("fonts/LinLibertine_R.ttf") format("truetype");*/
+/*    src: url("fonts/Minecraftia.ttf") format("truetype");*/
+}
+@font-face {
+    font-family: "links";
+/*    src: url("fonts/Neuton-Regular.ttf") format("truetype");*/
+    src: url("fonts/OpenSans-Regular.ttf") format("truetype");
+/*    src: url("fonts/LinLibertine_R.ttf") format("truetype");*/
 /*    src: url("fonts/Minecraftia.ttf") format("truetype");*/
 }
 
@@ -16,7 +25,8 @@ body {
     font-family: "contents", sans;
     font-size: 16px;
     text-align: left;
-    background-color: #F0F0E0;
+    background-color: #FEFFF1;
+/*    background-color: #F0F0E0;*/
     max-width: 1000px;
     margin: auto;
     margin-top: 20px;
@@ -35,24 +45,24 @@ div#main {
 }
 
 div#header {
-    text-align: left;
+    text-align: right;
 }
 
 div#header h1 {
 }
 
 div#side {
-    float: right;
-    padding: 0px 0px 0px 1%;
+    float: left;
+    padding: 0px 1% 0px 0px;
     width: 24%;
     text-align: left;
 }
 
 div#content {
-    float: left;
-    padding: 0px 1% 0px 0px;
+    float: right;
+    padding: 0px 0px 0px 1%;
     width: 74%;
-    text-align: justify;
+    text-align: left;
 }
 
 div#footer {
@@ -75,4 +85,21 @@ h3 {
 
 h4 {
     font-family: "titles", serif;
+}
+
+a:link {
+    font-family: "links", sans;
+    color: #000000;
+}
+
+/* visited link */
+a:visited {
+    font-family: "links", sans;
+    color: #000000;
+}
+
+/* mouse over link */
+a:hover {
+    font-family: "links", sans;
+    color: #736F6E;
 }
