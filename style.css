@@ -25,11 +25,13 @@ body {
     font-family: "contents", sans;
     font-size: 16px;
     text-align: left;
-    background-color: #FEFFF1;
+/*    background-color: #FEFFF1;*/
 /*    background-color: #F0F0E0;*/
     max-width: 1000px;
     margin: auto;
     margin-top: 20px;
+    background-image: url("resources/pw_maze_white.png");
+    background-repeat: repeat;
 }
 
 div#header,
