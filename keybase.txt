@@ -1,0 +1,78 @@
+==================================================================
+https://keybase.io/lostella
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://lostella.github.io
+  * I am lostella (https://keybase.io/lostella) on keybase.
+  * I have a public key with fingerprint RETU RN T HIS. PGP. GET_  FING ERPR INT( );
+     }
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.3"
+        },
+        "key": {
+            "fingerprint": "a734862fc1126fb29a4f16b90d7d7227d0557403",
+            "host": "keybase.io",
+            "key_id": "0D7D7227D0557403",
+            "uid": "91951c27f3ab1890f27ccf8e23229000",
+            "username": "lostella"
+        },
+        "merkle_root": {
+            "ctime": 1422150167,
+            "hash": "51b7979f9accfadcdf5586c3f8131a5320bee3a74d76646324818d94b813b85eec85f9dacfe19744d447855b0666981de0faebbeef35cd7d6e1c75cf905350a8",
+            "seqno": 140404
+        },
+        "service": {
+            "hostname": "lostella.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1422150254,
+    "expire_in": 157680000,
+    "prev": "af65fd59780b5debeb654ac423bb39a005606d1ed0d3a2a48546b5a478985a1a",
+    "seqno": 2,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owFdUm2IVUUYvnc1dS23CKold1s95P5p9zYz58zMmUsQK9cIAzFUVjC8zte597R3
+z7mdc+7mVS5EP9rWYPuQlVAI0pQwSZdc8se6lLgorht9rFgkRpTg/gkytCJWmrNt
+mDF/ZuZ95nmf53nnrRWLMk1Zd9uafeSvTd9mp2ZFZvPZ9cFuS4SqbuV3W7Li6yBJ
+dwHv11be6tN1wWOd88NVQah07sV41QKmyxrQUeyHgUGBHM3ZVqMrhaePPT8o6aga
++SmXxantuAR5EkJEPIEYdzxIBAOKKooQVQBj6gDbUJbDOLmrqzXPWfRV2qVACym+
+cAdfmy8wyDCUiHo2F9BlwENUSs/VyEaIAQBSYKyjBUsV00NXKjzV26+jvoouRmE4
+b1omfgqBDkIQA0ioUcTjsnmEoaCMMo9xw8yVVB7GLpG250IbcmwjILS2OXUUJcQh
+NnJc6CrmCFMXLtZauthjiktPQ0YdRzkOdTEWgBDCXKg08LgWhsOzsTS5EA0lxdJj
+ANsYcNdYiPVLQZiKA2Y10nM04Eud6k5j+5+7XMlPyjXxT4TVKExCGVZMvZwk1Tif
+ek/qVX3S3LysRXGBqyj8QJnZ/Xe40EDvzgVhp8vSO6t+pIt+isCUuCZmkDbSA+nE
+PYI9hRl1gcBKCy0Idrh0kC2EzTgAmACioFZA2Rxxx8UOEZibSJiLOeR33CKjk5cM
+ZeyXAp7UIm01hrJtizPZpsySe5rS35tZ3vzAv196Ti29vfrEh3zDc6f2vvBE98i7
+vzQ3rpwpHEk+uaQvdF49k+1o/nSS9f040/qMxBcn3y5tOL76yuAhOfD6x9+Mbfv9
+ke+PP7pyqnV20a7xXQ9/daj71MG29Uc/G60dvVE7OLls7g1rTetEy+VLr/Y+fXni
+h8H62dvDaG3PR5vr7PN33r8+ffHE5MjMF8//2rl8KyhPfbBzy+DhL1dOH9sz3d25
+cebNJd1Lt+9fcWz0wNc/lc+3g8ymnyf2n3vlqXXxjuvuzfxr1/zRvkLjag+5dWDv
+vvFn759tb3t88YMtvbfwfY8NfbeHZPI3Nh7+897zf2x5aGTd8Fhvf/u18Z73bv7W
+cW5o7emZ4Sdb6mOyNjfUsezI3w==
+=1qR1
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lostella
+
+==================================================================
+
