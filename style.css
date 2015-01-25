@@ -1,20 +1,17 @@
 @font-face {
     font-family: "titles";
-/*    src: url("fonts/Neuton-Extrabold.ttf") format("truetype");*/
     src: url("fonts/OpenSans-Bold.ttf") format("truetype");
 /*    src: url("fonts/LinLibertine_aBS.ttf") format("truetype");*/
 /*    src: url("fonts/Minecraftia.ttf") format("truetype");*/
 }
 @font-face {
     font-family: "contents";
-/*    src: url("fonts/Neuton-Regular.ttf") format("truetype");*/
     src: url("fonts/OpenSans-Light.ttf") format("truetype");
 /*    src: url("fonts/LinLibertine_R.ttf") format("truetype");*/
 /*    src: url("fonts/Minecraftia.ttf") format("truetype");*/
 }
 @font-face {
     font-family: "links";
-/*    src: url("fonts/Neuton-Regular.ttf") format("truetype");*/
     src: url("fonts/OpenSans-Regular.ttf") format("truetype");
 /*    src: url("fonts/LinLibertine_R.ttf") format("truetype");*/
 /*    src: url("fonts/Minecraftia.ttf") format("truetype");*/
