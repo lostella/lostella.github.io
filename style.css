@@ -12,13 +12,13 @@
 }
 @font-face {
     font-family: "links";
-    src: url("fonts/OpenSans-Regular.ttf") format("truetype");
+    src: url("fonts/OpenSans-Light.ttf") format("truetype");
 /*    src: url("fonts/LinLibertine_R.ttf") format("truetype");*/
 /*    src: url("fonts/Minecraftia.ttf") format("truetype");*/
 }
 
 body {
-    color: #000000;
+    color: #202F51;
     font-family: "contents", sans;
     font-size: 16px;
     text-align: left;
@@ -68,37 +68,48 @@ div#footer {
     clear: both;
     text-align: center;
     color: #C0C0B0;
+    padding: 30px;
 }
 
 h1 {
-    font-family: "titles", serif;
+    font-family: "titles", sans;
+    color: #021B3C;
 }
 
 h2 {
-    font-family: "titles", serif;
+    font-family: "titles", sans;
+    color: #021B3C;
 }
 
 h3 {
-    font-family: "titles", serif;
+    font-family: "titles", sans;
+    color: #021B3C;
 }
 
 h4 {
-    font-family: "titles", serif;
+    font-family: "titles", sans;
+    color: #021B3C;
 }
 
 a:link {
     font-family: "links", sans;
-    color: #000000;
+    color: #021B3C;
+    text-decoration: none;
+    border-bottom: solid 1px #021B3C;
 }
 
 /* visited link */
 a:visited {
     font-family: "links", sans;
-    color: #000000;
+    color: #021B3C;
+    text-decoration: none;
+    border-bottom: solid 1px #021B3C;
 }
 
 /* mouse over link */
 a:hover {
     font-family: "links", sans;
-    color: #736F6E;
+    color: #021B3C
+    text-decoration: none;
+    border-bottom: solid 2px #021B3C;
 }
