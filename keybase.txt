@@ -6,28 +6,24 @@ I hereby claim:
 
   * I am an admin of https://lostella.github.io
   * I am lostella (https://keybase.io/lostella) on keybase.
-  * I have a public key with fingerprint RETU RN T HIS. PGP. GET_  FING ERPR INT( );
-     }
+  * I have a public key with fingerprint 01F0 39DD 2B37 DF31 B639  8C38 4107 BCDD 7370 E6DD
 
-To claim this, I am signing this object:
+To do so, I am signing this object:
 
 {
     "body": {
         "client": {
             "name": "keybase.io node.js client",
-            "version": "0.7.3"
+            "version": "0.8.10"
         },
         "key": {
-            "fingerprint": "a734862fc1126fb29a4f16b90d7d7227d0557403",
+            "eldest_kid": "0101cdbbccb0692f5acdfbbf78945da52718bdc78c37d4f0556d9c6e88f96ce3a4410a",
+            "fingerprint": "01f039dd2b37df31b6398c384107bcdd7370e6dd",
             "host": "keybase.io",
-            "key_id": "0D7D7227D0557403",
+            "key_id": "4107bcdd7370e6dd",
+            "kid": "0101cdbbccb0692f5acdfbbf78945da52718bdc78c37d4f0556d9c6e88f96ce3a4410a",
             "uid": "91951c27f3ab1890f27ccf8e23229000",
             "username": "lostella"
-        },
-        "merkle_root": {
-            "ctime": 1422150167,
-            "hash": "51b7979f9accfadcdf5586c3f8131a5320bee3a74d76646324818d94b813b85eec85f9dacfe19744d447855b0666981de0faebbeef35cd7d6e1c75cf905350a8",
-            "seqno": 140404
         },
         "service": {
             "hostname": "lostella.github.io",
@@ -36,37 +32,35 @@ To claim this, I am signing this object:
         "type": "web_service_binding",
         "version": 1
     },
-    "ctime": 1422150254,
+    "ctime": 1437387682,
     "expire_in": 157680000,
-    "prev": "af65fd59780b5debeb654ac423bb39a005606d1ed0d3a2a48546b5a478985a1a",
-    "seqno": 2,
+    "prev": "b32ae8369747943703bb9aa415be4792ad0993ceb569a767f70ab09d419031c1",
+    "seqno": 7,
     "tag": "signature"
 }
 
-with the aforementioned key, yielding the PGP signature:
+which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
-Version: GnuPG v1
+Version: GnuPG v2
 
-owFdUm2IVUUYvnc1dS23CKold1s95P5p9zYz58zMmUsQK9cIAzFUVjC8zte597R3
-z7mdc+7mVS5EP9rWYPuQlVAI0pQwSZdc8se6lLgorht9rFgkRpTg/gkytCJWmrNt
-mDF/ZuZ95nmf53nnrRWLMk1Zd9uafeSvTd9mp2ZFZvPZ9cFuS4SqbuV3W7Li6yBJ
-dwHv11be6tN1wWOd88NVQah07sV41QKmyxrQUeyHgUGBHM3ZVqMrhaePPT8o6aga
-+SmXxantuAR5EkJEPIEYdzxIBAOKKooQVQBj6gDbUJbDOLmrqzXPWfRV2qVACym+
-cAdfmy8wyDCUiHo2F9BlwENUSs/VyEaIAQBSYKyjBUsV00NXKjzV26+jvoouRmE4
-b1omfgqBDkIQA0ioUcTjsnmEoaCMMo9xw8yVVB7GLpG250IbcmwjILS2OXUUJcQh
-NnJc6CrmCFMXLtZauthjiktPQ0YdRzkOdTEWgBDCXKg08LgWhsOzsTS5EA0lxdJj
-ANsYcNdYiPVLQZiKA2Y10nM04Eud6k5j+5+7XMlPyjXxT4TVKExCGVZMvZwk1Tif
-ek/qVX3S3LysRXGBqyj8QJnZ/Xe40EDvzgVhp8vSO6t+pIt+isCUuCZmkDbSA+nE
-PYI9hRl1gcBKCy0Idrh0kC2EzTgAmACioFZA2Rxxx8UOEZibSJiLOeR33CKjk5cM
-ZeyXAp7UIm01hrJtizPZpsySe5rS35tZ3vzAv196Ti29vfrEh3zDc6f2vvBE98i7
-vzQ3rpwpHEk+uaQvdF49k+1o/nSS9f040/qMxBcn3y5tOL76yuAhOfD6x9+Mbfv9
-ke+PP7pyqnV20a7xXQ9/daj71MG29Uc/G60dvVE7OLls7g1rTetEy+VLr/Y+fXni
-h8H62dvDaG3PR5vr7PN33r8+ffHE5MjMF8//2rl8KyhPfbBzy+DhL1dOH9sz3d25
-cebNJd1Lt+9fcWz0wNc/lc+3g8ymnyf2n3vlqXXxjuvuzfxr1/zRvkLjag+5dWDv
-vvFn759tb3t88YMtvbfwfY8NfbeHZPI3Nh7+897zf2x5aGTd8Fhvf/u18Z73bv7W
-cW5o7emZ4Sdb6mOyNjfUsezI3w==
-=1qR1
+owGtkllsTFEYx2cstYQQiSVp1bgiQWt67nruqUR44EFIESQkTM522zsdc2fm3mk1
+tbxItJYg1BoNGrHVA8KTekBIVSK0UUQtiUir0aCWpgzOrUoQj95OvvP7/8//+76z
+a+TAwNDg3CFX2tzEq7ZgUwcJLK9vqquUiMMqpMJKicZsHvf8Uxyv5VKhVMorCHZ5
+2HZCcYfxcNQN9TP5UhlPubYTFxQIm2EZSBvyfd5X8xjjrhcptZl/KwOZMkIoJcBA
+iqVjyixCLGgiTWdYV6BsEkahSVXINAvousEQNbhpWsigXMWaJgMsHrTseDFPJVK2
+H1HYWkBFjClEyCxVJoaKhIUpYEgoY1CFgBuMCWGJ43p/NCP1JY30xfsH/59zp/vs
+kIx0mSrQUjGRTQQsBVJqmVxRFQUBAHzQ5an+wcdEZB6LYX+oolpmU+4P1u/kLyJc
+bHslafKzq0TK8RzqxMR9iecl3EJf71UkfEE5J5F+qwix40xMs/b3NcoCpZ7tm8ua
+ClUTGqaSL/F1CTvFI7ZP6KIkogL/IV4mPImqYG6qBoIaREIEVEIQxpqsEy4qCmYA
+IZVyohsIQwNaEGACENNkBFSZypLfXTLuSIVQ5MTFwtK1i+PYS6e4tKE6mDMoEBwa
+yBo8wP+ngeHDRv/6vLfzhmTG3jpafXhxVlpecWJ87sKtl96VrxY76H5yMHvS9eYv
+C54diT088OnZtN724+PKCsZ/fnpo2UaGG5PfbtZP+Hr9zunOjy/JyerXg/fXhuZk
+rW9taThbYERHBBY+Wne15tutmtlFHZfXtEZ3rpyct2THhM7vpW/3aG7erK16Tt65
+ZfOzLtT3nNpUt+VuVeW9uhvzdpNMZi4p+NpS1Tvqy8zt5UbgU7BBj7Xm9K66cW3b
+sdyNuWvapnZkxqyqXRTNTholje9fN59vGFZ7sflCqKnxw5lj09XuTPpBdzJnb9Xq
+pudju4pmJk9O7GnR3sw7vnNpKFpxv21f++NoEema+KJmyoyr555u9np+AA==
+=e1xN
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
