@@ -1,115 +1,84 @@
+/*** FONTS ***/
+
 @font-face {
     font-family: "titles";
-    src: url("fonts/OpenSans-Bold.ttf") format("truetype");
-/*    src: url("fonts/LinLibertine_aBS.ttf") format("truetype");*/
-/*    src: url("fonts/Minecraftia.ttf") format("truetype");*/
+    src: url("fonts/OpenSans-Regular.ttf") format("truetype");
 }
 @font-face {
     font-family: "contents";
     src: url("fonts/OpenSans-Light.ttf") format("truetype");
-/*    src: url("fonts/LinLibertine_R.ttf") format("truetype");*/
-/*    src: url("fonts/Minecraftia.ttf") format("truetype");*/
 }
 @font-face {
     font-family: "links";
     src: url("fonts/OpenSans-Light.ttf") format("truetype");
-/*    src: url("fonts/LinLibertine_R.ttf") format("truetype");*/
-/*    src: url("fonts/Minecraftia.ttf") format("truetype");*/
 }
+
+/*** BODY ***/
 
 body {
     color: #202F51;
     font-family: "contents", sans;
     font-size: 16px;
     text-align: left;
-/*    background-color: #FEFFF1;*/
-/*    background-color: #F0F0E0;*/
-    max-width: 1000px;
-    margin: auto;
-    margin-top: 20px;
-    background-image: url("resources/pw_maze_white.png");
-    background-repeat: repeat;
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+    background-color: #FAFAFA;
 }
 
-div#header,
-div#main,
-div#footer {
-    max-width: 920px;
-    min-width: 300px;
-    margin: auto;
-}
+/*** DIVS ***/
 
-div#main {
-    position: relative;
-}
-
-div#header {
-    text-align: right;
-}
-
-div#header h1 {
-}
-
-div#side {
+#wrap {
+    /*background: #99c;*/
+    margin: 0 auto;
     float: left;
-    padding: 0px 1% 0px 0px;
-    width: 24%;
-    text-align: left;
 }
 
-div#content {
+#sidebar {
+    background: #EFEFEF;
+    float: left;
+    width: 400px;
+    height: 100%;
+    text-align: right;
+    padding: 0px 20px 0px 0px;
+}
+
+#main {
+    /*background: #9c9;*/
     float: right;
-    padding: 0px 0px 0px 1%;
-    width: 74%;
-    text-align: left;
+    width: 600px;
+    padding: 0px 0px 0px 20px;
 }
 
-div#footer {
+#footer {
+    /*background: #cc9;*/
     clear: both;
     text-align: center;
-    color: #C0C0B0;
+    color: #D0D0D0;
     padding: 30px;
 }
 
-h1 {
+/*** TITLES ***/
+
+#name {
+    font-size: 20pt;
     font-family: "titles", sans;
-    color: #021B3C;
 }
 
-h2 {
+#section {
+    display: inline;
     font-family: "titles", sans;
-    color: #021B3C;
+    font-weight: bold;
 }
 
-h3 {
-    font-family: "titles", sans;
-    color: #021B3C;
-}
+/*** HYPERLINKS ***/
 
-h4 {
-    font-family: "titles", sans;
-    color: #021B3C;
-}
-
-a:link {
+a {
     font-family: "links", sans;
     color: #021B3C;
     text-decoration: none;
     border-bottom: solid 1px #021B3C;
 }
 
-/* visited link */
-a:visited {
-    font-family: "links", sans;
-    color: #021B3C;
-    text-decoration: none;
-    border-bottom: solid 1px #021B3C;
-}
-
-/* mouse over link */
 a:hover {
-    font-family: "links", sans;
-    color: #021B3C
-    text-decoration: none;
     border-bottom: solid 2px #021B3C;
 }
