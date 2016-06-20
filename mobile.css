@@ -47,7 +47,7 @@ body {
 #main {
     /*background: #9c9;*/
     float: center;
-    width: 600px;
+    width: auto;
     padding: 5px 5px 0px 5px;
     background-color: #FAFAFA;
     text-align: justify;
