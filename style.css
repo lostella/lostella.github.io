@@ -20,9 +20,10 @@ body {
     font-family: "contents", sans;
     font-size: 16px;
     text-align: left;
+    height: 100%;
     margin: 0;
     padding: 0px 0px 0px 0px;
-    background-color: #FAFAFA;
+    background-color: #EFEFEF;
 }
 
 /*** DIVS ***/
@@ -47,6 +48,7 @@ body {
     float: right;
     width: 600px;
     padding: 0px 0px 0px 20px;
+    background-color: #FAFAFA;
 }
 
 #footer {
