@@ -20,23 +20,22 @@ More in my `curriculum vitae`_, or you can `contact me`_.
 
 1. Andreas Themelis, Lorenzo Stella and Panagiotis Patrinos. "Forward-backward
 envelope for the sum of two nonconvex functions: Further properties and
-nonmonotone line-search algorithms". `arXiv:1606.06256`_ [math.OC], 2016.
+nonmonotone line-search algorithms". `arXiv:1606.06256`_, 2016.
 
 2. Lorenzo Stella, Andreas Themelis, and Panagiotis Patrinos. "Forward-backward
-quasi-Newton methods for nonsmooth optimization problems". `arXiv:1604.08096`_
-[math.OC], 2016.
+quasi-Newton methods for nonsmooth optimization problems". `arXiv:1604.08096`_,
+2016.
 
 3. Puya Latafat, Lorenzo Stella and Panagiotis Patrinos. "New primal-dual
-proximal algorithms for distributed optimization". `arXiv:1605.01986`_
-[math.OC], 2016.
+proximal algorithms for distributed optimization". `arXiv:1605.01986`_, 2016.
 
 4. Panagiotis Patrinos, Lorenzo Stella, and Alberto Bemporad. "Douglas-Rachford
 splitting: complexity estimates and accelerated variants". 53rd IEEE Conference
 on Decision and Control, `10.1109/CDC.2014.7040049`_, 2014.
 
 5. Panagiotis Patrinos, Lorenzo Stella, and Alberto Bemporad. "Forward-backward
-truncated Newton methods for convex composite optimization". `arXiv:1402.6655`_
-[math.OC], 2014.
+truncated Newton methods for convex composite optimization". `arXiv:1402.6655`_,
+2014.
 
 **Software projects** (more in my `Github profile`_)
 
