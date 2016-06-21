@@ -37,11 +37,14 @@ truncated Newton methods for convex composite optimization". `arXiv:1402.6655`_ 
 
 **Software projects** (more in my `Github profile`_)
 
-★ *ForBES.* Generic and efficient MATLAB solver for nonsmooth optimization
-problems. webpage | GitHub
+★ `ForBES`_. Generic and efficient MATLAB solver for nonsmooth optimization
+problems. The solver is provided with a library of mathematical functions used
+in applications, along with their gradient and proximal operations.
 
-★ *libForBES.* Framework in C++ for modeling and solving large-scale nonsmooth
-optimization problems. webpage | GitHub
+★ `libForBES`_. Framework in C++ for modeling and solving large-scale nonsmooth
+optimization problems. It will allow to interface many high-level languages
+(including MATLAB, R, Python, Julia) to a unique solver capable of addressing
+nonsmooth optimization problems from several application fields.
 
 .. _IMT School for Advanced Studies Lucca: http://www.imtlucca.it/
 .. _KU Leuven: https://www.esat.kuleuven.be/stadius/
@@ -49,7 +52,7 @@ optimization problems. webpage | GitHub
 .. _Alberto Bemporad: http://cse.lab.imtlucca.it/~bemporad/
 .. _Luigi Brugnano: http://web.math.unifi.it/users/brugnano/
 
-.. _curriculum vitae: https://github.com/lostella/cv/raw/master/cv.pdf
+.. _curriculum vitae: https://github.com/lostella/lostella.github.io/raw/master/_static/LorenzoStellaCV.pdf
 .. _contact me: lorenzo.stella@imtlucca.it
 
 .. _Google Scholar profile: https://scholar.google.com/citations?user=Y3ag8YsAAAAJ&hl=en
@@ -60,3 +63,6 @@ optimization problems. webpage | GitHub
 .. _arXiv:1605.01986: http://arxiv.org/abs/1605.01986
 .. _10.1109/CDC.2014.7040049: http://dx.doi.org/10.1109/CDC.2014.7040049
 .. _arXiv:1402.6655: http://arxiv.org/abs/1402.6655
+
+.. _ForBES: http://kul-forbes.github.io/ForBES/
+.. _libForBES: http://kul-forbes.github.io/libForBES/
