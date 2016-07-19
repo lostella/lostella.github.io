@@ -14,7 +14,7 @@ optimization.
 I obtained my B.S. and M.S. in Computer Science from the University of Florence,
 where I graduated in 2011 under the supervision of `Luigi Brugnano`_.
 
-More in my |cv_link|, or you can `contact me`_.
+More in my `curriculum vitae`_, or you can `contact me`_.
 
 .. _IMT School for Advanced Studies Lucca: http://www.imtlucca.it/
 .. _KU Leuven: https://www.esat.kuleuven.be/stadius/
@@ -24,10 +24,6 @@ More in my |cv_link|, or you can `contact me`_.
 
 .. _curriculum vitae: https://github.com/lostella/lostella.github.io/raw/master/_static/LorenzoStellaCV.pdf
 .. _contact me: lorenzo.stella@imtlucca.it
-
-.. |cv_link| raw:: html
-
-  <a class="reference external" target="_blank" href="https://github.com/lostella/lostella.github.io/raw/master/_static/LorenzoStellaCV.pdf">curriculum vitae</a>
 
 .. toctree::
   :hidden:
