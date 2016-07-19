@@ -1,0 +1,18 @@
+Software projects
+=================
+
+(more in my `Github profile`_)
+
+★ `ForBES`_. Generic and efficient MATLAB solver for nonsmooth optimization
+problems. The solver is provided with a library of mathematical functions used
+in applications, along with their gradient and proximal operations.
+
+★ `libForBES`_. Framework in C++ for modeling and solving large-scale nonsmooth
+optimization problems. It will allow to interface many high-level languages
+(including MATLAB, R, Python, Julia) to a unique solver capable of addressing
+nonsmooth optimization problems from several application fields.
+
+.. _Github profile: https://github.com/lostella
+
+.. _ForBES: http://kul-forbes.github.io/ForBES/
+.. _libForBES: http://kul-forbes.github.io/libForBES/

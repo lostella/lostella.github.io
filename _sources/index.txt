@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Lorenzo Stella
-==============
+About me
+========
 
 I am a Ph.D. student at `IMT School for Advanced Studies Lucca`_ (Italy) and `KU
 Leuven`_ (Belgium), where I work under the supervision of `Panagiotis Patrinos`_
@@ -14,39 +14,7 @@ optimization.
 I obtained my B.S. and M.S. in Computer Science from the University of Florence,
 where I graduated in 2011 under the supervision of `Luigi Brugnano`_.
 
-More in my `curriculum vitae`_, or you can `contact me`_.
-
-**Papers** (more in my `Google Scholar profile`_)
-
-1. Andreas Themelis, Lorenzo Stella and Panagiotis Patrinos. "Forward-backward
-envelope for the sum of two nonconvex functions: Further properties and
-nonmonotone line-search algorithms". `arXiv:1606.06256`_, 2016.
-
-2. Lorenzo Stella, Andreas Themelis, and Panagiotis Patrinos. "Forward-backward
-quasi-Newton methods for nonsmooth optimization problems". `arXiv:1604.08096`_,
-2016.
-
-3. Puya Latafat, Lorenzo Stella and Panagiotis Patrinos. "New primal-dual
-proximal algorithms for distributed optimization". `arXiv:1605.01986`_, 2016.
-
-4. Panagiotis Patrinos, Lorenzo Stella, and Alberto Bemporad. "Douglas-Rachford
-splitting: complexity estimates and accelerated variants". 53rd IEEE Conference
-on Decision and Control, `10.1109/CDC.2014.7040049`_, 2014.
-
-5. Panagiotis Patrinos, Lorenzo Stella, and Alberto Bemporad. "Forward-backward
-truncated Newton methods for convex composite optimization". `arXiv:1402.6655`_,
-2014.
-
-**Software projects** (more in my `Github profile`_)
-
-★ `ForBES`_. Generic and efficient MATLAB solver for nonsmooth optimization
-problems. The solver is provided with a library of mathematical functions used
-in applications, along with their gradient and proximal operations.
-
-★ `libForBES`_. Framework in C++ for modeling and solving large-scale nonsmooth
-optimization problems. It will allow to interface many high-level languages
-(including MATLAB, R, Python, Julia) to a unique solver capable of addressing
-nonsmooth optimization problems from several application fields.
+More in my |cv_link|, or you can `contact me`_.
 
 .. _IMT School for Advanced Studies Lucca: http://www.imtlucca.it/
 .. _KU Leuven: https://www.esat.kuleuven.be/stadius/
@@ -57,14 +25,12 @@ nonsmooth optimization problems from several application fields.
 .. _curriculum vitae: https://github.com/lostella/lostella.github.io/raw/master/_static/LorenzoStellaCV.pdf
 .. _contact me: lorenzo.stella@imtlucca.it
 
-.. _Google Scholar profile: https://scholar.google.com/citations?user=Y3ag8YsAAAAJ&hl=en
-.. _Github profile: https://github.com/lostella
+.. |cv_link| raw:: html
 
-.. _arXiv:1606.06256: http://arxiv.org/abs/1606.06256
-.. _arXiv:1604.08096: http://arxiv.org/abs/1604.08096
-.. _arXiv:1605.01986: http://arxiv.org/abs/1605.01986
-.. _10.1109/CDC.2014.7040049: http://dx.doi.org/10.1109/CDC.2014.7040049
-.. _arXiv:1402.6655: http://arxiv.org/abs/1402.6655
+  <a class="reference external" target="_blank" href="https://github.com/lostella/lostella.github.io/raw/master/_static/LorenzoStellaCV.pdf">curriculum vitae</a>
 
-.. _ForBES: http://kul-forbes.github.io/ForBES/
-.. _libForBES: http://kul-forbes.github.io/libForBES/
+.. toctree::
+  :hidden:
+
+  papers.rst
+  software.rst
