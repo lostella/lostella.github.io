@@ -12,7 +12,20 @@ optimization problems. It will allow to interface many high-level languages
 (including MATLAB, R, Python, Julia) to a unique solver capable of addressing
 nonsmooth optimization problems from several application fields.
 
+★ `libLBFGS`_. Library written in C containing the structures and routines
+necessary for computing search directions in the limited-memory BFGS algorithm
+(L-BFGS), for large-scale smooth unconstrained optimization. Contains a Mex
+interface to MATLAB.
+
+**Just for fun**
+
+★ `Matto`_. A simple chess player implemented in C. I started this when I was 17
+and learning the C programming language, so there's a lot of room for
+improvement. Yet it plays in a meaningful way.
+
 .. _Github profile: https://github.com/lostella
 
 .. _ForBES: http://kul-forbes.github.io/ForBES/
 .. _libForBES: http://kul-forbes.github.io/libForBES/
+.. _libLBFGS: http://github.com/lostella/libLBFGS/
+.. _Matto: http://github.com/lostella/matto/
