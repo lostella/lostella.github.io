@@ -24,7 +24,7 @@ More in my `curriculum vitae`_, and feel free to `contact me`_.
 .. _Alberto Bemporad: http://cse.lab.imtlucca.it/~bemporad/
 .. _Luigi Brugnano: http://web.math.unifi.it/users/brugnano/
 
-.. _curriculum vitae: https://github.com/lostella/lostella.github.io/raw/master/_static/CV_Lorenzo_Stella.pdf
+.. _curriculum vitae: https://github.com/lostella/lostella.github.io/raw/master/_static/Lorenzo_Stella_CV.pdf
 .. _contact me: lorenzo.stella@imtlucca.it
 
 .. toctree::
