@@ -14,7 +14,9 @@ optimization.
 I obtained my B.S. and M.S. in Computer Science from the University of Florence,
 where I graduated in 2011 under the supervision of `Luigi Brugnano`_.
 
-More in my `curriculum vitae`_, or you can `contact me`_.
+**I'm on the job market!**
+
+More in my `curriculum vitae`_, and feel free to `contact me`_.
 
 .. _IMT School for Advanced Studies Lucca: http://www.imtlucca.it/
 .. _KU Leuven: https://www.esat.kuleuven.be/stadius/
@@ -22,7 +24,7 @@ More in my `curriculum vitae`_, or you can `contact me`_.
 .. _Alberto Bemporad: http://cse.lab.imtlucca.it/~bemporad/
 .. _Luigi Brugnano: http://web.math.unifi.it/users/brugnano/
 
-.. _curriculum vitae: https://github.com/lostella/lostella.github.io/raw/master/_static/LorenzoStellaCV.pdf
+.. _curriculum vitae: https://github.com/lostella/lostella.github.io/raw/master/_static/CV_Lorenzo_Stella.pdf
 .. _contact me: lorenzo.stella@imtlucca.it
 
 .. toctree::
