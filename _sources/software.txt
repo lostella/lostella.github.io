@@ -3,19 +3,18 @@ Software projects
 
 (more in my `Github profile`_)
 
-★ `ForBES`_. Generic and efficient MATLAB solver for nonsmooth optimization
-problems. The solver is provided with a library of mathematical functions used
-in applications, along with their gradient and proximal operations.
+★ `ForBES`_. MATLAB solver for nonsmooth optimization, contains a library of
+mathematical functions to formulate problems arising in control, machine
+learning, image and signal processing.
 
-★ `libForBES`_. Framework in C++ for modeling and solving large-scale nonsmooth
-optimization problems. It will allow to interface many high-level languages
-(including MATLAB, R, Python, Julia) to a unique solver capable of addressing
-nonsmooth optimization problems from several application fields.
+★ `libForBES`_. C++ framework for modeling and solving large-scale nonsmooth
+optimization problems, will allow to interface many high-level languages
+(including R, Python, Julia) to a unique solver capable of addressing nonsmooth
+optimization problems from several application fields.
 
-★ `libLBFGS`_. Library written in C containing the structures and routines
-necessary for computing search directions in the limited-memory BFGS algorithm
-(L-BFGS), for large-scale smooth unconstrained optimization. Contains a Mex
-interface to MATLAB.
+★ `libLBFGS`_. C library providing the structures and routines to implement the
+limited-memory BFGS algorithm (L-BFGS) for large-scale smooth unconstrained
+optimization. Contains a Mex interface to MATLAB.
 
 **Just for fun**
 
