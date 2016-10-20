@@ -18,7 +18,7 @@ html {
   outline: none !important; }
 
 body {
-  font-family: "Lora", sans-serif;
+  font-family: "Lora", serif;
   font-size: 1rem;
   line-height: 1.5;
   color: #333;
@@ -178,7 +178,7 @@ legend {
   box-sizing: border-box;
   width: 100%;
   padding: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
   line-height: inherit;
   color: inherit;
@@ -187,7 +187,7 @@ legend {
 
 label {
   display: inline-block;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 1.5rem; }
 
 textarea {
   overflow: auto;
@@ -322,8 +322,8 @@ th {
     padding-right: 0px; } }
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-family: "Lato", serif;
+  margin-bottom: 1.5rem;
+  font-family: "Lora", serif;
   line-height: 1.1;
   color: inherit; }
 
@@ -390,7 +390,7 @@ h6 {
     text-decoration: none; }
 
 hr {
-  margin: 1rem 0 1.5rem;
+  margin: 1rem 0 1rem;
   border: 0;
   border-top: 5px solid #e1e9f4; }
 
@@ -438,7 +438,7 @@ blockquote {
 
 @media (min-width: 768px) {
   blockquote {
-    margin: 2rem 0 2rem 2rem;
+    margin: 1rem 0 1rem 1rem;
     font-size: .85em;
     line-height: 1.8; } }
 .pre-scrollable {
@@ -469,22 +469,22 @@ kbd {
 
 @media (min-width: 480px) {
   .site {
-    padding: 0 2rem; } }
+    padding: 0 1rem; } }
 .site-header {
-  margin: 3rem 0 1.5rem; }
+  margin: 3rem 0 1rem; }
   .site-header::after {
     content: "";
     display: table;
     clear: both; }
 
 .site-logo {
-  width: 3rem;
-  height: 3rem; }
+  width: 5.5rem;
+  height: 5.5rem; }
 
 .site-nav {
   display: flex;
   justify-content: center;
-  font-family: "Lora", sans-serif;
+  font-family: "Lora", serif;
   font-size: 1.1rem; }
 
 .site-title {
@@ -493,7 +493,7 @@ kbd {
 .site-nav a {
   flex: 0 1 auto;
   padding: 0 .25rem;
-  margin-right: 0.5rem;
+  margin-right: 1.5rem;
   transition: background 0.1s ease-out; }
   .site-nav a:hover {
     text-decoration: none;
@@ -508,38 +508,38 @@ kbd {
 
 @media (min-width: 480px) {
   .site-header {
-    margin: 3rem 0 2rem; }
+    margin: 3rem 0 1rem; }
 
   .site-title {
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1rem; }
 
   .site-nav a {
-    margin-right: 1.5rem; } }
+    margin-right: 1rem; } }
 @media (min-width: 768px) {
   .site-logo {
-    margin-left: 0.5rem;
-    width: 3.5rem;
-    height: 3.5rem; }
+    margin-left: 1.5rem;
+    width: 5.5rem;
+    height: 5.5rem; }
 
   .site-nav {
     float: right;
     width: 80%;
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
     justify-content: space-around;
     font-size: 1.25rem; }
     .site-nav a {
       margin-right: 0;
-      padding: 0.25rem 0.5rem; }
+      padding: 0.25rem 1.5rem; }
 
   .site-title {
     float: left;
     width: 20%;
     text-align: inherit;
-    margin-bottom: 0.5rem; } }
+    margin-bottom: 1.5rem; } }
 .site-footer {
   margin: 4rem 0 6rem;
-  padding-top: 1.5rem;
-  font-family: "Lora", sans-serif;
+  padding-top: 1rem;
+  font-family: "Lora", serif;
   border-top: 1px solid #e1e9f4; }
 
 .site-footer ul, .site-footer li {
@@ -552,8 +552,8 @@ kbd {
   display: inline-block; }
 
 .site-author {
-  font-weight: bold;
-  margin-left: 0.5rem; }
+  font-weight: normal;
+  margin-left: 1rem; }
 
 .site-source a {
   color: #55595c; }
@@ -565,9 +565,9 @@ kbd {
 
 .site-contact li:not(:last-child)::after,
 .site-source li:not(:last-child)::after {
-  content: '|';
+  content: ' |';
   color: #e1e9f4;
-  margin: 0 0.3rem 0 0.5rem; }
+  margin: 0 .3rem 0 .3rem; }
 
 @media (min-width: 480px) {
   .site-contact {
@@ -608,21 +608,21 @@ kbd {
   margin-bottom: 1.3rem; }
 .post-content p + ul,
 .page-content p + ul {
-  margin-top: -0.5rem; }
+  margin-top: -1.5rem; }
 .post-content h2,
 .page-content h2 {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem; }
 .post-content h3,
 .page-content h3 {
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
   color: #55595c; }
 
 @media (min-width: 768px) {
   .page-header,
   .post-header {
-    margin-bottom: 2rem; }
+    margin-bottom: 1rem; }
 
   .post-content,
   .page-content {
@@ -632,14 +632,14 @@ kbd {
     .page-content p,
     .page-content ul,
     .page-content ol {
-      margin-bottom: 1.5rem; }
+      margin-bottom: 1rem; }
     .post-content h2,
     .page-content h2 {
       margin-top: 3rem;
-      margin-bottom: 1.5rem; }
+      margin-bottom: 1rem; }
     .post-content h3,
     .page-content h3 {
-      margin-top: 2rem;
+      margin-top: 1rem;
       margin-bottom: 1rem;
       color: #55595c; } }
 .select-hide,
@@ -656,12 +656,12 @@ kbd {
 .post-list {
   list-style: none;
   padding-left: 0;
-  margin-top: 2rem; }
+  margin-top: 1rem; }
   .post-list .post-title {
     color: #4072AF;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 1.5rem; }
   .post-list .post {
-    margin-bottom: 2rem; }
+    margin-bottom: 1rem; }
 
 .post-link,
 .post-link:hover,
@@ -671,14 +671,14 @@ kbd {
 
 .post-date {
   display: block;
-  font-family: "Lato", serif;
+  font-family: "Lora", serif;
   color: #818a91;
-  margin: -0.5rem 0 1rem;
+  margin: -1.5rem 0 1rem;
   font-size: .875rem; }
 
 p.post-desc {
   margin-bottom: 1rem;
-  margin-top: -0.5rem; }
+  margin-top: -1.5rem; }
 
 .post .post-header::after,
 .post-link::after {
@@ -705,21 +705,21 @@ p.post-desc {
   font-size: 1rem; }
 
 .project-title {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1rem; }
   .project-title a {
     font-weight: bold;
     border-bottom: 5px solid #e1e9f4;
-    padding-bottom: 0.5rem; }
+    padding-bottom: 1.5rem; }
     .project-title a:hover, .project-title a:focus {
       text-decoration: none;
       border-bottom-color: #4072AF; }
 
 @media (min-width: 768px) {
   .projects {
-    margin-top: 2rem; }
+    margin-top: 1rem; }
 
   .project-title {
-    margin-bottom: 2rem; } }
+    margin-bottom: 1rem; } }
 .lead-about {
   color: #254164; }
 
