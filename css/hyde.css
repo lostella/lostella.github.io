@@ -68,7 +68,7 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
+    width: 15rem;
     text-align: left;
   }
 }
@@ -96,19 +96,23 @@ html {
   margin-bottom: 1rem;
 }
 
-.sidebar-icons svg {
+.sidebar-icons svg,
+.sidebar-icons i {
   width: 30px;
   height: 30px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.sidebar-icons path {
+.sidebar-icons path,
+.sidebar-icons text {
   fill: #fff;
 }
 
-.sidebar-icons text {
-  fill: #fff;
+/* Sidebar copyright */
+
+.sidebar p {
+  font-size: 14px;
 }
 
 /* About section */
@@ -117,7 +121,7 @@ html {
   margin-top: 0;
   /*font-family: "Abril Fatface", serif;*/
   /*font-size: 3.25rem;*/
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
