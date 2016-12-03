@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="16px" viewBox="0 0 12 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>file</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="file" fill="#000000">
+            <path d="m2,8l7,0l0,-1l-7,0l0,1l0,0zm0,2l7,0l0,-1l-7,0l0,1l0,0zm0,2l7,0l0,-1l-7,0l0,1l0,0zm10,-7.5l0,9.5c0,0.55 -0.45,1 -1,1l-10,0c-0.55,0 -1,-0.45 -1,-1l0,-12c0,-0.55 0.45,-1 1,-1l7.5,0l3.5,3.5l0,0zm-1,0.5l-3,-3l-7,0l0,12l10,0l0,-9l0,0z" id="Shape"></path>
+        </g>
+    </g>
+    <text font-weight="bold" stroke="#000000" fill="#000000" transform="matrix(0.1880495228283019,0,0,0.17379605788939045,-10.315726399527335,-12.49098753637311) " xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" id="svg_1" y="106.944889" x="81.28679" stroke-width="0">CV</text>
+</svg>

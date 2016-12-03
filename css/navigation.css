@@ -1,0 +1,13 @@
+.navigation {
+  display: flex;
+  width: auto;
+  overflow: hidden;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.navigation a {
+  display: block;
+  font-size: 75%;
+}

@@ -1,0 +1,29 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Lorenzo Stella
+tagline:          #'A Jekyll theme'
+description:      #'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:              http://lostella.github.io
+baseurl:          /
+logo:             me_round.png
+permalink:        /blog/:year/:month/:day/:title
+
+author:
+  name:           'Lorenzo Stella'
+  url:            #https://twitter.com/mdo
+  github:         lostella
+  email:          lorenzostella@gmail.com
+  cv:             https://github.com/lostella/cv/raw/master/resume.pdf
+
+paginate:         5
+
+# Custom vars
+gems:
+                  - jekyll-paginate
+google_analytics: 'UA-79741121-1'
