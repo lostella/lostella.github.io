@@ -13,10 +13,11 @@ url:              http://lostella.github.io
 baseurl:          /
 logo:             me_round.png
 permalink:        /blog/:year/:month/:day/:title
+color_scheme:     theme-base-0d
 
 author:
   name:           'Lorenzo Stella'
-  url:            #https://twitter.com/mdo
+  # twitter:        lostella
   github:         lostella
   email:          lorenzostella@gmail.com
   cv:             https://github.com/lostella/cv/raw/master/resume.pdf

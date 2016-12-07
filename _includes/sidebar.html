@@ -11,21 +11,18 @@
     </div>
 
     <div class="sidebar-icons">
-      <div>
-        <a href="https://github.com/{{ site.author.github }}" target="_blank">
-          {% include mark-github.svg %}
-        </a>
-      </div>
-      <div>
-        <a href="{{ site.author.cv }}">
-          {% include file_cv.svg %}
-        </a>
-      </div>
-      <div>
-        <a href="mailto:{{ site.author.email }}">
-          {% include mail.svg %}
-        </a>
-      </div>
+      {% if site.author.github %}
+      <div><a href="https://github.com/{{ site.author.github }}" target="_blank">{% include mark-github.svg %}</a></div>
+      {% endif %}
+      {% if site.author.twitter %}
+      <div><a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">{% include twitter.svg %}</a></div>
+      {% endif %}
+      {% if site.author.cv %}
+      <div><a href="{{ site.author.cv }}">{% include file_cv.svg %}</a></div>
+      {% endif %}
+      {% if site.author.email %}
+      <div><a href="mailto:{{ site.author.email }}">{% include mail.svg %}</a></div>
+      {% endif %}
     </div>
 
     <nav class="sidebar-nav">
