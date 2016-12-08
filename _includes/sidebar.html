@@ -10,21 +10,6 @@
       <p class="lead">{{ site.description }}</p>
     </div>
 
-    <div class="sidebar-icons">
-      {% if site.author.github %}
-      <div><a href="https://github.com/{{ site.author.github }}" target="_blank">{% include mark-github.svg %}</a></div>
-      {% endif %}
-      {% if site.author.twitter %}
-      <div><a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">{% include twitter.svg %}</a></div>
-      {% endif %}
-      {% if site.author.cv %}
-      <div><a href="{{ site.author.cv }}">{% include file_cv.svg %}</a></div>
-      {% endif %}
-      {% if site.author.email %}
-      <div><a href="mailto:{{ site.author.email }}">{% include mail.svg %}</a></div>
-      {% endif %}
-    </div>
-
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
 
@@ -45,6 +30,22 @@
       <a class="sidebar-nav-item{% if page.url == "/blog/" %} active{% endif %}" href="/blog/">Blog</a>
       {% endif %}
     </nav>
+
+    <div class="sidebar-icons">
+      {% if site.author.github %}
+      <div><a href="https://github.com/{{ site.author.github }}" target="_blank">{% include Github-black.svg %}</a></div>
+      {% endif %}
+      {% if site.author.twitter %}
+      <div><a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">{% include Twitter-black.svg %}</a></div>
+      {% endif %}
+      {% if site.author.cv %}
+      <div><a href="{{ site.author.cv }}">{% include file_cv.svg %}</a></div>
+      {% endif %}
+      {% if site.author.email %}
+      <div><a href="mailto:{{ site.author.email }}">{% include mail.svg %}</a></div>
+      {% endif %}
+      <div><a href="/feed.xml">{% include RSS-black.svg %}</a></div>
+    </div>
 
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
