@@ -9,15 +9,15 @@ layout: default
 </div>
 <div class="navigation">
   {% if page.previous.url %}
-  <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+  <a class="prev" href="{{page.previous.url}}">&laquo; Prev</a> &nbsp;&middot;&nbsp;
   {% else %}
-  <a/>
+  &laquo; Prev&nbsp;&middot;&nbsp;
   {% endif %}
-  <!-- <a class="index" href="/blog/">All blog posts</a> -->
+  <a class="index" href="/blog/">All blog posts</a>
   {% if page.next.url %}
-  <a class="next" href="{{page.next.url}}" style="">{{page.next.title}} &raquo;</a>
+  &nbsp;&middot;&nbsp; <a class="next" href="{{page.next.url}}" style="">Next &raquo;</a>
   {% else %}
-  <a/>
+  &nbsp;&middot;&nbsp;Next &raquo;
   {% endif %}
 </div>
 <div class="related">

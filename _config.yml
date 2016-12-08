@@ -23,6 +23,7 @@ author:
   cv:             https://github.com/lostella/cv/raw/master/resume.pdf
 
 paginate:         5
+mathjax:          true
 
 # Custom vars
 gems:

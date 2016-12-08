@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="{{ site.baseurl }}css/hyde.css">
     <link rel="stylesheet" href="{{ site.baseurl }}css/navigation.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700|PT+Sans:400,400italic,700|Abril+Fatface">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
 
     <!-- Icons -->
     <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}public/apple-touch-icon-144-precomposed.png"> -->
@@ -40,4 +39,10 @@
         ga('send', 'pageview');
         </script>
     {% endif %}
+
+    <!-- MathJax -->
+    {% if site.mathjax == true %}
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    {% endif %}
+
 </head>
