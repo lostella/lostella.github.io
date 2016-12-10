@@ -33,18 +33,18 @@
 
     <div class="sidebar-icons">
       {% if site.author.github %}
-      <div><a href="https://github.com/{{ site.author.github }}" target="_blank">{% include Github-black.svg %}</a></div>
+      <div title="Github"><a href="https://github.com/{{ site.author.github }}" target="_blank">{% include Github-black.svg %}</a></div>
       {% endif %}
       {% if site.author.twitter %}
-      <div><a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">{% include Twitter-black.svg %}</a></div>
+      <div title="Twitter"><a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">{% include Twitter-black.svg %}</a></div>
       {% endif %}
       {% if site.author.cv %}
-      <div><a href="{{ site.author.cv }}">{% include file_cv.svg %}</a></div>
+      <div title="Résumé"><a href="{{ site.author.cv }}">{% include file_cv.svg %}</a></div>
       {% endif %}
       {% if site.author.email %}
-      <div><a href="mailto:{{ site.author.email }}">{% include mail.svg %}</a></div>
+      <div title="Email"><a href="mailto:{{ site.author.email }}">{% include mail.svg %}</a></div>
       {% endif %}
-      <div><a href="/feed.xml">{% include RSS-black.svg %}</a></div>
+      <div title="Atom feed"><a href="/feed.xml">{% include RSS-black.svg %}</a></div>
     </div>
 
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
