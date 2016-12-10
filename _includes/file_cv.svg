@@ -1,11 +1,6 @@
 <?xml version="1.0"?>
 <svg width="12" height="14" viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
- <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
- <title>file</title>
- <desc>Created with Sketch.</desc>
-
  <g>
-  <title>Layer 1</title>
   <g fill-rule="evenodd" fill="none" id="Octicons">
    <g fill="#000000" id="file">
     <path id="Shape" d="m2,7.065613l7,0l0,-1l-7,0l0,1l0,0zm0,2l7,0l0,-1l-7,0l0,1l0,0zm0,2l7,0l0,-1l-7,0l0,1l0,0zm10,-7.5l0,9.5c0,0.55 -0.45,1 -1,1l-10,0c-0.55,0 -1,-0.45 -1,-1l0,-12c0,-0.55 0.45,-1 1,-1l7.5,0l3.5,3.5l0,0zm-1,0.5l-3,-3l-7,0l0,12l10,0l0,-9l0,0z"/>
