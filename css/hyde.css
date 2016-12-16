@@ -60,7 +60,8 @@ html {
 .sidebar {
   text-align: center;
   padding: 1rem 1rem;
-  color: rgba(255,255,255,.5);
+  /*color: rgba(255,255,255,.5);*/
+  color: var(--background-color);
   background-color: #202020;
 }
 @media (min-width: 48em) {
@@ -80,13 +81,13 @@ html {
 
 /* Sidebar links */
 .sidebar a {
-  color: #fff;
+  color: var(--background-color);
 }
 
 /* Sidebar image (logo) */
 .sidebar-logo {
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid var(--background-color);
   width: 150px;
   height: 150px;
   margin-left: auto;
@@ -141,7 +142,7 @@ html {
 }
 .sidebar-icons path,
 .sidebar-icons text {
-    fill: #fff;
+    fill: var(--background-color);
 }
 
 /* Sidebar copyright */
@@ -152,7 +153,7 @@ html {
 
 /* About section */
 .sidebar-about h1 {
-  color: #fff;
+  color: var(--background-color);
   margin-top: 0;
   /*font-family: "Abril Fatface", serif;*/
   /*font-size: 3.25rem;*/
@@ -270,12 +271,18 @@ a.sidebar-nav-item:focus {
 /* Color selector 9000 */
 
 :root {
+  --background-color: #fcfcfc;
 /*  --main-color: #ac4142; /* Red */
 /*  --main-color: #d28445; /* Orange */
 /*  --main-color: #f4bf75; /* Yellow */
 /*  --main-color: #90a959; /* Green */
 /*  --main-color: #75b5aa; /* Cyan */
-  --main-color: #6a9fb5; /* Blue */
+/*  --main-color: #6a9fb5; /* Blue */
+/*  --main-color: #0375b4; /* Darker Blue */
+  --main-color: #286da8; /* Summer Sky */
+/*  --main-color: #30415d; /* Indigo */
+/*  --main-color: #6d7993; /* Lavendar */
+/*  --main-color: #565656; /* Blackboard */
 /*  --main-color: #aa759f; /* Magenta */
 /*  --main-color: #8f5536; /* Brown */
 /*  --main-color: #123456; /* Meh */
@@ -283,6 +290,9 @@ a.sidebar-nav-item:focus {
 
 .theme-base .sidebar {
   background-color: var(--main-color);
+}
+.theme-base {
+  background-color: var(--background-color);
 }
 .theme-base .content a,
 .theme-base .related-posts li a:hover {
