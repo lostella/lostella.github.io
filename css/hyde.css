@@ -60,8 +60,8 @@ html {
 .sidebar {
   text-align: center;
   padding: 1rem 1rem;
-  /*color: rgba(255,255,255,.5);*/
-  color: var(--background-color);
+  color: rgba(255,255,255,.5);
+  /*color: var(--background-color);*/
   background-color: #202020;
 }
 @media (min-width: 48em) {
