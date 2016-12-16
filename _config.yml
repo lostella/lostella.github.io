@@ -16,7 +16,7 @@ permalink:        /blog/:year/:month/:day/:title
 
 author:
   name:           'Lorenzo Stella'
-  twitter:        lostella
+  # twitter:        lostella
   github:         lostella
   email:          lorenzostella@gmail.com
   cv:             https://github.com/lostella/cv/raw/master/resume.pdf

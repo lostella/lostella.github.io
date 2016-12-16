@@ -115,7 +115,7 @@ html {
 
 .sidebar-icons {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin-bottom: 1rem;
 }
 .sidebar-icons div {
