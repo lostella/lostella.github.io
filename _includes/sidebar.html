@@ -33,16 +33,43 @@
 
     <div class="sidebar-icons">
       {% if site.author.github %}
-      <div title="Github"><a href="https://github.com/{{ site.author.github }}" target="_blank">{% include Github-black.svg %}</a></div>
+      <a href="https://github.com/{{ site.author.github }}" target="_blank">
+        Github
+        <!-- <i class="fa fa-github-square fa-2x" aria-hidden="true"></i> -->
+      </a>
       {% endif %}
       {% if site.author.twitter %}
-      <div title="Twitter"><a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">{% include Twitter-black.svg %}</a></div>
+      <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">
+        Twitter
+        <!-- <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i> -->
+      </a>
+      {% endif %}
+      {% if site.author.facebook %}
+      <a href="https://www.facebook.com/{{ site.author.facebook }}" target="_blank">
+        Facebook
+        <!-- <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i> -->
+      </a>
       {% endif %}
       {% if site.author.cv %}
-      <div title="Résumé"><a href="{{ site.author.cv }}">{% include file_cv.svg %}</a></div>
+      <a href="{{ site.author.cv }}">
+        CV
+        <!-- <span class="fa-stack">
+          <i class="fa fa-square fa-stack-2x"></i>
+          <span class="fa fa-stack-1x" style="color: var(--main-color); font-family: sans-serif; font-weight: bold;">CV</span>
+        </span> -->
+      </a>
       {% endif %}
       {% if site.author.email %}
-      <div title="Email"><a href="mailto:{{ site.author.email }}">{% include mail.svg %}</a></div>
+      <a href="mailto:{{ site.author.email }}">
+        Contact
+        <!-- <i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i> -->
+      </a>
+      {% endif %}
+      {% if site.atom %}
+      <a href="/feed.xml">
+        Feed
+        <!-- <i class="fa fa-rss-square fa-2x" aria-hidden="true"></i> -->
+      </a>
       {% endif %}
     </div>
 

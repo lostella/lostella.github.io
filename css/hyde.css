@@ -33,17 +33,13 @@
 
 html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  /*font-family: "Noto Sans", sans-serif;*/
-  /*font-family: "Lato", sans-serif;*/
-  /*font-family: "Open Sans", sans-serif;*/
-  /*font-family: 'Roboto', sans-serif;*/
 }
-@media (min-width: 48em) {
+@media(min-width: 48em) {
   html {
     font-size: 16px;
   }
 }
-@media (min-width: 58em) {
+@media(min-width: 58em) {
   html {
     font-size: 20px;
   }
@@ -61,10 +57,8 @@ html {
   text-align: center;
   padding: 1rem 1rem;
   color: rgba(255,255,255,.5);
-  /*color: var(--background-color);*/
-  background-color: #202020;
 }
-@media (min-width: 48em) {
+@media(min-width: 48em) {
   .sidebar {
     position: fixed;
     top: 0;
@@ -77,6 +71,8 @@ html {
 
 .sidebar h1 {
   font-weight: normal;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Sidebar links */
@@ -107,48 +103,39 @@ html {
    transform:scale(1.05);
 }
 
-/* Sidebar image (logo) */
-/*.sidebar-about a {
-  font-size: 1.5rem;
-}*/
-
 /* Sidebar icons */
 
 .sidebar-icons {
-    display: flex;
-    justify-content: left;
-    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.3rem;
+    font-size: 12px;
 }
-.sidebar-icons div {
+.sidebar-icons a {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    -webkit-transition: all 0.2s ease; /* Safari and Chrome */
-    -moz-transition: all 0.2s ease; /* Firefox */
-    -ms-transition: all 0.2s ease; /* IE 9 */
-    -o-transition: all 0.2s ease; /* Opera */
-    transition: all 0.2s ease;
 }
-.sidebar-icons div:hover {
-  -webkit-transform:scale(1.1); /* Safari and Chrome */
-  -moz-transform:scale(1.1); /* Firefox */
-  -ms-transform:scale(1.1); /* IE 9 */
-  -o-transform:scale(1.1); /* Opera */
-   transform:scale(1.1);
-}
-.sidebar-icons svg,
-.sidebar-icons i {
-    width: 24px;
-    height: 24px;
-}
-.sidebar-icons path,
-.sidebar-icons text {
-    fill: var(--background-color);
+@media (min-width: 48em) {
+  .sidebar-icons {
+      margin-right: auto;
+      margin-bottom: 0.3rem;
+      font-size: 14px;
+  }
+  .sidebar-icons a {
+      margin-left: 0rem;
+      margin-right: 1rem;
+  }
 }
 
 /* Sidebar copyright */
 
 .sidebar p {
+  font-size: 12px;
+}
+@media (min-width: 48em) {
+  .sidebar p {
     font-size: 14px;
+  }
 }
 
 /* About section */
@@ -175,7 +162,6 @@ html {
 }
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
-    /*text-decoration: none;*/
     text-decoration: underline;
 }
 .sidebar-nav-item.active {
@@ -187,6 +173,7 @@ a.sidebar-nav-item:focus {
     }
     .sidebar-nav-item {
         display: block;
+        margin-left: 0rem;
     }
 }
 

@@ -17,12 +17,14 @@ permalink:        /blog/:year/:month/:day/:title
 author:
   name:           'Lorenzo Stella'
   # twitter:        lostella
+  # facebook:       alletsol
   github:         lostella
   email:          lorenzostella@gmail.com
   cv:             https://github.com/lostella/cv/raw/master/resume.pdf
 
 paginate:         5
 mathjax:          true
+atom:             false
 
 # Custom vars
 gems:
