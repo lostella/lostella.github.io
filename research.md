@@ -10,7 +10,7 @@ Selected publications and working papers (more in my [Google Scholar profile](ht
 
 0. Puya Latafat, Lorenzo Stella and Panagiotis Patrinos.
 *New primal-dual proximal algorithms for distributed optimization*.
-55th IEEE Conference on Decision and Control, [arXiv:1605.01986](http://arxiv.org/abs/1605.01986), 2016.
+55th IEEE Conference on Decision and Control, [10.1109/CDC.2016.7798551](https://doi.org/10.1109/CDC.2016.7798551), 2016.
 
 0. Andreas Themelis, Lorenzo Stella and Panagiotis Patrinos.
 *Forward-backward envelope for the sum of two nonconvex functions: Further properties and nonmonotone line-search algorithms*.
@@ -23,7 +23,7 @@ Selected publications and working papers (more in my [Google Scholar profile](ht
 
 0. Panagiotis Patrinos, Lorenzo Stella, and Alberto Bemporad.
 *Douglas-Rachford splitting: complexity estimates and accelerated variants*.
-53rd IEEE Conference on Decision and Control, [10.1109/CDC.2014.7040049](http://dx.doi.org/10.1109/CDC.2014.7040049), 2014.
+53rd IEEE Conference on Decision and Control, [10.1109/CDC.2014.7040049](https://doi.org/10.1109/CDC.2014.7040049), 2014.
 
 0. Panagiotis Patrinos, Lorenzo Stella, and Alberto Bemporad.
 *Forward-backward truncated Newton methods for convex composite optimization*.
