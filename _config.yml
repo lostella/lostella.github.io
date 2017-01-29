@@ -31,3 +31,5 @@ gems:
                   - jekyll-paginate
                   - jekyll-feed
 google_analytics: 'UA-79741121-1'
+
+theme: jekyll-theme-minimal
