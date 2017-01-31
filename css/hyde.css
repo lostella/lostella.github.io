@@ -95,13 +95,13 @@ html {
   transition: all 0.2s ease;
 }
 
-.sidebar-logo:hover {
-  -webkit-transform:scale(1.05); /* Safari and Chrome */
-  -moz-transform:scale(1.05); /* Firefox */
-  -ms-transform:scale(1.05); /* IE 9 */
-  -o-transform:scale(1.05); /* Opera */
-   transform:scale(1.05);
-}
+/*.sidebar-logo:hover {*/
+  /*-webkit-transform:scale(1.05); /* Safari and Chrome */*/*/
+  /*-moz-transform:scale(1.05); /* Firefox */*/
+  /*-ms-transform:scale(1.05); /* IE 9 */*/
+  /*-o-transform:scale(1.05); /* Opera */*/
+   /*transform:scale(1.05);*/
+/*}*/
 
 /* Sidebar icons */
 
