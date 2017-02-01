@@ -6,7 +6,9 @@ keywords: "publications, articles, research, journal, conference, optimization, 
 permalink: /research/
 ---
 
-Selected publications and working papers (more in my [Google Scholar profile](https://scholar.google.com/citations?user=Y3ag8YsAAAAJ&hl=en)):
+# Research
+
+Publications and working papers (more in my [Google Scholar profile](https://scholar.google.com/citations?user=Y3ag8YsAAAAJ&hl=en)):
 
 0. Puya Latafat, Lorenzo Stella and Panagiotis Patrinos.
 *New primal-dual proximal algorithms for distributed optimization*.

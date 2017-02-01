@@ -6,7 +6,9 @@ keywords: "software, code, programming, c, c++, julia, matlab, solver, optimizat
 permalink: /software/
 ---
 
-Software I've been working on (also check out my [Github profile](https://github.com/lostella)):
+# Software
+
+Software I've been working on (also check out my [Github profile](https://github.com/{{site.author.github}})):
 
 ★ [ProximalOperators.jl](https://github.com/kul-forbes/ProximalOperators.jl). Julia package to compute the proximal operator of several functions commonly used in nonsmooth optimization problems. Useful as building block to implement large scale optimization algorithms such as ADMM.
 

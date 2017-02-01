@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Home"
 description: "Ph.D. student at IMT Lucca and KU Leuven, large-scale nonsmooth optimization algorithms."
 keywords: "ku leuven, imt lucca, research, optimization, nonsmooth, large scale, solver, solvers"
