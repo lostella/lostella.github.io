@@ -16,6 +16,6 @@ their theoretical analysis and efficient implementation.
 
 Check out my [recent publications]({{ "/research" }}) and my [software projects]({{ "/software" }}).
 
-### I'm on the job market!
+## I'm on the job market!
 
 Find more about me in my [curriculum vitae]({{ site.author.cv }}), and feel free to [contact me](mailto:{{ site.author.email }}).
