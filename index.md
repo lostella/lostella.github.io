@@ -14,7 +14,7 @@ and [Alberto Bemporad](http://cse.lab.imtlucca.it/~bemporad/).
 My research interests cover algorithms for large-scale nonsmooth optimization problems,
 their theoretical analysis and efficient implementation.
 
-Check out my [recent publications]({{ "/research" }}) and my [software projects]({{ "/software" }}).
+Check out my [recent publications]({{ "/research" }}) and [software projects]({{ "/software" }}).
 
 ## I'm on the job market!
 

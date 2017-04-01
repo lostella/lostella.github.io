@@ -1,18 +1,19 @@
-@import "fonts";
+@import url(https://fonts.googleapis.com/css?family=Lato:700,700i|Open+Sans:400,400i);
 @import "rouge-github";
 
 body {
   background-color: #fff;
   padding:50px;
-  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#525252;
+  font: 14px/1.5 'Open Sans', sans-serif;
+  color:#444;
   font-weight:400;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font: 14px/1.5 'Lato', sans-serif;
   color:#222;
   margin:0 0 20px;
-  font-weight:500;
+  font-weight:700;
 }
 
 p, ul, ol, table, pre, dl {
@@ -36,7 +37,7 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#39c;
+  color:#28b;
   text-decoration:none;
 }
 
@@ -175,7 +176,7 @@ section {
   width:550px;
   float:right;
   // padding-bottom:50px;
-  border-left:1px solid #e5e5e5;
+  border-left:0px solid #e5e5e5;
   padding-left: 20px;
 }
 

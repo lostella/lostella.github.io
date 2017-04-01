@@ -10,6 +10,10 @@ permalink: /research/
 
 Publications and working papers (more in my [Google Scholar profile](https://scholar.google.com/citations?user=Y3ag8YsAAAAJ&hl=en)):
 
+0. Lorenzo Stella, Andreas Themelis, Pantelis Sopasakis and Panos Patrinos. *A simple and efficient algorithm for nonlinear model predictive control*. (Submitted), 2017.
+
+0. Lorenzo Stella, Andreas Themelis and Panos Patrinos. *Newton-type alternating minimization algorithm for convex optimization*. (Submitted), 2017.
+
 0. Puya Latafat, Lorenzo Stella and Panagiotis Patrinos.
 *New primal-dual proximal algorithms for distributed optimization*.
 55th IEEE Conference on Decision and Control, [10.1109/CDC.2016.7798551](https://doi.org/10.1109/CDC.2016.7798551), 2016.
