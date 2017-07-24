@@ -9,7 +9,8 @@
 {% endcomment %}
 
 <ul>
-{% for node in site.pages %}
+{% assign sorted_pages = site.pages | sort: "weight" %}
+{% for node in sorted_pages %}
   {% if node.title != null %}
     {% if node.layout == "page" %}
       <li><a href="{{ node.url }}">{{ node.title }}</a></li>

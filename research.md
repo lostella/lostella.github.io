@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Research"
+weight: 3
 description: "My publications, journal articles, conference and working papers and research-related stuff."
 keywords: "publications, articles, research, journal, conference, optimization, nonsmooth, proximal, splitting"
 permalink: /research/

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Software"
+weight: 4
 description: "Solvers for nonsmooth optimization problems and other utilities I wrote in C, Julia, MATLAB."
 keywords: "software, code, programming, c, c++, julia, matlab, solver, optimization"
 permalink: /software/

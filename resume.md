@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Resume"
+weight: 2
 description: "My resume."
 keywords: "resume, cv, curriculum vitae"
 permalink: /resume/
