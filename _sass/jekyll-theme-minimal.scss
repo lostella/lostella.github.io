@@ -235,6 +235,11 @@ footer {
 }
 
 @media print, screen and (max-width: 720px) {
+
+  iframe {
+    display: none;
+  }
+
   body {
     word-wrap:break-word;
   }
