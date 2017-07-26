@@ -1,11 +1,7 @@
-// @import url(https://fonts.googleapis.com/css?family=Lato:700,700i|Open+Sans:400,400i);
-// @import url('https://fonts.googleapis.com/css?family=PT+Sans');
-// @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700');
-// @import "rouge-github";
+@import "fonts";
 
 body {
-  background-color: #fff;
+  background-color: #ffffff;
   padding:50px;
   font: 16px/1.5 'Fira Sans', sans-serif;
   color:#444;
@@ -118,46 +114,8 @@ header {
 
 header ul {
   list-style:none;
-//  height:40px;
   padding:0;
-//   background: #f4f4f4;
-//   border-radius:5px;
-//   border:1px solid #e0e0e0;
-//   width:270px;
 }
-//
-// header li {
-//   width:89px;
-//   float:left;
-//   border-right:1px solid #e0e0e0;
-//   height:40px;
-// }
-//
-// header li:first-child a {
-//   border-radius:5px 0 0 5px;
-// }
-//
-// header li:last-child a {
-//   border-radius:0 5px 5px 0;
-// }
-//
-// header ul a {
-//   line-height:1;
-//   font-size:11px;
-//   color:#999;
-//   display:block;
-//   text-align:center;
-//   padding-top:6px;
-//   height:34px;
-// }
-//
-// header ul a:hover {
-//   color:#999;
-// }
-//
-// header ul a:active {
-//   background-color:#f0f0f0;
-// }
 
 strong {
   color:#222;
@@ -178,8 +136,7 @@ header ul a strong {
 section {
   width:630px;
   float:right;
-  // padding-bottom:50px;
-  border-left:0px solid #e5e5e5;
+  border-left:1px solid #e5e5e5;
   padding-left: 20px;
 }
 
@@ -209,12 +166,20 @@ footer {
   color:#A2A2A2;
 }
 
-.profile-image {
-  width: 100px;
+.title img {
+  width: 120px;
   border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 @media print, screen and (max-width: 960px) {
+
+  .title img {
+    display: none;
+  }
 
   div.wrapper {
     width:auto;
@@ -232,9 +197,10 @@ footer {
   // }
 
   section {
-    border:1px solid #e5e5e5;
-    border-width:1px 0 0 0;
-    padding:20px 0 0 0;
+    border: solid #e5e5e5;
+    border-width: 1px 0 0 0;
+    padding: 0 0 0 0;
+    padding-top: 20px;
   }
 
   // header a small {

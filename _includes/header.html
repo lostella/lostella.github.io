@@ -1,7 +1,10 @@
-<h1>{{ site.title | default: site.github.repository_name }}</h1>
-{% if site.description != null %}
-<p>{{ site.description | default: site.github.project_tagline }}</p>
-{% endif %}
+<div class="title">
+  <a href="/"><img src="{{ site.author.pic }}"><a>
+  <h1>{{ site.title | default: site.github.repository_name }}</h1>
+  {% if site.description != null %}
+  <p>{{ site.description | default: site.github.project_tagline }}</p>
+  {% endif %}
+</div>
 
 {% comment %}
   The code below dynamically generates a sidebar nav of pages with
