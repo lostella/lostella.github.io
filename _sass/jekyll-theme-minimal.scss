@@ -1,5 +1,7 @@
 @import "fonts";
 
+html { margin-left: calc(100vw - 100%); }
+
 body {
   background-color: #ffffff;
   padding:50px;
