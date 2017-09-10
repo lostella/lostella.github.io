@@ -31,9 +31,10 @@
 
 <ul>
 {% if site.github.is_user_page %}
-  <a href="https://github.com/{{site.author.github}}" target="_blank"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a>
-  <a href="https://twitter.com/{{site.author.twitter}}" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-  <a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+  <a href="https://github.com/{{site.author.github}}" target="_blank" title="GitHub"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a>
+  <a href="https://twitter.com/{{site.author.twitter}}" target="_blank" title="Twitter"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+  <a href="mailto:{{ site.author.email }}" title="E-mail"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
+  <a href="{{ site.author.pgp }}" target="_blank" title="Public key"><i class="fa fa-key fa-lg" aria-hidden="true"></i></a>
 {% endif %}
 </ul>
 
