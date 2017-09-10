@@ -9,7 +9,7 @@ author:
   github: lostella
   twitter: lostella
   pic: /img/me.jpg
-  pgp: /lostella.gpg
+  pgp: /lostella.asc
 
 github:
   is_user_page: true
