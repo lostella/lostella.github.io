@@ -2,21 +2,17 @@
 layout: page
 title: "Home"
 weight: 1
-description: "Ph.D. candidate at IMT Lucca and KU Leuven, large-scale nonsmooth optimization algorithms."
-keywords: "ku leuven, imt lucca, research, optimization, nonsmooth, large scale, solver, solvers"
+description: "Applied Scientist at Amazon (Berlin), previously PhD at IMT Lucca and KU Leuven: large-scale nonsmooth optimization algorithms, optimal control, machine learning"
 ---
 
 # Hello!
 
-I'm a Ph.D. candidate at [IMT School for Advanced Studies Lucca](http://www.imtlucca.it/) (Italy)
+I am an Applied Scientist at Amazon, Berlin (Germany).
+Previously I was Ph.D. student at [IMT School for Advanced Studies Lucca](http://www.imtlucca.it/) (Italy)
 and [KU Leuven](https://www.esat.kuleuven.be/stadius/) (Belgium), under the supervision of
 [Panos Patrinos](https://www.esat.kuleuven.be/stadius/person.php?persid=639&id=782)
-and [Alberto Bemporad](http://cse.lab.imtlucca.it/~bemporad/).
-My research interests cover algorithms for large-scale nonsmooth optimization problems,
+and [Alberto Bemporad](http://cse.lab.imtlucca.it/~bemporad/),
+where I did research on algorithms for large-scale nonsmooth optimization problems,
 their theoretical analysis and efficient implementation.
 
-Check out my [recent publications]({{ "/research" }}) and [software projects]({{ "/software" }}).
-
-## I'm on the job market!
-
-Find more about me in my [curriculum vitae]({{ site.author.cv }}), and feel free to [contact me](mailto:{{ site.author.email }}).
+Check out my [recent publications]({{ "/research" }}) and [software projects]({{ "/software" }}), or find more about me in my [curriculum vitae]({{ site.author.cv }}) and feel free to [contact me](mailto:{{ site.author.email }}).

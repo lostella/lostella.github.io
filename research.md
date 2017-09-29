@@ -2,8 +2,7 @@
 layout: page
 title: "Research"
 weight: 3
-description: "My publications, journal articles, conference and working papers and research-related stuff."
-keywords: "publications, articles, research, journal, conference, optimization, nonsmooth, proximal, splitting"
+description: "My publications, journal articles, conference papers and working papers and research-related stuff."
 permalink: /research/
 ---
 
@@ -15,7 +14,7 @@ Recent publications (more in my [Google Scholar profile](https://scholar.google.
 *Forward-backward quasi-Newton methods for nonsmooth optimization problems*.
 Computational Optimization and Applications, Volume 67, Issue 3, pp. 443–487, [10.1007/s10589-017-9912-y](https://doi.org/10.1007/s10589-017-9912-y), 2017.
 
-0. Lorenzo Stella, Andreas Themelis, Pantelis Sopasakis and Panos Patrinos. *A simple and efficient algorithm for nonlinear model predictive control*. Submitted, 2017.
+0. Lorenzo Stella, Andreas Themelis, Pantelis Sopasakis and Panos Patrinos. *A simple and efficient algorithm for nonlinear model predictive control*. To appear in 56th IEEE Conference on Decision and Control, 2017.
 
 0. Lorenzo Stella, Andreas Themelis and Panos Patrinos. *Newton-type alternating minimization algorithm for convex optimization*. Submitted, 2017.
 
