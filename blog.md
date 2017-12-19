@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: page
 title: "Blog"
+weight: 10
 description: "Blog posts."
 keywords: "blog, post, posts"
 permalink: /blog/

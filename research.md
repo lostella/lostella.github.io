@@ -8,7 +8,7 @@ permalink: /research/
 
 # Research
 
-Recent publications (more in my [Google Scholar profile](https://scholar.google.com/citations?user=Y3ag8YsAAAAJ&hl=en)):
+Recent publications (more in my [Google Scholar profile](https://scholar.google.com/citations?user={{ site.author.scholar }}&hl=en)):
 
 0. Lorenzo Stella, Andreas Themelis, and Panagiotis Patrinos.
 *Forward-backward quasi-Newton methods for nonsmooth optimization problems*.
