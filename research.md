@@ -14,7 +14,7 @@ Recent publications (more in my [Google Scholar profile](https://scholar.google.
 *Forward-backward quasi-Newton methods for nonsmooth optimization problems*.
 Computational Optimization and Applications, Volume 67, Issue 3, pp. 443–487, [10.1007/s10589-017-9912-y](https://doi.org/10.1007/s10589-017-9912-y), 2017.
 
-0. Lorenzo Stella, Andreas Themelis, Pantelis Sopasakis and Panos Patrinos. *A simple and efficient algorithm for nonlinear model predictive control*. To appear in 56th IEEE Conference on Decision and Control, 2017.
+0. Lorenzo Stella, Andreas Themelis, Pantelis Sopasakis and Panos Patrinos. *A simple and efficient algorithm for nonlinear model predictive control*. 56th IEEE Conference on Decision and Control, [10.1109/CDC.2017.8263933](https://doi.org/10.1109/CDC.2017.8263933), 2017.
 
 0. Lorenzo Stella, Andreas Themelis and Panos Patrinos. *Newton-type alternating minimization algorithm for convex optimization*. Submitted, 2017.
 
