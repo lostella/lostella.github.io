@@ -1,8 +1,9 @@
 ---
 layout: page
 title: "Home"
+is_homepage: true
 weight: 1
-description: "Applied Scientist at Amazon (Berlin), previously PhD at IMT Lucca and KU Leuven: large-scale nonsmooth optimization algorithms, optimal control, machine learning"
+description: "Applied Scientist at Amazon (Berlin), previously PhD at IMT Lucca and KU Leuven: machine learning, deep learning, large-scale nonsmooth optimization algorithms, optimal control"
 ---
 
 # Hello!
