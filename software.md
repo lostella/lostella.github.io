@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Software"
-weight: 4
+weight: 3
 description: "Solvers for nonsmooth optimization problems and other utilities I wrote in C, Julia, MATLAB."
 permalink: /software/
 ---

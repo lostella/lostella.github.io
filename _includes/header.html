@@ -22,6 +22,9 @@
       {% endif %}
   {% endif %}
 {% endfor %}
+{% if site.author.cv %}
+  <li><a href="{{ site.author.cv }}">Resume</a></li>
+{% endif %}
 </ul>
 
 {% if site.github.is_project_page %}

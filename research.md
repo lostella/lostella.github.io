@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Research"
-weight: 3
+weight: 2
 description: "My publications, journal articles, conference papers and working papers and research-related stuff."
 permalink: /research/
 ---
