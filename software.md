@@ -10,9 +10,9 @@ permalink: /software/
 
 Software I've been working on (also check out my [Github profile](https://github.com/{{ site.author.github }})):
 
-[ProximalOperators.jl](https://github.com/kul-forbes/ProximalOperators.jl). Julia package implementing the proximal operator for several functions: these can be used as building blocks to implement large-scale nonsmooth optimization algorithms such as ADMM.
+[ProximalAlgorithms.jl](https://github.com/kul-forbes/ProximalAlgorithms.jl). Efficient, generic Julia implementations of first-order optimization algorithms for nonsmooth problems, based on operator splittings: forward-backward splitting (proximal gradient method), Douglas-Rachford splitting (ADMM), Newton-type methods, primal-dual splitting algorithms. Based on:
 
-[ProximalAlgorithms.jl](https://github.com/kul-forbes/ProximalAlgorithms.jl). Generic, efficient Julia implementations of proximal algorithms for nonsmooth optimization. Based on [ProximalOperators.jl](https://github.com/kul-forbes/ProximalOperators.jl).
+[ProximalOperators.jl](https://github.com/kul-forbes/ProximalOperators.jl). Julia package to compute the proximal operator of several functions commonly used in nonsmooth optimization problems. Useful as building block to implement large-scale optimization algorithms such as ADMM.
 
 [ForBES](http://kul-forbes.github.io/ForBES/). MATLAB solver for nonsmooth optimization, contains a library of
 mathematical functions to formulate problems arising in control, machine

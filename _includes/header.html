@@ -15,7 +15,11 @@
 {% assign sorted_pages = site.pages | sort: "weight" %}
 {% for node in sorted_pages %}
   {% if node.weight < 10 or node.weight == 10 and site.posts != empty %}
-      <li><a href="{{ node.url }}">{{ node.title }}</a></li>
+      {% if page.title == node.title %}
+        <li><a href="{{ node.url }}"><bold>{{ node.title }}</bold></a></li>
+      {% else %}
+        <li><a href="{{ node.url }}">{{ node.title }}</a></li>
+      {% endif %}
   {% endif %}
 {% endfor %}
 </ul>
@@ -29,7 +33,7 @@
   <a href="https://github.com/{{site.author.github}}" target="_blank" title="GitHub"><i class="fab fa-github-alt fa-lg" aria-hidden="true"></i></a>
   <a href="https://twitter.com/{{site.author.twitter}}" target="_blank" title="Twitter"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
   <a href="mailto:{{ site.author.email }}" title="E-mail"><i class="fas fa-at fa-lg" aria-hidden="true"></i></a>
-  <a href="{{ site.author.pgp }}" target="_blank" title="Public key"><i class="fas fa-unlock-alt fa-lg" aria-hidden="true"></i></a>
+  <a href="{{ site.author.pgp }}" target="_blank" title="Public key"><i class="fas fa-key fa-lg" aria-hidden="true"></i></a>
 {% endif %}
 </ul>
 
