@@ -11,5 +11,4 @@ author:
   pic: /img/me.jpg
   pgp: /lostella.asc
 
-github:
-  is_user_page: true
+permalink: /blog/:year/:month/:day/:title

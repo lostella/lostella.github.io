@@ -1,0 +1,120 @@
+body {
+  background-color: #ffffff;
+  padding:10px;
+  font: 16px/1.5 'Fira Sans', sans-serif;
+  color:#444;
+  font-weight:400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fira Sans', sans-serif;
+  margin:0 0 20px;
+  font-weight:700;
+}
+
+h1 {
+  font-size: 1em;
+}
+
+h2 {
+  font-size: 0.75em;
+}
+
+h3 {
+  font-size: 0.685em;
+}
+
+h4 {
+  font-size: 0.5em;
+}
+
+h5 {
+  font-size: 0.425em;
+}
+
+h6 {
+  font-size: 0.375em;
+}
+
+a {
+  color:#28b;
+  text-decoration:none;
+}
+
+a:hover {
+  color:#069;
+}
+
+div.wrapper {
+  // background-color: #bbbbbb;
+  max-width:780px;
+  margin:0 auto;
+}
+
+header, main {
+  // background-color: #cccccc;
+  display:block;
+  float:left;
+  width:100%;
+}
+
+main {
+  border-top:1px solid #e5e5e5;
+}
+
+#title {
+  float:left;
+  margin-right: -30px;
+}
+
+header ul {
+  list-style:none;
+}
+
+#icons {
+  float:left;
+}
+
+#menu {
+  float:right;
+}
+
+header li {
+  float:left;
+  margin-left:10px;
+}
+
+#menu li.active a {
+  border-bottom: 2px solid;
+}
+
+// main {
+//   // background-color: #cccccc;
+//   max-width:inherit;
+//   position:relative;
+//   float:left;
+//   border-top:1px solid #e5e5e5;
+// }
+
+// img.author {
+//   width: 100px;
+//   border-radius: 5%;
+//   float:left;
+//   margin-left: 0;
+//   margin-right: 20px;
+//   margin-bottom: 20px;
+// }
+
+code, pre {
+  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+  color:#333;
+  font-size:12px;
+}
+
+pre {
+  padding:8px 15px;
+  background: #f8f8f8;
+  border-radius:5px;
+  border:1px solid #e5e5e5;
+  overflow-x: auto;
+}

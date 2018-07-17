@@ -1,34 +1,31 @@
-<div class="title">
-  <a href="/"><img src="{{ site.author.pic }}"><a>
-  <h1>{{ site.title | default: site.github.repository_name }}</h1>
+<div id="title">
+  <p><strong><a href="/">{{ site.title }}</a></strong></p>
 </div>
+
+<ul id="icons">
+  <li><a href="https://github.com/{{site.author.github}}" target="_blank" title="GitHub"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>
+  <li><a href="https://twitter.com/{{site.author.twitter}}" target="_blank" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+  <li><a href="mailto:{{ site.author.email }}" title="E-mail"><i class="far fa-envelope" aria-hidden="true"></i></a></li>
+  <li><a href="{{ site.author.pgp }}" target="_blank" title="Public key"><i class="fas fa-key" aria-hidden="true"></i></a></li>
+</ul>
 
 {% comment %}
   The code below dynamically generates a sidebar nav of pages with
   `layout: page` in the front-matter. See readme for usage.
 {% endcomment %}
-
-<ul>
+<ul id="menu">
 {% assign sorted_pages = site.pages | sort: "weight" %}
 {% for node in sorted_pages %}
-  {% if node.weight < 10 or node.weight == 10 and site.posts != empty %}
-      {% if page.title == node.title %}
-        <li><a href="{{ node.url }}"><bold>{{ node.title }}</bold></a></li>
-      {% else %}
-        <li><a href="{{ node.url }}">{{ node.title }}</a></li>
-      {% endif %}
-  {% endif %}
+  {% unless node.hidden or node.url contains "/assets/" or node.is_blog_home and site.posts == empty %}
+    {% if page.title == node.title %}
+      {% assign li_class = "active" %}
+    {% else %}
+      {% assign li_class = "inactive" %}
+    {% endif %}
+    <li class="{{ li_class }}"><a href="{{ node.url }}">{{ node.title }}</a></li>
+  {% endunless %}
 {% endfor %}
 {% if site.author.cv %}
   <li><a href="{{ site.author.cv }}">Resume</a></li>
 {% endif %}
 </ul>
-
-{% if site.github.is_user_page %}
-<ul>
-  <a href="https://github.com/{{site.author.github}}" target="_blank" title="GitHub"><i class="fab fa-github-alt fa-lg" aria-hidden="true"></i></a>
-  <a href="https://twitter.com/{{site.author.twitter}}" target="_blank" title="Twitter"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
-  <a href="mailto:{{ site.author.email }}" title="E-mail"><i class="fas fa-at fa-lg" aria-hidden="true"></i></a>
-  <a href="{{ site.author.pgp }}" target="_blank" title="Public key"><i class="fas fa-key fa-lg" aria-hidden="true"></i></a>
-</ul>
-{% endif %}

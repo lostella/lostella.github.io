@@ -55,11 +55,6 @@ a:hover small {
   color:#777;
 }
 
-.wrapper {
-  width:900px;
-  margin:0 auto;
-}
-
 blockquote {
   border-left:1px solid #e5e5e5;
   margin:0;
@@ -105,13 +100,6 @@ img {
   max-width:100%;
 }
 
-header {
-  width:220px;
-  float:left;
-  position:fixed;
-  -webkit-font-smoothing:subpixel-antialiased;
-}
-
 header ul {
   list-style:none;
   padding:0;
@@ -137,13 +125,6 @@ header ul a strong {
   color:#222;
 }
 
-section {
-  width:630px;
-  float:right;
-  border-left:1px solid #e5e5e5;
-  padding-left: 20px;
-}
-
 small {
   font-size:11px;
 }
@@ -151,7 +132,7 @@ small {
 date {
   font-size:11px;
   color:#A2A2A2;
-  margin-bottom: 20px; // this doesn't work?
+  margin: 0 0 20px; // this doesn't work?
 }
 
 hr {
@@ -159,6 +140,24 @@ hr {
   background:#e5e5e5;
   height:1px;
   margin:0 0 20px;
+}
+
+i {
+  margin-right: 15px;
+}
+
+header {
+  width:220px;
+  float:left;
+  position:fixed;
+  -webkit-font-smoothing:subpixel-antialiased;
+}
+
+section {
+  width:630px;
+  float:right;
+  border-left:1px solid #e5e5e5;
+  padding-left: 20px;
 }
 
 footer {
@@ -179,20 +178,12 @@ footer {
   margin-bottom: 20px;
 }
 
-i {
-  margin-right: 15px;
+.wrapper {
+  max-width:780px;
+  margin:0 auto;
 }
 
-@media print, screen and (max-width: 960px) {
-
-  .title img {
-    display: none;
-  }
-
-  div.wrapper {
-    width:auto;
-    margin:0;
-  }
+// @media print, screen and (max-width: 960px) {
 
   header, section, footer {
     float:none;
@@ -200,16 +191,42 @@ i {
     width:auto;
   }
 
-  // header {
-  //   padding-right:320px;
-  // }
-
   section {
     border: solid #e5e5e5;
     border-width: 1px 0 0 0;
     padding: 0 0 0 0;
     padding-top: 20px;
   }
+
+  footer {
+    border:1px solid #e5e5e5;
+    border-width:1px 0 0 0;
+    padding:20px 0 0 0;
+  }
+
+  header ul {
+    position:static;
+    // right:50px;
+    // top:52px;
+  }
+
+  header li {
+    padding-right: 5px;
+    display: inline;
+  }
+
+  .title img {
+    display: none;
+  }
+
+  // .wrapper {
+  //   width:auto;
+  //   margin:0;
+  // }
+
+  // header {
+  //   padding-right:320px;
+  // }
 
   // header a small {
   //   display:inline;
@@ -223,66 +240,49 @@ i {
   // header p {
   //   float: left;
   // }
+// }
 
-  header ul {
-    position:static;
-    // right:50px;
-    // top:52px;
-  }
-
-  header li {
-    padding-right: 5px;
-    display: inline;
-  }
-
-  footer {
-    border:1px solid #e5e5e5;
-    border-width:1px 0 0 0;
-    padding:20px 0 0 0;
-  }
-}
-
-@media print, screen and (max-width: 720px) {
-
-  iframe {
-    display: none;
-  }
-
-  body {
-    word-wrap:break-word;
-  }
-
-  header {
-    padding:0;
-  }
-
-  // header ul, header p.view {
-  //   position:static;
-  // }
-
-  pre, code {
-    word-wrap:normal;
-  }
-}
-
-@media print, screen and (max-width: 480px) {
-  body {
-    padding:15px;
-  }
-
-  header ul {
-    width:99%;
-  }
-
-  header li, header ul li + li + li {
-    // width:33%;
-  }
-}
-
-@media print {
-  body {
-    padding:0.4in;
-    font-size:12pt;
-    color:#444;
-  }
-}
+// @media print, screen and (max-width: 720px) {
+//
+//   iframe {
+//     display: none;
+//   }
+//
+//   body {
+//     word-wrap:break-word;
+//   }
+//
+//   header {
+//     padding:0;
+//   }
+//
+//   // header ul, header p.view {
+//   //   position:static;
+//   // }
+//
+//   pre, code {
+//     word-wrap:normal;
+//   }
+// }
+//
+// @media print, screen and (max-width: 480px) {
+//   body {
+//     padding:15px;
+//   }
+//
+//   header ul {
+//     width:99%;
+//   }
+//
+//   header li, header ul li + li + li {
+//     // width:33%;
+//   }
+// }
+//
+// @media print {
+//   body {
+//     padding:0.4in;
+//     font-size:12pt;
+//     color:#444;
+//   }
+// }

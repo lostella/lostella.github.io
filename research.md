@@ -1,12 +1,10 @@
 ---
 layout: page
-title: "Research"
+title: Research
 weight: 2
-description: "My publications, journal articles, conference papers and working papers and research-related stuff."
+description: "My publications, journal articles, conference papers, and research-related stuff."
 permalink: /research/
 ---
-
-# Research
 
 Recent publications (more in my [Google Scholar profile](https://scholar.google.com/citations?user={{ site.author.scholar }}&hl=en)):
 
