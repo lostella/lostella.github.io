@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight:700;
 }
 
+p {
+  margin:0 0 20px;
+}
+
 h1 {
   font-size: 1em;
 }
@@ -36,6 +40,10 @@ h6 {
   font-size: 0.375em;
 }
 
+small {
+  font-size: 0.685em;
+}
+
 a {
   color:#28b;
   text-decoration:none;
@@ -51,7 +59,7 @@ div.wrapper {
   margin:0 auto;
 }
 
-header, main {
+header, main, footer {
   // background-color: #cccccc;
   display:block;
   float:left;
@@ -63,20 +71,25 @@ main {
 }
 
 #title {
+  // background-color: #cccccc;
   float:left;
-  margin-right: -30px;
 }
 
 header ul {
   list-style:none;
+  margin-top: 0px;
 }
 
-#icons {
+ul#icons {
+  // background-color: #cccccc;
   float:left;
+  padding-left: 0px;
 }
 
-#menu {
+ul#menu {
+  // background-color: #cccccc;
   float:right;
+  padding-left: 0px;
 }
 
 header li {
@@ -86,6 +99,14 @@ header li {
 
 #menu li.active a {
   border-bottom: 2px solid;
+}
+
+footer a.prev {
+  float: left;
+}
+
+footer a.next {
+  float: right;
 }
 
 // main {
@@ -107,7 +128,7 @@ header li {
 
 code, pre {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-  color:#333;
+  // color:#333;
   font-size:12px;
 }
 
