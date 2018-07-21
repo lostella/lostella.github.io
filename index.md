@@ -14,4 +14,4 @@ and [Alberto Bemporad](http://cse.lab.imtlucca.it/~bemporad/),
 where I did research on algorithms for large-scale nonsmooth optimization problems,
 their theoretical analysis and efficient implementation.
 
-Check out my [recent publications]({{ "/research" }}) and [software projects]({{ "/software" }}), or find more about me in my [curriculum vitae]({{ site.author.cv }}) and feel free to [contact me](mailto:{{ site.author.email }}).
+Check out my [recent publications]({{ "/research" }}) and [software projects]({{ "/software" }}), or find more about me in my <a href="{{ site.author.cv }}" target="_blank">curriculum vitae</a> and feel free to [contact me](mailto:{{ site.author.email }}).
