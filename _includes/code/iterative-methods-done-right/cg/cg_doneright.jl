@@ -8,7 +8,7 @@ disp(state) = @printf "%5d | %.3e | %.3e\n" state[2][1] state[1]/1e9 sqrt(state[
 function cg(A::TA, b::Tb; x::Tx=nothing, tol=1e-6, maxit=max(1000,size(A,2)),
     period=div(size(A,2),10)) where {TA, Tb, Tx}
 
-    iter = CGIterable{TA, Tb, Tx}(A, b, x)
+    iter = cgiterable(A, b, x)
     iter = halt(iter, stop)
     iter = take(iter, maxit)
     iter = enumerate(iter)

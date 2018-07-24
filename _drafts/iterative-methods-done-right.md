@@ -6,19 +6,19 @@ date: 2018-07-17
 mathjax: true
 ---
 
-Iterative methods are a class of numerical algorithms that, starting from an
-initial guess, produce a sequence of (hopefully) better and better
-approximations to a solution of some problem. Function minimization,
-linear and nonlinear systems of equations, are very often solved with iterative
-methods (especially when the problem is too large for direct methods to kick in).
+Iterative methods are a class of numerical algorithms that produce a sequence of
+(hopefully) better and better approximations to a solution of a problem,
+starting from an initial guess. Function minimization, linear and nonlinear
+systems of equations, are very often solved with iterative methods (especially
+when the problem is too large for direct methods to kick in).
 
 On paper, iterative methods are commonly
 described as loops that somehow generate a sequence of approximations to the
 problem solution: in fact, that's the immediate way of translating them into
-running pieces of code using your programming language of choice.
+running pieces of code using the programming language of choice.
 Include a bit of additional logic (some stopping condition to halt the
 iterations, a few lines to display the algorithm's status or log it to a file)
-and you have a pretty decent utility to run experiments.
+and one has a pretty decent utility to run experiments.
 
 However, that's not necessarily *the best* way of doing the job, especially if
 you need to code this type of loops over and over again:
@@ -44,7 +44,7 @@ in case you have months (or years) ahead of experimenting with iterative methods
 
 # Iterables in Julia
 
-Iterables are objects you can iterate on, like lists or other types of collections.
+Iterables are objects one can iterate on, like lists or other types of collections.
 Unlike collections however, iterables do not hold all elements in memory: instead,
 they only need to be able to generate all elements in sequence, one after the other.
 They're like *lazy* collections.
@@ -78,16 +78,17 @@ end
 
 In order to unroll the sequence and compute each element, one only needs to keep
 track of the pair $$(F_{n-1}, F_{n})$$ of the two most recent elements: that
-will be the state of our iteration. Next we need to define *two* methods for
-the `iterate` function:
+will be the state of our iteration. Based on that, we need to define *two*
+methods for the `iterate` function:
 * `iterate(iter::FibonacciIterable)` returning the pair `(F0, state0)` containing
 the *first* element in the sequence and initial state respectively;
 * `iterate(iter::FibonacciIterable, state)` returning the pair `(F, newstate)`
 of the *next* element `F` in the sequence (given `state`) and the updated state
 `newstate`.
 
-When iterating over a finite sequence, `iterate` should return
-`nothing` (Julia's "none" value) as soon as no elements are left.
+As soon as the sequence is over, `iterate` should return
+`nothing` (Julia's "none" value). This is never the case for our Fibonacci
+sequences, since they're infinite.
 Note that `FibonacciIterable` objects are immutable: we would like them not
 to change as we iterate, since they *identify* the sequence which is being produced.
 Instead, all mutations should occur in state updates.
@@ -132,9 +133,9 @@ $$
 where $$A\in\mathbb{R}^{n\times n}$$ is a positive semidefinite, symmetric matrix.
 It is particularly useful when $$n$$ is very large and $$A$$ is sparse,
 in which case direct methods (Cholesky factorization) are computationally
-prohibitive. Instead, CG works by only applying matrix-vector operations with
+prohibitive. Instead, CG works by only applying matrix-vector products with
 $$A$$. Given an initial guess $$x_0$$, the method produces a sequence $$x_k$$
-of approximations to the solution according to the following recurrence:
+of solution approximations according to the following recurrence:
 
 1. Initialize $$ r_0 = p_0 = Ax_0 - b $$.
 2. For any $$k > 0$$ do
@@ -203,7 +204,7 @@ by doing
 
 {% highlight julia %}
 k = 1
-for state in cg(A, b)
+for state in cgiterable(A, b)
   # do something
   if k >= maxit break end
   k += 1
@@ -219,7 +220,7 @@ reusable way of doing it.
 A cleaner solution is
 
 {% highlight julia %}
-for (k, state) in Base.Iterators.enumerate(cg(A, b))
+for (k, state) in Base.Iterators.enumerate(cgiterable(A, b))
   # do something
   if k >= maxit break end
 end
@@ -228,7 +229,7 @@ end
 or, even better
 
 {% highlight julia %}
-for state in Base.Iterators.take(cg(A, b), maxit)
+for state in Base.Iterators.take(cgiterable(A, b), maxit)
   # do something
 end
 {% endhighlight %}
@@ -241,24 +242,24 @@ in the original sequence;
 only yields the first `n` elements in the original sequence.
 
 These are iterable *wrappers*: given an iterable (i.e. a sequence)
-they wrap a new one around it that extends its behaviour somehow.
+they wrap a new one around it that somehow extends its behaviour.
 What's most important here is that we get to add features on top of our original
 iteration *without ever touching its code*.
 
 In this spirit, let us now define more of these iterable wrappers that are
-useful when playing with iterative methods, and nicely address
-problems 2 and 3 above, among other things.
+useful when working with iterative methods, and nicely address problems 2 and 3
+above (among other things) without getting in the way of our CG implementation.
 
 # Halting
 
-Aside from imposing a maximum number of iteration, one usually wants to stop
-the iteration as soon as some condition is met. Here the `halt` wrapper takes an
+Aside from imposing a maximum number of iterations, one usually wants to stop
+the computation as soon as some condition is met. Here the `halt` wrapper takes an
 iterable `iter` and a boolean function `fun`: a new iterable is returned that
 applies `fun` to each element of `iter` until `true` is returned, at which point
 the iteration stops.
 
 {% highlight julia %}
-{% include code/iterative-methods-done-right/cg/halt.jl %}
+{% include code/iterative-methods-done-right/tools/halt.jl %}
 {% endhighlight %}
 
 # Side effects
@@ -270,7 +271,7 @@ I'm calling this wrapper `tee`, like the
 because of the apparent analogy.
 
 {% highlight julia %}
-{% include code/iterative-methods-done-right/cg/tee.jl %}
+{% include code/iterative-methods-done-right/tools/tee.jl %}
 {% endhighlight %}
 
 This can be used to display some summary of the algorithm's state
@@ -298,7 +299,7 @@ is precisely interested in the final state of an iterative algorithm&mdash;the
 one that triggered the prescribed stopping criterion.
 
 {% highlight julia %}
-{% include code/iterative-methods-done-right/cg/sample.jl %}
+{% include code/iterative-methods-done-right/tools/sample.jl %}
 {% endhighlight %}
 
 # Timing
@@ -308,27 +309,26 @@ here `stopwatch` measures time elapsed from the beginning
 ([in nanoseconds](https://docs.julialang.org/en/latest/base/base/#Base.time_ns)).
 
 {% highlight julia %}
-{% include code/iterative-methods-done-right/cg/stopwatch.jl %}
+{% include code/iterative-methods-done-right/tools/stopwatch.jl %}
 {% endhighlight %}
 
 Measuring time in the context of numerical algorithms needs no justification, I believe.
 
 # Putting it all together
 
-Now that we have quite a bunch of ingredients, we can cook up our CG solver
-recipe by appropriately mixing them. First, there's another piece of code that we can
-factor out and put in our toolbox: the `for` loop. The following function
-takes whatever iterable, loops over it until it's over, and returns the last
+There's another piece of code that we can factor out and put in our toolbox:
+the `for` loop. The following function takes whatever iterable, loops
+over it until it's finished (so it better be finite), and returns the last
 element:
 
 {% highlight julia %}
-{% include code/iterative-methods-done-right/cg/loop.jl %}
+{% include code/iterative-methods-done-right/tools/loop.jl %}
 {% endhighlight %}
 
-
-The following `cg` routine instantiates a `CGIterable` object for the given
-problem, buries it under the wrappers we described above, then loops the
-resulting iterable to get the last state.
+We now have all pieces to assemble our CG solver routine.
+In the following snippet, the `cg` function instantiates a `CGIterable` object
+for the given problem, buries it under the wrappers we described above,
+then loops the resulting iterable to get the last state.
 For simplicity, the composition of iterables is fixed, but one could think of
 parsing here all sorts of options the user may provide (e.g. verbose/silent,
 measure time/do not measure time, using multiple termination criteria...)
@@ -368,29 +368,34 @@ julia> norm(A*x - b)
 * Unit testing is easier. -->
 
 Implementing iterative methods as iterables has several advantages with respect
-to writing explicit, monolithic loops.
-The "core" computations of the methods are well isolated and can be modified,
+to writing explicit, monolithic for loops: above all, "core" computation of the
+method is well isolated from all additional logics and can be modified,
 optimized, checked for correctness (and *unit tested*) much more easily.
-Additional functionality can be wrapped around the method without the need to
-touch anything close to the math, can be unit tested as well, and can be stored
-for future usage.
-In the end, writing the solver routine amounts to designing its user interface,
-the available options, and writing the logic that builds the right iterable.
+Additional functionality can be wrapped around the core method without the need
+to touch anything close to the math, can be unit tested as well, and can be
+stored for future usage.
+In the end, writing a solver amounts to designing its user interface, the
+available options, and writing the logic that builds the right iterable.
 
-**[TBC]**
+In this post I've outlined a rather minimal set of iterable wrappers, and only
+explored the simple example of CG. However, this design should be possible to
+use in order to implement and glue together many other kinds of pieces:
+* Preconditioning (e.g. quasi-Newton methods, L-BFGS).
+* Step-size selection rules (including line-searches).
+* Nesterov acceleration (fast gradient methods).
+* Restart (e.g. for GMRES or fast gradient methods).
 
-How does one get to apply all this (free lunch?):
+All of these could be wrapped on top of some core iterable, by using something
+along the lines of the `tee` wrapper defined above, and is material for future
+posts.
+
+<!-- **[TBC]** -->
+
+<!-- How does one get to apply all this (free lunch?):
 * The effort shifts into appropriately rearranging the algorithm operations.
 
-Further examples could be:
-* Step-size selection rules.
-* Related to the above, line-search (i.e., iterations inside iterations).
-* Implementing restart as a separate logic from core iterations.
-* Preconditioning
-* Nesterov acceleration
-
 Questions:
-* Any apparent limit of this approach?
+* Any apparent limit of this approach? -->
 
 <!--
 # Foreword
