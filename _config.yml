@@ -3,6 +3,7 @@ show_downloads: false
 google_analytics: 'UA-79741121-1'
 
 author:
+  name: Lorenzo Stella
   email: lorenzostella<AT>gmail<DOT>com
   cv: /pdf/resume.pdf
   github: lostella

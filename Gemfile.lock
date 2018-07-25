@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/jneen/rouge
-  revision: c5f4288162e2e6218180779c7f6ac1735bb56eab
+  revision: 11aaec03cd9a7c878d9b30ac0b89689dd62b1a9c
   specs:
     rouge (3.1.1)
 

@@ -3,7 +3,7 @@ layout: page
 title: Blog
 weight: 4
 is_blog_home: true
-description: "Lorenzo Stella's blog."
+description: "My blog."
 permalink: /blog/
 ---
 

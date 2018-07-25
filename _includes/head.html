@@ -1,6 +1,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
-<title> {{ site.name }}{% if page.is_homepage %}{% else %} &mdash; {{ page.title }}{% endif %}</title>
+<title>
+  {% if page.is_homepage %}
+    {{ site.name }}
+  {% else %}
+    {{ page.title }} | {{ site.name }}
+  {% endif %}
+</title>
 <!--  Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700" rel="stylesheet">
 
