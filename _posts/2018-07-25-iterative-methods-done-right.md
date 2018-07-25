@@ -1,8 +1,12 @@
 ---
 layout: post
-title: "Iterative methods done right: life's too short to write for loops"
-tags: [ julia, iterables, cg ]
-date: 2018-07-17
+title: "Iterative methods done right (life's too short to write for-loops)"
+description: "Complicated for-loops may not be the ideal way of coding iterative
+methods: by composing iterable objects one can use (and re-use) well-separated,
+testable pieces to assemble sometimes tedious-to-code routines. Examples in
+Julia are included."
+tags: [ iterative methods, julia, iterables ]
+date: 2018-07-25
 mathjax: true
 ---
 
@@ -160,6 +164,9 @@ the initial guess $$x_0$$, so those will compose our iterable objects:
 {% include code/iterative-methods-done-right/cg/cg_iterable.jl %}
 {% endhighlight %}
 
+In the `cgiterable` constructor we allow for `x0` to be `nothing`: in this case
+we will assume the initial point to be the zero vector, and save ourselves one
+matrix-vector product.
 The *state* of the iteration is composed of vectors $$x_k$$, $$r_k$$, and $$p_k$$.
 In addition to that, we will make room for additional stuff, so as to reuse all
 possible memory and avoid allocations: vector $$A p_k$$ and scalars $$\|r_k\|^2$$
@@ -184,9 +191,6 @@ The actual computation is carried out by the `iterate` function:
 Rather than the sequence of $$x_k$$, we yield the sequence of states of the
 algorithm, since that contains all information that may be needed when
 experimenting with the algorithm (including $$x_k$$ itself).
-Note also that in initializing the state we allow for `x0` to be `nothing`,
-in which case it is assumed to be the zero vector: this allows saving one
-matrix-vector product.
 
 # Wrapping iterables
 
@@ -361,80 +365,24 @@ julia> norm(A*x - b)
 
 # Conclusions
 
-<!-- With this approach:
-* Core iterations are more easily provable correct.
-* Implementation of core operations can be optimized without all the bullshit around.
-* You can plug in functionality and take it out without ever touching the core iterations.
-* Unit testing is easier. -->
-
-Implementing iterative methods as iterables has several advantages with respect
-to writing explicit, monolithic for loops: above all, "core" computation of the
-method is well isolated from all additional logics and can be modified,
+Implementing iterative methods as iterables has some advantages with respect
+to writing explicit, monolithic for-loops: above all, "core" computations are
+well isolated from all additional logics and can be modified,
 optimized, checked for correctness (and *unit tested*) much more easily.
-Additional functionality can be wrapped around the core method without the need
-to touch anything close to the math, can be unit tested as well, and can be
-stored for future usage.
-In the end, writing a solver amounts to designing its user interface, the
-available options, and writing the logic that builds the right iterable.
+Additional functionalities (stopping criteria, I/O, ...) can be wrapped around
+the core method, as well as tested, and stored for future usage. Ultimately,
+writing a solver amounts to designing its interface, options, and coding the
+logic that builds the right iterable.
 
-In this post I've outlined a rather minimal set of iterable wrappers, and only
-explored the simple example of CG. However, this design should be possible to
-use in order to implement and glue together many other kinds of pieces:
-* Preconditioning (e.g. quasi-Newton methods, L-BFGS).
+In this post I've outlined a rather minimal set of iterables, and only explored
+the simple example of CG. However, using this design one should be able
+to implement and glue together many other kinds of pieces:
+* Computing preconditioners (e.g. quasi-Newton or L-BFGS).
 * Step-size selection rules (including line-searches).
 * Nesterov acceleration (fast gradient methods).
 * Restart (e.g. for GMRES or fast gradient methods).
 
-All of these could be wrapped on top of some core iterable, by using something
-along the lines of the `tee` wrapper defined above, and is material for future
-posts.
-
-<!-- **[TBC]** -->
-
-<!-- How does one get to apply all this (free lunch?):
-* The effort shifts into appropriately rearranging the algorithm operations.
-
-Questions:
-* Any apparent limit of this approach? -->
-
-<!--
-# Foreword
-Introduction, motivations:
-* Importance of iterative methods.
-* Off-by-1 errors.
-* Indexing mistakes (especially when different notations are around) <- this is evident in fast FBS.
- -->
-<!--
-# CG the monolithic way
-How does CG work? The simple iteration an undergrad would write in MATLAB.
- -->
-<!--
-# Iterators in Julia
-How do they work? Focus on Julia 0.7
- -->
-<!--
-# CG the functional way
-Writing an iterable that uniquely determines the sequence (at least for deterministic algorithms):
-* Immutable iterable.
-* Possibly mutable state.
- -->
-<!--
-# Composing iterators
-Doing other things on top of the iterations:
-* Limiting the number of iterations.
-* Stopping criterion.
-* Counting/timing.
-* Sampling (i.e. taking one every n iterations to do some of the stuff).
-* Side effects (e.g. displaying/logging).
-Include motivations: for example, one may check stopping conditions at every iteration, but display every 100th.
-Doing this by iterator compositions alleviates from having to handle the logic in the loop.
- -->
-<!--
-# Conclusions
-Everyone has his or her own needs when implementing iterative methods.
-This set if recipes may not be relevant to everyone, they just address some of the problems I encountered.
-Do these recipes cook themselves? Where does all effort go? It goes in implementing the algorithm's core iterator:
-* Carefully thinking what the iteration state is
-* .................. what the state recursion is
-Same things must be thought of in the "monolithic" way, but now they are isolated from the bullshit.
- -->
+Intuitively, all of these could be implemented using the `tee` wrapper defined
+above (when, like in the case of `CGIterable`, the "elements" that `TeeIterable`
+handles are the *mutable* states of our iteration) or could be implemented as
+separate building blocks. In any case, that's material for future thinking.
