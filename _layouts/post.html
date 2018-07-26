@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 {% include head.html %}
 <!-- Open Graph metas -->
@@ -14,15 +14,13 @@
 {% include header.html %}
 </header>
 <main>
-<p>
-<p><strong>{{ page.title }}</strong></p>
+<h1>{{ page.title }}</h1>
 <p><small>
 By <a href="/">{{ site.name }}</a> &mdash;
 {{ page.date | date: "%A %B %d, %Y"}}
 {% if page.update %} (last update: {{ page.update | date: "%A %B %d, %Y"}}) {% endif %}
 </small></p>
 {{ content }}
-</p>
 </main>
 <footer>
 {% if page.previous.url %}

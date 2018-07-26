@@ -43,7 +43,7 @@ It goes without saying that similar things one can do in
 or whatever language is preferred: in fact, I would highly encourage you to do so
 in case you have months (or years) ahead of experimenting with iterative methods.
 
-# Iterables in Julia
+## Iterables in Julia
 
 Iterables are objects one can iterate on, like lists or other types of collections.
 Unlike collections however, iterables do not hold all elements in memory: instead,
@@ -123,7 +123,7 @@ julia> for F in FibonacciIterable(BigInt(0), BigInt(1))
 55
 {% endhighlight%}
 
-# The conjugate gradient method
+## The conjugate gradient method
 
 The conjugate gradient (CG) method solves linear systems
 
@@ -189,7 +189,7 @@ Rather than the sequence of $$x_k$$, we yield the sequence of states of the
 algorithm, since that contains all information that may be needed when
 experimenting with the algorithm (including $$x_k$$ itself).
 
-# Wrapping iterables
+## Wrapping iterables
 
 Given the simplicity of the method, it is easy to check that the iterable type
 we just defined is a correct CG implementation. However, there are some
@@ -251,7 +251,7 @@ In this spirit, let us now define more of these iterable wrappers that are
 useful when working with iterative methods, and nicely address problems 2 and 3
 above (among other things) without getting in the way of our CG implementation.
 
-# Halting
+## Halting
 
 Aside from imposing a maximum number of iterations, one usually wants to stop
 the computation as soon as some condition is met. Here the `halt` wrapper takes an
@@ -263,7 +263,7 @@ the iteration stops.
 {% include code/iterative-methods-done-right/tools/halt.jl %}
 {% endhighlight %}
 
-# Side effects
+## Side effects
 
 This is a simple but powerful one: for a given sequence, apply some function to
 each of its elements, and yield the same original sequence.
@@ -282,7 +282,7 @@ synchronization mechanism through which agents communicate and exchange informat
 Note that this is conceptually different from
 [callbacks](https://stackoverflow.com/questions/824234/what-is-a-callback-function/7549753#7549753).
 
-# Sampling
+## Sampling
 
 Not always you want to do something with *all* elements in a sequence.
 Sometimes you want to consider, say, every tenth element and do something about it.
@@ -303,7 +303,7 @@ one that triggered the prescribed stopping criterion.
 {% include code/iterative-methods-done-right/tools/sample.jl %}
 {% endhighlight %}
 
-# Timing
+## Timing
 
 Just like `enumerate` counts the elements as a sequence unfolds,
 here `stopwatch` measures time elapsed from the beginning
@@ -315,7 +315,7 @@ here `stopwatch` measures time elapsed from the beginning
 
 Measuring time in the context of numerical algorithms needs no justification, I believe.
 
-# Putting it all together
+## Putting it all together
 
 There's another piece of code that we can factor out and put in our toolbox:
 the `for` loop. The following function takes whatever iterable, loops
@@ -360,7 +360,7 @@ julia> norm(A*x - b)
 5.65469997682613e-9
 {% endhighlight %}
 
-# Conclusions
+## Conclusions
 
 Implementing iterative methods as iterables has some advantages with respect
 to writing explicit, monolithic for-loops: above all, "core" computations are
