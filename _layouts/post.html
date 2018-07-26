@@ -1,36 +1,39 @@
 <!doctype html>
 <html>
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        {% include header.html %}
-      </header>
-      <main>
-        <p>
-          <p><strong>{{ page.title }}</strong></p>
-          <p><small>
-            By <a href="/">{{ site.name }}</a> &mdash;
-            {{ page.date | date: "%A %B %d, %Y"}}
-            {% if page.update %}
-              (last update: {{ page.update | date: "%A %B %d, %Y"}})
-            {% endif %}
-          </small></p>
-          {{ content }}
-        </p>
-      </main>
-      <footer>
-        {% if page.previous.url %}
-          <a class="prev" href="{{page.previous.url}}">&laquo; Previous</a>
-        {% endif %}
-        {% if page.next.url %}
-          <a class="next" href="{{page.next.url}}">Next &raquo;</a>
-        {% endif %}
-      </footer>
-    </div>
-    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
-    {% include ga.html %}
-  </body>
+<head>
+{% include head.html %}
+<!-- Open Graph metas -->
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d"}}">
+{% if page.updated %}<meta property="article:modified_time" content="{{ page.updated | date: "%Y-%m-%d"}}">{% endif %}
+</head>
+<body>
+<div class="wrapper">
+<header>
+{% include header.html %}
+</header>
+<main>
+<p>
+<p><strong>{{ page.title }}</strong></p>
+<p><small>
+By <a href="/">{{ site.name }}</a> &mdash;
+{{ page.date | date: "%A %B %d, %Y"}}
+{% if page.update %} (last update: {{ page.update | date: "%A %B %d, %Y"}}) {% endif %}
+</small></p>
+{{ content }}
+</p>
+</main>
+<footer>
+{% if page.previous.url %}
+<a class="prev" href="{{page.previous.url}}">&laquo; Previous</a>
+{% endif %}
+{% if page.next.url %}
+<a class="next" href="{{page.next.url}}">Next &raquo;</a>
+{% endif %}
+</footer>
+</div>
+<script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+{% include ga.html %}
+</body>
 </html>

@@ -1,10 +1,7 @@
 ---
 layout: post
 title: "Iterative methods done right (life's too short to write for-loops)"
-description: "Complicated for-loops may not be the ideal way of coding iterative
-methods: by composing iterable objects one can use (and re-use) well-separated,
-testable pieces to assemble sometimes tedious-to-code routines. Examples in
-Julia are included."
+description: "Notes on iterative methods implementation using iterables, with examples in Julia."
 tags: [ iterative methods, julia, iterables ]
 date: 2018-07-25
 mathjax: true

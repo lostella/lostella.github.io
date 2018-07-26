@@ -1,20 +1,23 @@
 <!doctype html>
 <html>
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        {% include header.html %}
-      </header>
-      <main>
-        <p>
-        {{ content }}
-        </p>
-      </main>
-    </div>
-    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
-    {% include ga.html %}
-  </body>
+<head>
+{% include head.html %}
+<!-- Open Graph metas -->
+<meta property="og:title" content="{% if page.is_homepage %}{{ site.name }}{% else %}{{ page.title }} | {{ site.name }}{% endif %}" />
+<meta property="og:type" content="website" />
+</head>
+<body>
+<div class="wrapper">
+<header>
+{% include header.html %}
+</header>
+<main>
+<p>
+{{ content }}
+</p>
+</main>
+</div>
+<script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+{% include ga.html %}
+</body>
 </html>
