@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Iterative methods done right (life's too short to write for-loops)"
-description: "Notes on iterative methods implementation using iterables, with examples in Julia."
+description: "Notes on iterative methods implementation using Julia iterables."
 tags: [ iterative methods, julia, iterables ]
 date: 2018-07-25
 mathjax: true
