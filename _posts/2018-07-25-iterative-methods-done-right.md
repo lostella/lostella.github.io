@@ -4,6 +4,7 @@ title: "Iterative methods done right (life's too short to write for-loops)"
 description: "Notes on iterative methods implementation using Julia iterables."
 tags: [ iterative methods, julia, iterables ]
 date: 2018-07-25
+updated: 2018-07-28
 mathjax: true
 ---
 
@@ -50,7 +51,7 @@ Unlike collections however, iterables do not hold all elements in memory: instea
 they only need to be able to generate all elements in sequence, one after the other.
 They're like *lazy* collections.
 In order to make
-[custom iterable types in Julia]((https://docs.julialang.org/en/latest/manual/interfaces/#man-interface-iteration-1)),
+[custom iterable types in Julia](https://docs.julialang.org/en/latest/manual/interfaces/#man-interface-iteration-1),
 it is sufficient to identify what the *state* of the iteration is,
 and define the `iterate` function returning the next element in the sequence
 and updated state.
