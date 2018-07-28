@@ -1,6 +1,5 @@
 name: Lorenzo Stella
-show_downloads: false
-google_analytics: 'UA-79741121-1'
+lang: en_US
 
 author:
   name: Lorenzo Stella
@@ -8,8 +7,28 @@ author:
   cv: /pdf/resume.pdf
   github: lostella
   twitter: lostella
+  facebook: alletsol
   scholar: Y3ag8YsAAAAJ
-  pic: /img/me.jpg
   pgp: /lostella.asc
 
+twitter:
+  username: lostella
+  card: summary
+
+facebook:
+  admins: alletsol
+
+social:
+  name: Lorenzo Stella
+  links:
+    - https://twitter.com/lostella
+    - https://www.facebook.com/alletsol
+    - https://github.com/lostella
+    - https://keybase.io/lostella
+
+google_analytics: 'UA-79741121-1'
+
 permalink: /blog/:year/:month/:day/:title
+
+plugins:
+  - jekyll-seo-tag

@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
 {% include head.html %}
-<!-- Open Graph metas -->
-<meta property="og:title" content="{% if page.is_homepage %}{{ site.name }}{% else %}{{ page.title }} | {{ site.name }}{% endif %}" />
-<meta property="og:type" content="website" />
+{% seo title=false %}
 </head>
 <body>
 <div class="wrapper">

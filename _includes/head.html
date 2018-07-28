@@ -1,6 +1,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 <title>{% if page.is_homepage %}{{ site.name }}{% else %}{{ page.title }} | {{ site.name }}{% endif %}</title>
+
 <!--  Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700" rel="stylesheet">
 
@@ -8,18 +9,9 @@
 <link rel="shortcut icon" href="/img/favicon.ico">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-<!-- SEO metas -->
-{% if page.description %}<meta name="description" content="{{ page.description }}" />{% endif %}
-{% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}" />{% endif %}
-
-<!-- Open Graph metas -->
-<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-{% if page.description %}<meta property="og:description" content="{{ page.description }}" />{% endif %}
-<meta property="og:image" content="{{ site.url }}/img/dodici.png" />
-
-<link rel="stylesheet" href="/assets/css/style.css">
-<link rel="stylesheet" href="/assets/css/syntax.css">
-<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/assets/css/syntax.css" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width" />
 
 <!-- MathJax -->
 {% if page.mathjax == true %}
