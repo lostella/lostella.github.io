@@ -5,11 +5,10 @@
 <ul id="icons">
   <li><a href="https://github.com/{{site.author.github}}" target="_blank" title="GitHub"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>
   <li><a href="https://twitter.com/{{site.author.twitter}}" target="_blank" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-  <li><a href="mailto:{{ site.author.email }}" title="E-mail"><i class="far fa-envelope" aria-hidden="true"></i></a></li>
-  <li><a href="{{ site.author.pgp }}" target="_blank" title="Public key"><i class="fas fa-key" aria-hidden="true"></i></a></li>
   {% if site.author.cv %}
-    <li><a href="{{ site.author.cv }}" target="_blank" title="Resume"><i class="far fa-file-alt" aria-hidden="true"></i></a></li>
+    <li><a href="{{ site.author.cv }}" target="_blank" title="Curriculum vitae"><strong>CV</strong></a></li>
   {% endif %}
+  <li><a href="mailto:{{ site.author.email }}" title="E-mail"><i class="far fa-envelope" aria-hidden="true"></i></a></li>
 </ul>
 
 {% comment %}
