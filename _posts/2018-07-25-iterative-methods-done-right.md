@@ -5,7 +5,7 @@ description: "Notes on iterative methods implementation using Julia iterables."
 image: /img/dodici.png
 tags: [ iterative methods, julia, iterables ]
 date: 2018-07-25
-updated: 2018-07-28
+updated: 2018-07-31
 mathjax: true
 ---
 
@@ -49,7 +49,7 @@ in case you have months (or years) ahead of experimenting with iterative methods
 
 Iterables are objects one can iterate on, like lists or other types of collections.
 Unlike collections however, iterables do not hold all elements in memory: instead,
-they only need to be able to generate all elements in sequence, one after the other.
+they only need to be able to generate them in sequence, one after the other.
 They're like *lazy* collections.
 In order to make
 [custom iterable types in Julia](https://docs.julialang.org/en/latest/manual/interfaces/#man-interface-iteration-1),
@@ -81,7 +81,7 @@ end
 
 In order to unroll the sequence and compute each element, one only needs to keep
 track of the pair $$(F_{n-1}, F_{n})$$ of the two most recent elements: that
-will be the state of our iteration. Based on that, we need to define *two*
+will be the state of our iteration. Then we need to define *two*
 methods for the `iterate` function:
 * `iterate(iter::FibonacciIterable)` returning the pair `(F0, state0)` containing
 the *first* element in the sequence and initial state respectively;
@@ -189,7 +189,7 @@ The actual computation is carried out by the `iterate` function:
 
 Rather than the sequence of $$x_k$$, we yield the sequence of states of the
 algorithm, since that contains all information that may be needed when
-experimenting with the algorithm (including $$x_k$$ itself).
+experimenting (including $$x_k$$ itself).
 
 ## Wrapping iterables
 
