@@ -8,11 +8,11 @@ permalink: /research/
 
 Recent publications (more in my [Google Scholar profile](https://scholar.google.com/citations?user={{ site.author.scholar }}&hl=en)):
 
+0. Lorenzo Stella, Andreas Themelis, Panagiotis Patrinos. *Newton-type alternating minimization algorithm for convex optimization*. IEEE Transactions on Automatic Control, [10.1109/TAC.2018.2872203](https://ieeexplore.ieee.org/document/8472357), 2018.
+
 0. Andreas Themelis, Lorenzo Stella, Panagiotis Patrinos.
 *Forward-backward envelope for the sum of two nonconvex functions: Further properties and nonmonotone line-search algorithms*.
 SIAM Journal on Optimization, Volume 28, Issue 3, pp. 2274–2303, [10.1137/16M1080240](https://doi.org/10.1137/16M1080240), 2018.
-
-0. Lorenzo Stella, Andreas Themelis, Panagiotis Patrinos. *Newton-type alternating minimization algorithm for convex optimization*. [arXiv:1803.05256](https://arxiv.org/abs/1803.05256), 2018.
 
 0. Lorenzo Stella, Andreas Themelis, Panagiotis Patrinos.
 *Forward-backward quasi-Newton methods for nonsmooth optimization problems*.
