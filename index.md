@@ -6,7 +6,7 @@ weight: 1
 description: "Applied Scientist at Amazon (Berlin), previously PhD at IMT Lucca and KU Leuven: optimization, machine learning, deep learning, optimal control."
 ---
 
-Hello! I am an Applied Scientist at Amazon, Berlin (Germany).
+Hello! I am an Applied Scientist at Amazon in Berlin.
 Previously I was Ph.D. student at [IMT School for Advanced Studies Lucca](http://www.imtlucca.it/) (Italy)
 and [KU Leuven](https://www.esat.kuleuven.be/stadius/) (Belgium), under the supervision of
 [Panos Patrinos](https://www.esat.kuleuven.be/stadius/person.php?persid=639&id=782)
