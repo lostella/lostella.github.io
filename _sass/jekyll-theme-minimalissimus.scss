@@ -6,13 +6,13 @@ html {
 body {
   background-color: #ffffff;
   padding: 10px;
-  font: 16px/1.5 'Roboto', sans-serif;
+  font: 16px/1.5 'Lato', sans-serif;
   color:#444;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   margin:0 0 20px;
   font-weight: 700;
 }
@@ -45,8 +45,9 @@ h6 {
   font-size: 0.425em;
 }
 
-small {
+authordate {
   font-size: 0.75em;
+  color: #999;
 }
 
 gray {
