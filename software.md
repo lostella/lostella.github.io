@@ -1,12 +1,11 @@
 ---
 layout: page
 title: Software
-weight: 3
 description: "Solvers for nonsmooth optimization problems and other utilities I wrote in C, Julia, MATLAB."
 permalink: /software/
 ---
 
-Software I've been working on (also check out my [Github profile](https://github.com/{{ site.author.github }})):
+Software I've been working on (also check out my [Github profile](https://github.com/{{ site.github_username }})):
 
 * [ProximalAlgorithms.jl](https://github.com/kul-forbes/ProximalAlgorithms.jl). Efficient, generic Julia implementations of first-order optimization algorithms for nonsmooth problems, based on operator splittings: forward-backward splitting (proximal gradient method), Douglas-Rachford splitting (ADMM), Newton-type methods, primal-dual splitting algorithms. Based on:
 

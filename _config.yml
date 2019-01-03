@@ -1,35 +1,47 @@
-name: Lorenzo Stella
-lang: en_US
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-author:
-  name: Lorenzo Stella
-  email: lorenzostella<AT>gmail<DOT>com
-  cv: /pdf/cv-lorenzo-stella.pdf
-  github: lostella
-  twitter: lostella
-  facebook: alletsol
-  scholar: Y3ag8YsAAAAJ
-  pgp: /lostella.asc
-
-twitter:
-  username: lostella
-  card: summary
-
-facebook:
-  admins: alletsol
-
-social:
-  name: Lorenzo Stella
-  links:
-    - https://twitter.com/lostella
-    - https://www.facebook.com/alletsol
-    - https://github.com/lostella
-    - https://keybase.io/lostella
-
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Lorenzo Stella
+email: lorenzostella _at_ gmail _dot_ com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://lostella.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: 'UA-79741121-1'
+author_name: Lorenzo Stella
+twitter_username: lostella
+github_username:  lostella
+scholar_userid: Y3ag8YsAAAAJ
+rss: true
+cv: /pdf/cv-lorenzo-stella.pdf
+key: /lostella.asc
 
-permalink: /blog/:year/:month/:day/:title
-
+# Build settings
+markdown: kramdown
+theme: minima
 plugins:
+  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

@@ -1,0 +1,6 @@
+<ul class="social-media-list">
+  {%- if site.github_username -%}<li><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>{%- endif -%}
+  {%- if site.twitter_username -%}<li><a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>{%- endif -%}
+  {%- if site.rss -%}<li><a href="{{ 'feed.xml' | relative_url }}"><i class="fas fa-rss-square"></i></a></li>{%- endif -%}
+  {%- if site.key -%}<li><a href="{{ site.key | relative_url }}"><i class="fas fa-key"></i></a></li>{%- endif -%}
+</ul>
