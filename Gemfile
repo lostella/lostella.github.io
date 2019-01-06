@@ -31,3 +31,6 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 # Added at 2019-01-03 23:08:35 +0100 by stellalo:
 gem "jekyll-sitemap", "~> 1.2"
+
+# Added at 2019-01-06 10:15:46 +0100 by stellalo:
+gem "jekyll-redirect-from", "~> 0.14.0"

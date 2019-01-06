@@ -7,6 +7,7 @@ tags: [ iterative methods, julia, iterables ]
 date: 2018-07-25
 updated: 2018-07-31
 mathjax: true
+redirect_from: /blog/2018/07/25/iterative-methods-done-right
 ---
 
 Iterative methods are a class of numerical algorithms that produce a sequence of
