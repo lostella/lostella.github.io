@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Lorenzo Stella
-email: lorenzostella _at_ gmail _dot_ com
+email: lorenzostella@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lostella.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: 'UA-79741121-1'
@@ -26,8 +26,13 @@ rss: true
 cv: /pdf/cv-lorenzo-stella.pdf
 key: /lostella.asc
 
+# Options
+show_excerpts: true
+show_tags: false
+
 # Build settings
 markdown: kramdown
+highlighter: rouge
 theme: minima
 plugins:
   - jekyll-feed
