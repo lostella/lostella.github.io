@@ -106,7 +106,12 @@ a {
   color: $brand-color;
   text-decoration: none;
 
+  &:visited {
+    color: darken($brand-color, 0%);
+  }
+
   &:hover {
+    color: $text-color;
     text-decoration: underline;
   }
 
@@ -213,10 +218,8 @@ pre {
 }
 
 .social-media-list {
-  li {
-    display: inline;
-    margin-right: 10px;
-    margin-left: 10px;
+  li + li {
+    padding-top: 5px;
   }
 }
 
