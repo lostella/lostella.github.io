@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $brand-color;
+  border-top: 3px solid $brand-color;
   border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
 
@@ -17,11 +17,7 @@
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
-
-  &,
-  &:visited {
-    color: $brand-color;
-  }
+  color: $text-color;
 }
 
 .site-nav {
@@ -37,7 +33,7 @@
   }
 
   .page-link {
-    color: $brand-color;
+    color: $text-color;
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the last one
@@ -119,6 +115,10 @@
 .social-media-list {
   list-style: none;
   margin-left: 0;
+}
+
+.social-media-list i {
+  width: 20px;
 }
 
 .footer-col-wrapper {
