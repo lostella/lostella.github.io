@@ -34,6 +34,3 @@ gem "jekyll-sitemap", "~> 1.2"
 
 # Added at 2019-01-06 10:15:46 +0100 by stellalo:
 gem "jekyll-redirect-from", "~> 0.14.0"
-
-# Added at 2019-02-03 20:16:24 +0100 by stellalo:
-gem "jekyll-time-to-read", "~> 0.1.2"

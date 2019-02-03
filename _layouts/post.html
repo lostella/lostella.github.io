@@ -12,8 +12,6 @@ layout: default
         {%- if page.updated -%}
           &nbsp;(updated {{ page.updated | date: date_format }})
         {%- endif -%}
-        &nbsp;&mdash;
-        {{ page.content | reading_time_as_i | downcase }} read
       </time>
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>

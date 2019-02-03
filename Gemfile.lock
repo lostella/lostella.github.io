@@ -37,8 +37,6 @@ GEM
       jekyll (~> 3.3)
     jekyll-sitemap (1.2.0)
       jekyll (~> 3.3)
-    jekyll-time-to-read (0.1.2)
-      jekyll
     jekyll-watch (2.1.2)
       listen (~> 3.0)
     kramdown (1.17.0)
@@ -75,7 +73,6 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-redirect-from (~> 0.14.0)
   jekyll-sitemap (~> 1.2)
-  jekyll-time-to-read (~> 0.1.2)
   minima (~> 2.0)
   tzinfo-data
 
