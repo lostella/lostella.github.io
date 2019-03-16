@@ -7,7 +7,7 @@ permalink: /research/
 
 Recent publications (more in my [Google Scholar profile](https://scholar.google.com/citations?user={{ site.scholar_userid }}&hl=en)):
 
-0. Lorenzo Stella, Andreas Themelis, Panagiotis Patrinos. *Newton-type alternating minimization algorithm for convex optimization*. IEEE Transactions on Automatic Control, [10.1109/TAC.2018.2872203](https://ieeexplore.ieee.org/document/8472357), 2019.
+0. Lorenzo Stella, Andreas Themelis, Panagiotis Patrinos. *Newton-type alternating minimization algorithm for convex optimization*. IEEE Transactions on Automatic Control, Volume 64, Issue 2, pp. 697-711, [10.1109/TAC.2018.2872203](https://ieeexplore.ieee.org/document/8472357), 2019.
 
 0. Syama Rangapuram, and Matthias Seeger, Jan Gasthaus, Lorenzo Stella, Yuyang Wang, Tim Januschowski. *Deep State Space Models for Time Series Forecasting*. Advances in Neural Information Processing Systems, 2018.
 

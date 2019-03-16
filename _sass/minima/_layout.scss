@@ -2,7 +2,6 @@
  * Site header
  */
 .site-header {
-  border-top: 3px solid $brand-color;
   border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
 
@@ -12,12 +11,17 @@
 
 .site-title {
   @include relative-font-size(1.625);
-  font-weight: 400;
+  font-weight: 700;
   line-height: $base-line-height * $base-font-size * 2.25;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
   margin-bottom: 0;
   float: left;
-  color: $text-color;
+
+  color: $grey-color-dark;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .site-nav {
@@ -33,12 +37,23 @@
   }
 
   .page-link {
-    color: $text-color;
+    color: $grey-color;
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
-      margin-right: 20px;
+      margin-right: 40px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $grey-color-dark;
+      transition: 0.3s;
+    }
+    &:not(:hover) {
+      text-decoration: none;
+      color: $grey-color;
+      transition: 0.3s;
     }
   }
 
