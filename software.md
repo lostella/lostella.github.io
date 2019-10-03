@@ -1,13 +1,14 @@
 ---
 layout: page
 title: Software
-description: "Solvers for nonsmooth optimization problems and other utilities I wrote in C, Julia, MATLAB."
 permalink: /software/
 ---
 
 Software I've been working on (also check out my [Github profile](https://github.com/{{ site.github_username }})):
 
-* [ProximalAlgorithms.jl](https://github.com/kul-forbes/ProximalAlgorithms.jl). Efficient, generic Julia implementations of first-order optimization algorithms for nonsmooth problems, based on operator splittings: forward-backward splitting (proximal gradient method), Douglas-Rachford splitting (ADMM), Newton-type methods, primal-dual splitting algorithms. Based on:
+* [GluonTS](https://github.com/awslabs/gluon-ts). A Python toolkit for probabilistic time series modeling, with a focus on deep learning architectures, built around [Apache MXNet](https://mxnet.incubator.apache.org/).
+
+* [ProximalAlgorithms.jl](https://github.com/kul-forbes/ProximalAlgorithms.jl). Efficient, generic Julia implementations of first-order optimization algorithms for nonsmooth problems, based on operator splittings: forward-backward (proximal gradient method), Douglas-Rachford (ADMM), primal-dual, and Davis-Yin splitting algorithms. Also contains Newton-type extensions. Based on:
 
 * [ProximalOperators.jl](https://github.com/kul-forbes/ProximalOperators.jl). Julia package to compute the proximal operator of several functions commonly used in nonsmooth optimization problems. Useful as building block to implement large-scale optimization algorithms such as ADMM.
 
@@ -18,11 +19,6 @@ learning, image and signal processing.
 * [libLBFGS](http://github.com/lostella/libLBFGS/). C library providing the structures and routines to implement the
 limited-memory BFGS algorithm (L-BFGS) for large-scale smooth unconstrained
 optimization. Contains a Mex interface to MATLAB.
-
-* [libForBES](http://kul-forbes.github.io/libForBES/). C++ framework for modeling and solving large-scale nonsmooth
-optimization problems, will allow to interface many high-level languages
-(including R, Python, Julia) to a unique solver capable of addressing nonsmooth
-optimization problems from several application fields.
 
 Just for fun:
 
