@@ -6,7 +6,7 @@ permalink: /software/
 
 Software I've been working on (also check out my [Github profile](https://github.com/{{ site.github_username }})):
 
-* [GluonTS](https://github.com/awslabs/gluon-ts). A Python toolkit for probabilistic time series modeling, with a focus on deep learning architectures, built around [Apache MXNet](https://mxnet.incubator.apache.org/).
+* [GluonTS](https://github.com/awslabs/gluon-ts). Python toolkit for probabilistic time series modeling, with a focus on deep learning architectures, built around [Apache MXNet](https://mxnet.incubator.apache.org/).
 
 * [ProximalAlgorithms.jl](https://github.com/kul-forbes/ProximalAlgorithms.jl). Efficient, generic Julia implementations of first-order optimization algorithms for nonsmooth problems, based on operator splittings: forward-backward (proximal gradient method), Douglas-Rachford (ADMM), primal-dual, and Davis-Yin splitting algorithms. Also contains Newton-type extensions. Based on:
 
@@ -22,8 +22,8 @@ optimization. Contains a Mex interface to MATLAB.
 
 Just for fun:
 
-* [Matto](http://github.com/lostella/matto/). A simple chess player implemented in C. I started this when I was 17
+* [Matto](http://github.com/lostella/matto/). Simple chess player implemented in C. I started this when I was 17
 and learning the C programming language, so there's a lot of room for
 improvement. Yet it plays!
 
-* [podds](http://github.com/lostella/podds/). A multi-threaded Texas hold 'em poker odds evaluation tool, written in C, command line only.
+* [podds](http://github.com/lostella/podds/). Multi-threaded Texas hold 'em poker odds evaluation tool, written in C, command line only.
