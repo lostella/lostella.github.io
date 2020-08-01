@@ -1,14 +1,14 @@
 '''
-include("cg_donewrong.jl")
-include("cg_iterable.jl")
-include("cg_state.jl")
-include("cg_iterate.jl")
-include("halt.jl")
-include("tee.jl")
-include("stopwatch.jl")
-include("sample.jl")
-include("loop.jl")
-include("cg_doneright.jl")
+include("cg/cg_donewrong.jl")
+include("cg/cg_iterable.jl")
+include("cg/cg_state.jl")
+include("cg/cg_iterate.jl")
+include("tools/halt.jl")
+include("tools/tee.jl")
+include("tools/stopwatch.jl")
+include("tools/sample.jl")
+include("tools/loop.jl")
+include("cg/cg_doneright.jl")
 '''
 
 using Random
@@ -16,7 +16,7 @@ using LinearAlgebra
 using Test
 using BenchmarkTools
 
-srand(123456)
+Random.seed!(123456)
 
 n = 100
 
@@ -30,7 +30,7 @@ x0 = randn(n)
 println(it_wrong)
 println(norm(A*x_wrong - b))
 
-@time x_right, it_right = cg(A, b, x=x0)
+@time x_right, it_right = cg(A, b, x0=x0)
 
 println(it_right)
 println(norm(A*x_right - b))

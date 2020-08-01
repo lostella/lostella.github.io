@@ -5,7 +5,7 @@ description: "Notes on the implementation of iterative methods in Julia, using i
 image: /img/dodici.png
 tags: [ iterative methods, julia, iterables ]
 date: 2018-07-25
-updated: 2018-07-31
+updated: 2020-08-01
 mathjax: true
 redirect_from: /blog/2018/07/25/iterative-methods-done-right
 ---
@@ -45,6 +45,9 @@ It goes without saying that similar things one can do in
 [C++](https://www.cs.helsinki.fi/u/tpkarkka/alglib/k06/lectures/iterators.html),
 or whatever language is preferred: in fact, I would highly encourage you to do so
 in case you have months (or years) ahead of experimenting with iterative methods.
+
+*Edit (August 1, 2020):* some snippets were updated to be compatible with more recent versions of Julia
+(they were tested on Julia 1.4.2).
 
 ## Iterables in Julia
 
@@ -347,7 +350,7 @@ A quick test on a random, small, dense linear system shows the routine in action
 {% highlight julia %}
 julia> using Random
 
-julia> srand(12345);
+julia> Random.seed!(12345);
 
 julia> n = 100; L = randn(n, n); A = L*L'; b = randn(n);
 
