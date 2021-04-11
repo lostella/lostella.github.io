@@ -1,18 +1,30 @@
 ---
 layout: page
-title: Research
+title: Publications
 description: "My publications, journal articles, conference papers, and research-related stuff."
-permalink: /research/
+permalink: /publications/
 ---
 
 Recent publications (more in my [Google Scholar profile](https://scholar.google.com/citations?user={{ site.scholar_userid }}&hl=en)):
+
+0. Emmanuel de Bézenac, Syama Sundar Rangapuram, Konstantinos Benidis,
+Michael Bohlke-Schneider, Richard Kurle, Lorenzo Stella, Hilaf Hasson,
+Patrick Gallinari, Tim Januschowski.
+*Normalizing Kalman Filters for Multivariate Time Series Analysis*.
+Advances in Neural Information Processing Systems 33 (NeurIPS 2020),
+[online](https://papers.nips.cc/paper/2020/hash/1f47cef5e38c952f94c5d61726027439-Abstract.html), 2020.
+
+0. Andreas Themelis, Lorenzo Stella, Panagiotis Patrinos,
+*Douglas-Rachford splitting and ADMM for nonconvex optimization: Accelerated and Newton-type algorithms*.
+[arXiv:2005.10230](https://arxiv.org/abs/2005.10230), 2020.
 
 0. Alexander Alexandrov, Konstantinos Benidis, Michael Bohlke-Schneider,
 Valentin Flunkert, Jan Gasthaus, Tim Januschowski, Danielle C. Maddix,
 Syama Rangapuram, David Salinas, Jasper Schulz, Lorenzo Stella,
 Ali Caner Türkmen, Yuyang Wang.
-*GluonTS: Probabilistic Time Series Models in Python*.
-[arXiv:1906.05264](https://arxiv.org/abs/1906.05264), 2019.
+*GluonTS: Probabilistic and Neural Time Series Modeling in Python*,
+Journal of Machine Learning Research, Volume 21,
+[online](http://jmlr.org/papers/v21/19-820.html), 2020.
 
 0. Lorenzo Stella, Andreas Themelis, Panagiotis Patrinos.
 *Newton-type alternating minimization algorithm for convex optimization*.
