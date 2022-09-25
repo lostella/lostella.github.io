@@ -4,7 +4,7 @@ title: About me
 permalink: /about/
 ---
 
-Hello! My name is Lorenzo, I'm a Computer Scientist currently working at Amazon in Berlin.
+Hello! My name is Lorenzo, I'm a Computer Scientist currently working at Amazon Web Services (AWS) in Berlin.
 
 Previously I was Ph.D. student at [IMT School for Advanced Studies Lucca](http://www.imtlucca.it/) (Italy)
 and [KU Leuven](https://www.esat.kuleuven.be/stadius/) (Belgium), under the supervision of
