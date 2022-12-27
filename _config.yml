@@ -17,7 +17,6 @@ title: Lorenzo Stella
 email: "first name last name @ google's email domain"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lostella.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-google_analytics: 'UA-79741121-1'
 author_name: Lorenzo Stella
 twitter_username: lostella
 github_username:  lostella
