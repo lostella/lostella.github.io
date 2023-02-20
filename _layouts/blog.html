@@ -13,7 +13,7 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         {%- if site.show_excerpts -%}
-        <span>{{ post.description }}</span>
+        &nbsp;<span>{{ post.description }}</span>
         {%- endif -%}
       </li>
       {%- endfor -%}
