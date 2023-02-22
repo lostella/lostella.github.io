@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Software
-permalink: /software/
+title: Projects
+permalink: /projects/
 ---
 
-Software I've been working on (also check out my [Github profile](https://github.com/{{ site.github_username }})):
+Things I've been working on (also check out my [Github profile](https://github.com/{{ site.github_username }})):
 
 * [ProtoGrad](https://github.com/lostella/ProtoGrad.jl). An experimental Julia package for gradient-based optimization of machine learning models.
 Essentially, a highly opinionated collection of design ideas of mine, on how deep learning frameworks should work.
