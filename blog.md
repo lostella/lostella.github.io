@@ -1,6 +1,9 @@
 ---
-layout: default
+layout: page
+title: Blog
+permalink: /blog/
 ---
+
 <div class="blog">
 
   {%- if site.posts.size > 0 -%}

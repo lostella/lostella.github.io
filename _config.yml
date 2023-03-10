@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Lorenzo Stella
-email: "first name last name @ google's email"
+email: "first last @ google email"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lostella.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 author_name: Lorenzo Stella
@@ -23,6 +23,7 @@ github_username:  lostella
 scholar_userid: Y3ag8YsAAAAJ
 cv: /pdf/cv-lorenzo-stella.pdf
 key: /lostella.asc
+permalink: /blog/:year/:month/:day/:title
 
 # Options
 show_excerpts: true
