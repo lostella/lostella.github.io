@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lorenzo Stella</title>
+    <link>https://lostella.github.io/</link>
+    <description>Recent content on Lorenzo Stella</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Jul 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://lostella.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Iterative methods done right (life&#39;s too short to write for-loops)</title>
+      <link>https://lostella.github.io/blog/iterative-methods-done-right/</link>
+      <pubDate>Wed, 25 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://lostella.github.io/blog/iterative-methods-done-right/</guid>
+      <description>Iterative methods are a class of numerical algorithms that produce a sequence of (hopefully) better and better approximations to a solution of a problem, starting from an initial guess. Function minimization, linear and nonlinear systems of equations, are very often solved with iterative methods (especially when the problem is too large for direct methods to kick in).
+On paper, iterative methods are commonly described as loops that somehow generate a sequence of approximations to the problem solution: in fact, that&amp;rsquo;s the immediate way of translating them into running pieces of code using the programming language of choice.</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://lostella.github.io/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lostella.github.io/projects/</guid>
+      <description>Things I&amp;rsquo;ve been working on (also check out my Github profile):
+ProtoGrad. An experimental Julia package for gradient-based optimization of machine learning models. Essentially, a highly opinionated collection of design ideas of mine, on how deep learning frameworks should work.
+GluonTS. Python toolkit for probabilistic time series modeling, with a focus on deep learning architectures, built around Apache MXNet and PyTorch.
+ProximalAlgorithms.jl. Efficient, generic Julia implementations of first-order optimization algorithms for nonsmooth problems, based on operator splittings: forward-backward (proximal gradient method), Douglas-Rachford (ADMM), primal-dual, and Davis-Yin splitting algorithms.</description>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>https://lostella.github.io/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lostella.github.io/research/</guid>
+      <description>Recent publications (more in my Google Scholar profile):
+Emmanuel de Bézenac, Syama Sundar Rangapuram, Konstantinos Benidis, Michael Bohlke-Schneider, Richard Kurle, Lorenzo Stella, Hilaf Hasson, Patrick Gallinari, Tim Januschowski. Normalizing Kalman Filters for Multivariate Time Series Analysis. Advances in Neural Information Processing Systems 33 (NeurIPS 2020), online, 2020.
+Andreas Themelis, Lorenzo Stella, Panagiotis Patrinos, Douglas-Rachford splitting and ADMM for nonconvex optimization: Accelerated and Newton-type algorithms. arXiv:2005.10230, 2020.
+Alexander Alexandrov, Konstantinos Benidis, Michael Bohlke-Schneider, Valentin Flunkert, Jan Gasthaus, Tim Januschowski, Danielle C.</description>
+    </item>
+    
+  </channel>
+</rss>

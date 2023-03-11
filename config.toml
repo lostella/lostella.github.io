@@ -1,0 +1,4 @@
+baseURL = "https://lostella.github.io/"
+languageCode = "en-us"
+title = "Lorenzo Stella"
+theme = "hugo-bearblog"

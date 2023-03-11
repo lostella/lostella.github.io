@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Lorenzo Stella</title>
+    <link>https://lostella.github.io/blog/</link>
+    <description>Recent content in Blogs on Lorenzo Stella</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Jul 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://lostella.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Iterative methods done right (life&#39;s too short to write for-loops)</title>
+      <link>https://lostella.github.io/blog/iterative-methods-done-right/</link>
+      <pubDate>Wed, 25 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://lostella.github.io/blog/iterative-methods-done-right/</guid>
+      <description>Iterative methods are a class of numerical algorithms that produce a sequence of (hopefully) better and better approximations to a solution of a problem, starting from an initial guess. Function minimization, linear and nonlinear systems of equations, are very often solved with iterative methods (especially when the problem is too large for direct methods to kick in).
+On paper, iterative methods are commonly described as loops that somehow generate a sequence of approximations to the problem solution: in fact, that&amp;rsquo;s the immediate way of translating them into running pieces of code using the programming language of choice.</description>
+    </item>
+    
+  </channel>
+</rss>

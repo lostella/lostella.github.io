@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects | Lorenzo Stella</title>
+<meta name="title" content="Projects" />
+<meta name="description" content="Things I&rsquo;ve been working on (also check out my Github profile):
+ProtoGrad. An experimental Julia package for gradient-based optimization of machine learning models. Essentially, a highly opinionated collection of design ideas of mine, on how deep learning frameworks should work.
+GluonTS. Python toolkit for probabilistic time series modeling, with a focus on deep learning architectures, built around Apache MXNet and PyTorch.
+ProximalAlgorithms.jl. Efficient, generic Julia implementations of first-order optimization algorithms for nonsmooth problems, based on operator splittings: forward-backward (proximal gradient method), Douglas-Rachford (ADMM), primal-dual, and Davis-Yin splitting algorithms." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Projects" />
+<meta property="og:description" content="Things I&rsquo;ve been working on (also check out my Github profile):
+ProtoGrad. An experimental Julia package for gradient-based optimization of machine learning models. Essentially, a highly opinionated collection of design ideas of mine, on how deep learning frameworks should work.
+GluonTS. Python toolkit for probabilistic time series modeling, with a focus on deep learning architectures, built around Apache MXNet and PyTorch.
+ProximalAlgorithms.jl. Efficient, generic Julia implementations of first-order optimization algorithms for nonsmooth problems, based on operator splittings: forward-backward (proximal gradient method), Douglas-Rachford (ADMM), primal-dual, and Davis-Yin splitting algorithms." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lostella.github.io/projects/" /><meta property="article:section" content="" />
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Projects"/>
+<meta name="twitter:description" content="Things I&rsquo;ve been working on (also check out my Github profile):
+ProtoGrad. An experimental Julia package for gradient-based optimization of machine learning models. Essentially, a highly opinionated collection of design ideas of mine, on how deep learning frameworks should work.
+GluonTS. Python toolkit for probabilistic time series modeling, with a focus on deep learning architectures, built around Apache MXNet and PyTorch.
+ProximalAlgorithms.jl. Efficient, generic Julia implementations of first-order optimization algorithms for nonsmooth problems, based on operator splittings: forward-backward (proximal gradient method), Douglas-Rachford (ADMM), primal-dual, and Davis-Yin splitting algorithms."/>
+
+
+
+<meta itemprop="name" content="Projects">
+<meta itemprop="description" content="Things I&rsquo;ve been working on (also check out my Github profile):
+ProtoGrad. An experimental Julia package for gradient-based optimization of machine learning models. Essentially, a highly opinionated collection of design ideas of mine, on how deep learning frameworks should work.
+GluonTS. Python toolkit for probabilistic time series modeling, with a focus on deep learning architectures, built around Apache MXNet and PyTorch.
+ProximalAlgorithms.jl. Efficient, generic Julia implementations of first-order optimization algorithms for nonsmooth problems, based on operator splittings: forward-backward (proximal gradient method), Douglas-Rachford (ADMM), primal-dual, and Davis-Yin splitting algorithms.">
+
+<meta itemprop="wordCount" content="219">
+<meta itemprop="keywords" content="" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Lorenzo Stella</h2>
+</a>
+<nav><a href="/">Home</a>
+
+<a href="/projects/">Projects</a>
+
+<a href="/research/">Research</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<content>
+  <p>Things I&rsquo;ve been working on (also check out my <a href="https://github.com/lostella">Github profile</a>):</p>
+<ul>
+<li>
+<p><a href="https://github.com/lostella/ProtoGrad.jl">ProtoGrad</a>. An experimental Julia package for gradient-based optimization of machine learning models.
+Essentially, a highly opinionated collection of design ideas of mine, on how deep learning frameworks should work.</p>
+</li>
+<li>
+<p><a href="https://github.com/awslabs/gluon-ts">GluonTS</a>. Python toolkit for probabilistic time series modeling, with a focus on deep learning architectures, built around <a href="https://mxnet.incubator.apache.org/">Apache MXNet</a> and <a href="https://pytorch.org/">PyTorch</a>.</p>
+</li>
+<li>
+<p><a href="https://github.com/kul-forbes/ProximalAlgorithms.jl">ProximalAlgorithms.jl</a>. Efficient, generic Julia implementations of first-order optimization algorithms for nonsmooth problems, based on operator splittings: forward-backward (proximal gradient method), Douglas-Rachford (ADMM), primal-dual, and Davis-Yin splitting algorithms. Also contains Newton-type extensions. Based on:</p>
+</li>
+<li>
+<p><a href="https://github.com/kul-forbes/ProximalOperators.jl">ProximalOperators.jl</a>. Julia package to compute the proximal operator of several functions commonly used in nonsmooth optimization problems. Useful as building block to implement large-scale optimization algorithms such as ADMM.</p>
+</li>
+<li>
+<p><a href="http://kul-forbes.github.io/ForBES/">ForBES</a>. MATLAB solver for nonsmooth optimization, contains a library of
+mathematical functions to formulate problems arising in control, machine
+learning, image and signal processing.</p>
+</li>
+<li>
+<p><a href="http://github.com/lostella/libLBFGS/">libLBFGS</a>. C library providing the structures and routines to implement the
+limited-memory BFGS algorithm (L-BFGS) for large-scale smooth unconstrained
+optimization. Contains a Mex interface to MATLAB.</p>
+</li>
+<li>
+<p><a href="http://github.com/lostella/matto/">Matto</a>. Simple chess player implemented in C. I started this when I was 17
+and learning the C programming language, so there&rsquo;s a lot of room for
+improvement. Yet it plays!</p>
+</li>
+<li>
+<p><a href="http://github.com/lostella/podds/">podds</a>. Multi-threaded Texas hold &rsquo;em poker odds evaluation tool, written in C, command line only.</p>
+</li>
+</ul>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>
