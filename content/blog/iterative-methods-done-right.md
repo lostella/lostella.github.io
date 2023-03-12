@@ -97,15 +97,14 @@ The following definitions give exactly the above described generalized Fibonacci
 sequence:
 
 ```julia
-import Base: iterate
-iterate(iter::FibonacciIterable) = iter.s0, (iter.s0, iter.s1)
-iterate(iter::FibonacciIterable, state) = state[2], (state[2], sum(state))
+Base.iterate(iter::FibonacciIterable) = iter.s0, (iter.s0, iter.s1)
+Base.iterate(_::FibonacciIterable, state) = state[2], (state[2], sum(state))
 ```
 
 We can now loop any `FibonacciIterable` object:
 
 ```julia
-julia> for F in FibonacciIterable(BigInt(0), BigInt(1))
+julia> for F in FibonacciIterable(0, 1)
            println(F)
            if F > 50 break end
        end
@@ -126,9 +125,7 @@ julia> for F in FibonacciIterable(BigInt(0), BigInt(1))
 
 The conjugate gradient (CG) method solves linear systems
 
-$$
-Ax = b
-$$
+$$Ax = b$$
 
 where $$A\in\mathbb{R}^{n\times n}$$ is a positive semidefinite, symmetric matrix.
 It is particularly useful when $n$ is very large and $A$ is sparse,
@@ -152,12 +149,13 @@ The iteration is completely determined by matrix $A$, vector $b$, and
 the initial guess $x_0$, so those will compose our iterable objects:
 
 ```julia
-{{% include "/static/code/iterative-methods-done-right/cg/cg_iterable.jl" %}}
+struct CGIterable{TA, Tb, Tx}
+    A::TA
+    b::Tb
+    x0::Tx
+end
 ```
 
-In the `cgiterable` constructor we allow for `x0` to be `nothing`: in this case
-we will assume the initial point to be the zero vector, and save ourselves one
-matrix-vector product.
 The *state* of the iteration is composed of vectors $x_k$, $r_k$, and $p_k$.
 In addition to that, we will make room for additional stuff, so as to reuse all
 possible memory and avoid allocations: vector $A p_k$ and scalars $\|r_k\|^2$
@@ -167,7 +165,14 @@ and keeping it in a `Tuple` would be impractical. So let's give things a name
 by defining a custom type for the state:
 
 ```julia
-{{% include "static/code/iterative-methods-done-right/cg/cg_state.jl" %}}
+mutable struct CGState{R, Tb}
+    x::Tb
+    r::Tb
+    rs::R
+    rsprev::R
+    p::Tb
+    Ap::Tb
+end
 ```
 
 Note that `CGState` is defined as `mutable`: this is because we will overwrite
@@ -176,7 +181,30 @@ the iteration state rather than allocate new objects, again for efficiency reaso
 The actual computation is carried out by the `iterate` function:
 
 ```julia
-{{% include "static/code/iterative-methods-done-right/cg/cg_iterate.jl" %}}
+using LinearAlgebra
+
+function Base.iterate(iter::CGIterable)
+    x = copy(iter.x0)
+    r = iter.A*x
+    r .*= -1
+    r .+= iter.b
+    rs = dot(r, r)
+    p = copy(r)
+    Ap = similar(r)
+    state = CGState(x, r, rs, zero(rs), p, Ap)
+    return state, state
+end
+
+function Base.iterate(iter::CGIterable, state::CGState)
+    mul!(state.Ap, iter.A, state.p)
+    alpha = state.rs / dot(state.p, state.Ap)
+    state.x .+= alpha .* state.p
+    state.r .-= alpha .* state.Ap
+    state.rsprev = state.rs
+    state.rs = dot(state.r, state.r)
+    state.p .= state.r .+ (state.rs / state.rsprev) .* state.p
+    return state, state
+end
 ```
 
 Rather than the sequence of $x_k$, we yield the sequence of states of the
@@ -199,7 +227,7 @@ by doing
 
 ```julia
 k = 1
-for state in cgiterable(A, b)
+for state in CGIterable(A, b, x0)
   # do something
   if k >= maxit break end
   k += 1
@@ -215,7 +243,7 @@ reusable way of doing it.
 A cleaner solution is
 
 ```julia
-for (k, state) in Base.Iterators.enumerate(cgiterable(A, b))
+for (k, state) in Iterators.enumerate(CGIterable(A, b, x0))
   # do something
   if k >= maxit break end
 end
@@ -224,7 +252,7 @@ end
 or, even better
 
 ```julia
-for state in Base.Iterators.take(cgiterable(A, b), maxit)
+for state in Iterators.take(CGIterable(A, b, x0), maxit)
   # do something
 end
 ```
@@ -254,7 +282,28 @@ applies `fun` to each element of `iter` until `true` is returned, at which point
 the iteration stops.
 
 ```julia
-{{% include "static/code/iterative-methods-done-right/tools/halt.jl" %}}
+struct HaltingIterable{I, F}
+    iter::I
+    fun::F
+end
+
+function Base.iterate(iter::HaltingIterable)
+    next = iterate(iter.iter)
+    return dispatch(iter, next)
+end
+
+function Base.iterate(iter::HaltingIterable, (instruction, state))
+    if instruction == :halt return nothing end
+    next = iterate(iter.iter, state)
+    return dispatch(iter, next)
+end
+
+function dispatch(iter::HaltingIterable, next)
+    if next === nothing return nothing end
+    return next[1], (iter.fun(next[1]) ? :halt : :continue, next[2])
+end
+
+halt(iter, fun) = HaltingIterable(iter, fun)
 ```
 
 ## Side effects
@@ -266,7 +315,18 @@ I'm calling this wrapper `tee`, like the
 because of the apparent analogy.
 
 ```julia
-{{% include "static/code/iterative-methods-done-right/tools/tee.jl" %}}
+struct TeeIterable{I, F}
+    iter::I
+    fun::F
+end
+
+function Base.iterate(iter::TeeIterable, args...)
+    next = iterate(iter.iter, args...)
+    if next !== nothing iter.fun(next[1]) end
+    return next
+end
+
+tee(iter, fun) = TeeIterable(iter, fun)
 ```
 
 This can be used to display some summary of the algorithm's state
@@ -294,7 +354,23 @@ is precisely interested in the final state of an iterative algorithm&mdash;the
 one that triggered the prescribed stopping criterion.
 
 ```julia
-{{% include "static/code/iterative-methods-done-right/tools/sample.jl" %}}
+struct SamplingIterable{I}
+    iter::I
+    period::Integer
+end
+
+function Base.iterate(iter::SamplingIterable, state=iter.iter)
+    current = iterate(state)
+    if current === nothing return nothing end
+    for i = 1:iter.period-1
+        next = iterate(state, current[2])
+        if next === nothing return current[1], rest(state, current[2]) end
+        current = next
+    end
+    return current[1], rest(state, current[2])
+end
+
+sample(iter, period) = SamplingIterable(iter, period)
 ```
 
 ## Timing
@@ -304,7 +380,27 @@ here `stopwatch` measures time elapsed from the beginning
 ([in nanoseconds](https://docs.julialang.org/en/latest/base/base/#Base.time_ns)).
 
 ```julia
-{{% include "static/code/iterative-methods-done-right/tools/stopwatch.jl" %}}
+struct StopwatchIterable{I}
+    iter::I
+end
+
+function Base.iterate(iter::StopwatchIterable)
+    t0 = time_ns()
+    next = iterate(iter.iter)
+    return dispatch(iter, t0, next)
+end
+
+function Base.iterate(iter::StopwatchIterable, (t0, state))
+    next = iterate(iter.iter, state)
+    return dispatch(iter, t0, next)
+end
+
+function dispatch(_::StopwatchIterable, t0, next)
+    if next === nothing return nothing end
+    return (time_ns()-t0, next[1]), (t0, next[2])
+end
+
+stopwatch(iter) = StopwatchIterable(iter)
 ```
 
 Measuring time in the context of numerical algorithms needs no justification, I believe.
@@ -317,7 +413,11 @@ over it until it's finished (so it better be finite), and returns the last
 element:
 
 ```julia
-{{% include "static/code/iterative-methods-done-right/tools/loop.jl" %}}
+function loop(iter)
+    x = nothing
+    for y in iter x = y end
+    return x
+end
 ```
 
 We now have all pieces to assemble our CG solver routine.
@@ -330,7 +430,30 @@ measure time/do not measure time, using multiple termination criteria...)
 and cook up the iterable accordingly.
 
 ```julia
-{{% include "static/code/iterative-methods-done-right/cg/cg_doneright.jl" %}}
+using Base.Iterators # so we can use `take` and `enumerate`
+using Printf # so we can use the `@printf` macro
+
+function cg(
+    A, b;
+    x0=zeros(size(A,2)),
+    tol=1e-6, maxit=max(1000,size(A,2)),
+    period=div(size(A,2),10)
+)
+    stop(state) = sqrt(state.rs) <= tol
+    disp(state) = @printf "%5d | %.3e | %.3e\n" state[2][1] state[1]/1e9 sqrt(state[2][2].rs)
+
+    iter = CGIterable(A, b, x0)
+    iter = halt(iter, stop)
+    iter = take(iter, maxit)
+    iter = enumerate(iter)
+    iter = sample(iter, period)
+    iter = stopwatch(iter)
+    iter = tee(iter, disp)
+
+    (_, (it, state)) = loop(iter)
+
+    return state.x, it
+end
 ```
 
 A quick test on a random, small, dense linear system shows the routine in action:
