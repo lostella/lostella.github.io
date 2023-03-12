@@ -1,3 +1,7 @@
++++
+description = "Hello! I'm Lorenzo, a computer scientist currently working at AWS in Berlin. This is my home page."
++++
+
 Hello! I'm Lorenzo, a computer scientist currently working at AWS in Berlin.
 
 Previously I was Ph.D. student at [IMT School for Advanced Studies Lucca](http://www.imtlucca.it/) (Italy)

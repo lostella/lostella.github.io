@@ -143,8 +143,8 @@ of solution approximations according to the following recurrence:
     3. $r_{k+1} = r_{k} + \alpha_{k} A p_{k}$
     4. $p_{k+1} = r_{k+1} + \frac{\|r_{k+1}\|^2}{\|r_{k}\|^2}p_{k}$
 
-See [here](https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf)
-for a detailed derivation of the method.
+See [these notes on the conjugate gradient method](https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf)
+for a detailed derivation, insights, and analysis.
 
 Let's now translate CG into a Julia iterable type.
 The iteration is completely determined by matrix $A$, vector $b$, and
