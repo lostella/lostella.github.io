@@ -44,8 +44,8 @@ It goes without saying that similar things one can do in
 or whatever language is preferred: in fact, I would highly encourage you to do so
 in case you have months (or years) ahead of experimenting with iterative methods.
 
-*Edit (August 1, 2020):* some snippets were updated to be compatible with more recent versions of Julia
-(they were tested on Julia 1.4.2).
+*Edit (March 12, 2023):* some snippets were updated to be compatible with more recent versions of Julia
+(they were tested on Julia 1.8.5).
 
 ## Iterables in Julia
 
@@ -228,9 +228,9 @@ by doing
 ```julia
 k = 1
 for state in CGIterable(A, b, x0)
-  # do something
-  if k >= maxit break end
-  k += 1
+    # do something
+    if k >= maxit break end
+    k += 1
 end
 ```
 
@@ -244,8 +244,8 @@ A cleaner solution is
 
 ```julia
 for (k, state) in Iterators.enumerate(CGIterable(A, b, x0))
-  # do something
-  if k >= maxit break end
+    # do something
+    if k >= maxit break end
 end
 ```
 
@@ -253,7 +253,7 @@ or, even better
 
 ```julia
 for state in Iterators.take(CGIterable(A, b, x0), maxit)
-  # do something
+    # do something
 end
 ```
 
