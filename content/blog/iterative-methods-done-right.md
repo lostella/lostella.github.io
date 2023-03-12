@@ -60,13 +60,8 @@ and updated state.
 
 For instance, suppose we want to compute the following generalized Fibonacci sequence:
 
-$$
-\begin{align}
-F_{0} &= s_{0}, \\
-F_{1} &= s_{1}, \\
-F_{n} &= F_{n-1} + F_{n-2},\quad\forall\ n > 1.
-\end{align}
-$$
+$$ F_{0} = s_{0}, F_{1} = s_{1} $$
+$$ F_{n} = F_{n-1} + F_{n-2},\quad\forall\ n > 1$$
 
 The sequence is uniquely determined by $s_0$ and $s_1$
 (with $s_0=0$, $s_1=1$ yielding the
@@ -81,7 +76,7 @@ end
 ```
 
 In order to unroll the sequence and compute each element, one only needs to keep
-track of the pair $$(F_{n-1}, F_{n})$$ of the two most recent elements: that
+track of the pair $(F_{n-1}, F_{n})$ of the two most recent elements: that
 will be the state of our iteration. Then we need to define *two*
 methods for the `iterate` function:
 * `iterate(iter::FibonacciIterable)` returning the pair `(F0, state0)` containing
