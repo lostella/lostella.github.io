@@ -5,16 +5,21 @@ menu = "main"
 
 Recent publications (more in my [Google Scholar profile](https://scholar.google.com/citations?user=Y3ag8YsAAAAJ&hl=en)):
 
+1. Puya Latafat, Andreas Themelis, Lorenzo Stella, Panagiotis Patrinos,
+*Adaptive proximal algorithms for convex optimization under local Lipschitz continuity of the gradient*.
+[arXiv:2301.04431](https://arxiv.org/abs/2301.04431), 2023.
+
+1. Andreas Themelis, Lorenzo Stella, Panagiotis Patrinos,
+*Douglas-Rachford splitting and ADMM for nonconvex optimization: Accelerated and Newton-type algorithms*.
+Computational Optimization and Applications 82, pp. 395–440,
+[10.1007/s10589-022-00366-y](https://link.springer.com/article/10.1007/s10589-022-00366-y), 2022.
+
 1. Emmanuel de Bézenac, Syama Sundar Rangapuram, Konstantinos Benidis,
 Michael Bohlke-Schneider, Richard Kurle, Lorenzo Stella, Hilaf Hasson,
 Patrick Gallinari, Tim Januschowski.
 *Normalizing Kalman Filters for Multivariate Time Series Analysis*.
 Advances in Neural Information Processing Systems 33 (NeurIPS 2020),
 [online](https://papers.nips.cc/paper/2020/hash/1f47cef5e38c952f94c5d61726027439-Abstract.html), 2020.
-
-1. Andreas Themelis, Lorenzo Stella, Panagiotis Patrinos,
-*Douglas-Rachford splitting and ADMM for nonconvex optimization: Accelerated and Newton-type algorithms*.
-[arXiv:2005.10230](https://arxiv.org/abs/2005.10230), 2020.
 
 1. Alexander Alexandrov, Konstantinos Benidis, Michael Bohlke-Schneider,
 Valentin Flunkert, Jan Gasthaus, Tim Januschowski, Danielle C. Maddix,
