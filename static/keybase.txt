@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/lostella
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://lostella.github.io
+  * I am lostella (https://keybase.io/lostella) on keybase.
+  * I have a public key ASAiQnm-kLkopRgiLCGDKC5w5ZcA-ehLSCEZAp-HYjaxLAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120224279be90b928a518222c2183282e70e59700f9e84b482119029f876236b12c0a",
+      "host": "keybase.io",
+      "kid": "0120224279be90b928a518222c2183282e70e59700f9e84b482119029f876236b12c0a",
+      "uid": "91951c27f3ab1890f27ccf8e23229000",
+      "username": "lostella"
+    },
+    "service": {
+      "hostname": "lostella.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.21"
+  },
+  "ctime": 1505051366,
+  "expire_in": 504576000,
+  "merkle_root": {
+    "ctime": 1505051309,
+    "hash": "1134008c7377929c256f17dd229fecd769383dbca039c22dee081cb99285a28eb2dcb292e21e37bfa884b82c8e5e2ba9d1c010d9a24781ba645c13815d2f4e81",
+    "seqno": 1378300
+  },
+  "prev": "b9b7f7d659387582c2f460d78f2da9a40724703880b59832c75558fa12110955",
+  "seqno": 26,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgIkJ5vpC5KKUYIiwhgygucOWXAPnoS0ghGQKfh2I2sSwKp3BheWxvYWTFAvx7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMjI0Mjc5YmU5MGI5MjhhNTE4MjIyYzIxODMyODJlNzBlNTk3MDBmOWU4NGI0ODIxMTkwMjlmODc2MjM2YjEyYzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMjI0Mjc5YmU5MGI5MjhhNTE4MjIyYzIxODMyODJlNzBlNTk3MDBmOWU4NGI0ODIxMTkwMjlmODc2MjM2YjEyYzBhIiwidWlkIjoiOTE5NTFjMjdmM2FiMTg5MGYyN2NjZjhlMjMyMjkwMDAiLCJ1c2VybmFtZSI6Imxvc3RlbGxhIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJsb3N0ZWxsYS5naXRodWIuaW8iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4yMSJ9LCJjdGltZSI6MTUwNTA1MTM2NiwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTA1MDUxMzA5LCJoYXNoIjoiMTEzNDAwOGM3Mzc3OTI5YzI1NmYxN2RkMjI5ZmVjZDc2OTM4M2RiY2EwMzljMjJkZWUwODFjYjk5Mjg1YTI4ZWIyZGNiMjkyZTIxZTM3YmZhODg0YjgyYzhlNWUyYmE5ZDFjMDEwZDlhMjQ3ODFiYTY0NWMxMzgxNWQyZjRlODEiLCJzZXFubyI6MTM3ODMwMH0sInByZXYiOiJiOWI3ZjdkNjU5Mzg3NTgyYzJmNDYwZDc4ZjJkYTlhNDA3MjQ3MDM4ODBiNTk4MzJjNzU1NThmYTEyMTEwOTU1Iiwic2Vxbm8iOjI2LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQGqsI42U0qCqoV7xvntZpB9K1S3QKgVhDN8ztnjKuB4Cn+y5UvDDL9Fdidm0+7Vs0IlswlXw78p42C0VxmV8QQ2oc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCBM3EP9rqgMRBcBPJmt4wHo0q1GqxlSlsK/wKmOYJ5D66N0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lostella
+
+==================================================================
