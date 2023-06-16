@@ -8,7 +8,7 @@ Things I've been working on (also check out my [Github profile](https://github.c
 * [ProtoGrad](https://github.com/lostella/ProtoGrad.jl). An experimental Julia package for gradient-based optimization of machine learning models.
 Essentially, a highly opinionated collection of design ideas of mine, on how deep learning frameworks should work.
 
-* [GluonTS](https://github.com/awslabs/gluon-ts). Python toolkit for probabilistic time series modeling, with a focus on deep learning architectures, built around [Apache MXNet](https://mxnet.incubator.apache.org/) and [PyTorch](https://pytorch.org/).
+* [GluonTS](https://github.com/awslabs/gluon-ts). Python toolkit for probabilistic time series modeling, with a focus on deep learning architectures, built around [PyTorch](https://pytorch.org/).
 
 * [ProximalAlgorithms.jl](https://github.com/kul-forbes/ProximalAlgorithms.jl). Generic Julia implementations of first-order optimization algorithms for nonsmooth problems, based on operator splittings: forward-backward (proximal gradient method), Douglas-Rachford (ADMM), primal-dual, and Davis-Yin splitting algorithms. Also contains Newton-type extensions. Based on:
 
