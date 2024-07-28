@@ -5,6 +5,8 @@ menu = "main"
 
 Things I've been working on (also check out my [Github profile](https://github.com/lostella)):
 
+* [Chronos](https://github.com/amazon-science/chronos-forecasting). Pretrained time series forecasting models, based on transformer architectures for language modeling. Some like to call these "time series foundation models", but I do not.
+
 * [ProtoGrad](https://github.com/lostella/ProtoGrad.jl). An experimental Julia package for gradient-based optimization of machine learning models.
 Essentially, a highly opinionated collection of design ideas of mine, on how deep learning frameworks should work.
 
