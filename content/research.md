@@ -5,6 +5,8 @@ menu = "main"
 
 Recent publications (more in my [Google Scholar profile](https://scholar.google.com/citations?user=Y3ag8YsAAAAJ&hl=en)):
 
+1. Abdul Fatir Ansari, Lorenzo Stella, Caner Turkmen, Xiyuan Zhang, Pedro Mercado, Huibin Shen, Oleksandr Shchur, Syama Sundar Rangapuram, Sebastian Pineda Arango, Shubham Kapoor, Jasper Zschiegner, Danielle C. Maddix, Hao Wang, Michael W. Mahoney, Kari Torkkola, Andrew Gordon Wilson, Michael Bohlke-Schneider, Yuyang Wang, *Chronos: Learning the Language of Time Series*. [arXiv:2403.07815](https://arxiv.org/abs/2403.07815), 2024.
+
 1. Puya Latafat, Andreas Themelis, Lorenzo Stella, Panagiotis Patrinos,
 *Adaptive proximal algorithms for convex optimization under local Lipschitz continuity of the gradient*.
 [arXiv:2301.04431](https://arxiv.org/abs/2301.04431), 2023.
