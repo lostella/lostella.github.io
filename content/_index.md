@@ -13,5 +13,5 @@ their theoretical analysis and efficient implementation.
 
 Check out my [recent publications]({{< ref "research" >}}), [projects]({{< ref "projects" >}}),
 and [blog posts]({{< ref "blog" >}}).
-And feel free to reach out! These are my [Twitter](https://twitter.com/lostella) and [GitHub](https://github.com/lostella),
+And feel free to reach out! I'm on [Bluesky](https://bsky.app/profile/lostella.bsky.social), [GitHub](https://github.com/lostella),
 and my email address is: first name, followed by last name, at Google's email domain.
