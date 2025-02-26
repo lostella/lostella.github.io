@@ -13,7 +13,7 @@ Mathematical Programming, [10.1007/s10107-024-02143-7](https://link.springer.com
 
 1. Andreas Themelis, Lorenzo Stella, Panagiotis Patrinos,
 *Douglas-Rachford splitting and ADMM for nonconvex optimization: Accelerated and Newton-type algorithms*.
-Computational Optimization and Applications 82, pp. 395–440,
+Computational Optimization and Applications 82,
 [10.1007/s10589-022-00366-y](https://link.springer.com/article/10.1007/s10589-022-00366-y), 2022.
 
 1. Emmanuel de Bézenac, Syama Sundar Rangapuram, Konstantinos Benidis,
@@ -33,7 +33,7 @@ Journal of Machine Learning Research, Volume 21,
 
 1. Lorenzo Stella, Andreas Themelis, Panagiotis Patrinos.
 *Newton-type alternating minimization algorithm for convex optimization*.
-IEEE Transactions on Automatic Control, Volume 64, Issue 2, pp. 697-711,
+IEEE Transactions on Automatic Control, Volume 64, Issue 2,
 [10.1109/TAC.2018.2872203](https://ieeexplore.ieee.org/document/8472357), 2019.
 
 1. Syama Rangapuram, Matthias Seeger, Jan Gasthaus, Lorenzo Stella, Yuyang Wang, Tim Januschowski.
@@ -43,12 +43,12 @@ IEEE Transactions on Automatic Control, Volume 64, Issue 2, pp. 697-711,
 1. Andreas Themelis, Lorenzo Stella, Panagiotis Patrinos.
 *Forward-backward envelope for the sum of two nonconvex functions: Further
 properties and nonmonotone line-search algorithms*.
-SIAM Journal on Optimization, Volume 28, Issue 3, pp. 2274–2303,
+SIAM Journal on Optimization, Volume 28, Issue 3,
 [10.1137/16M1080240](https://doi.org/10.1137/16M1080240), 2018.
 
 1. Lorenzo Stella, Andreas Themelis, Panagiotis Patrinos.
 *Forward-backward quasi-Newton methods for nonsmooth optimization problems*.
-Computational Optimization and Applications, Volume 67, Issue 3, pp. 443–487,
+Computational Optimization and Applications, Volume 67, Issue 3,
 [10.1007/s10589-017-9912-y](https://doi.org/10.1007/s10589-017-9912-y), 2017.
 
 1. Lorenzo Stella, Andreas Themelis, Pantelis Sopasakis, Panagiotis Patrinos.
@@ -58,12 +58,12 @@ Computational Optimization and Applications, Volume 67, Issue 3, pp. 443–487,
 
 1. Puya Latafat, Lorenzo Stella, Panagiotis Patrinos.
 *New primal-dual proximal algorithms for distributed optimization*.
-55th IEEE Conference on Decision and Control, pp. 1959-1964,
+55th IEEE Conference on Decision and Control,
 [10.1109/CDC.2016.7798551](https://doi.org/10.1109/CDC.2016.7798551), 2016.
 
 1. Panagiotis Patrinos, Lorenzo Stella, Alberto Bemporad.
 *Douglas-Rachford splitting: complexity estimates and accelerated variants*.
-53rd IEEE Conference on Decision and Control, pp. 4234-4239,
+53rd IEEE Conference on Decision and Control,
 [10.1109/CDC.2014.7040049](https://doi.org/10.1109/CDC.2014.7040049), 2014.
 
 1. Panagiotis Patrinos, Lorenzo Stella, Alberto Bemporad.
