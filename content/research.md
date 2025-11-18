@@ -3,7 +3,7 @@ title = "Research"
 menu = "main"
 +++
 
-Recent publications (more in my [Google Scholar profile](https://scholar.google.com/citations?user=Y3ag8YsAAAAJ&hl=en)):
+Selected publications (more on [Google Scholar](https://scholar.google.com/citations?user=Y3ag8YsAAAAJ&hl=en)):
 
 1. Abdul Fatir Ansari, Lorenzo Stella, Caner Turkmen, Xiyuan Zhang, Pedro Mercado, Huibin Shen, Oleksandr Shchur, Syama Sundar Rangapuram, Sebastian Pineda Arango, Shubham Kapoor, Jasper Zschiegner, Danielle C. Maddix, Hao Wang, Michael W. Mahoney, Kari Torkkola, Andrew Gordon Wilson, Michael Bohlke-Schneider, Yuyang Wang, *Chronos: Learning the Language of Time Series*. Transactions on Machine Learning Research, [online](https://openreview.net/forum?id=gerNCVqqtR), 2024.
 
