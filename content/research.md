@@ -5,6 +5,10 @@ menu = "main"
 
 Selected publications (more on [Google Scholar](https://scholar.google.com/citations?user=Y3ag8YsAAAAJ&hl=en)):
 
+1. Abdul Fatir Ansari, Oleksandr Shchur, Jaris Küken, Andreas Auer, Boran Han, Pedro Mercado, Syama Sundar Rangapuram, Huibin Shen, Lorenzo Stella, Xiyuan Zhang, Mononito Goswami, Shubham Kapoor, Danielle C Maddix, Pablo Guerron, Tony Hu, Junming Yin, Nick Erickson, Prateek Mutalik Desai, Hao Wang, Huzefa Rangwala, George Karypis, Yuyang Wang, Michael Bohlke-Schneider, *Chronos-2: From Univariate to Universal Forecasting". [arxiv:2510.15821](https://arxiv.org/abs/2510.15821), 2025.
+
+1. Oleksandr Shchur, Abdul Fatir Ansari, Caner Turkmen, Lorenzo Stella, Nick Erickson, Pablo Guerron, Michael Bohlke-Schneider, Yuyang Wang, *fev-bench: A Realistic Benchmark for Time Series Forecasting*. [arxiv:2509.26468](https://arxiv.org/abs/2509.26468), 2025.
+
 1. Abdul Fatir Ansari, Lorenzo Stella, Caner Turkmen, Xiyuan Zhang, Pedro Mercado, Huibin Shen, Oleksandr Shchur, Syama Sundar Rangapuram, Sebastian Pineda Arango, Shubham Kapoor, Jasper Zschiegner, Danielle C. Maddix, Hao Wang, Michael W. Mahoney, Kari Torkkola, Andrew Gordon Wilson, Michael Bohlke-Schneider, Yuyang Wang, *Chronos: Learning the Language of Time Series*. Transactions on Machine Learning Research, [online](https://openreview.net/forum?id=gerNCVqqtR), 2024.
 
 1. Puya Latafat, Andreas Themelis, Lorenzo Stella, Panagiotis Patrinos,
@@ -65,7 +69,3 @@ Computational Optimization and Applications, Volume 67, Issue 3,
 *Douglas-Rachford splitting: complexity estimates and accelerated variants*.
 53rd IEEE Conference on Decision and Control,
 [10.1109/CDC.2014.7040049](https://doi.org/10.1109/CDC.2014.7040049), 2014.
-
-1. Panagiotis Patrinos, Lorenzo Stella, Alberto Bemporad.
-*Forward-backward truncated Newton methods for convex composite optimization*.
-[arXiv:1402.6655](http://arxiv.org/abs/1402.6655), 2014.
