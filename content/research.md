@@ -5,7 +5,7 @@ menu = "main"
 
 Selected publications (more on [Google Scholar](https://scholar.google.com/citations?user=Y3ag8YsAAAAJ&hl=en)):
 
-1. Abdul Fatir Ansari, Oleksandr Shchur, Jaris Küken, Andreas Auer, Boran Han, Pedro Mercado, Syama Sundar Rangapuram, Huibin Shen, Lorenzo Stella, Xiyuan Zhang, Mononito Goswami, Shubham Kapoor, Danielle C Maddix, Pablo Guerron, Tony Hu, Junming Yin, Nick Erickson, Prateek Mutalik Desai, Hao Wang, Huzefa Rangwala, George Karypis, Yuyang Wang, Michael Bohlke-Schneider, *Chronos-2: From Univariate to Universal Forecasting". [arxiv:2510.15821](https://arxiv.org/abs/2510.15821), 2025.
+1. Abdul Fatir Ansari, Oleksandr Shchur, Jaris Küken, Andreas Auer, Boran Han, Pedro Mercado, Syama Sundar Rangapuram, Huibin Shen, Lorenzo Stella, Xiyuan Zhang, Mononito Goswami, Shubham Kapoor, Danielle C Maddix, Pablo Guerron, Tony Hu, Junming Yin, Nick Erickson, Prateek Mutalik Desai, Hao Wang, Huzefa Rangwala, George Karypis, Yuyang Wang, Michael Bohlke-Schneider, *Chronos-2: From Univariate to Universal Forecasting*. [arxiv:2510.15821](https://arxiv.org/abs/2510.15821), 2025.
 
 1. Oleksandr Shchur, Abdul Fatir Ansari, Caner Turkmen, Lorenzo Stella, Nick Erickson, Pablo Guerron, Michael Bohlke-Schneider, Yuyang Wang, *fev-bench: A Realistic Benchmark for Time Series Forecasting*. [arxiv:2509.26468](https://arxiv.org/abs/2509.26468), 2025.
 
