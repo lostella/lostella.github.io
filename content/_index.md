@@ -4,7 +4,7 @@ description = "Hello! I'm Lorenzo, a computer scientist currently working at AWS
 
 Hello! I'm Lorenzo, a computer scientist currently working at AWS in Berlin.
 
-Previously I was Ph.D. student at [IMT Lucca](http://www.imtlucca.it/) (Italy)
+Previously I was Ph.D. student at [IMT Lucca](https://www.imtlucca.it/en/homepage) (Italy)
 and [KU Leuven](https://www.esat.kuleuven.be/english) (Belgium), under the supervision of
 [Panos Patrinos](https://homes.esat.kuleuven.be/~ppatrino/)
 and [Alberto Bemporad](http://cse.lab.imtlucca.it/~bemporad/),
