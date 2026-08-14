@@ -1,0 +1,27 @@
+[project]
+name = "website"
+version = "0"
+description = "Static site generator for lostella.github.io"
+requires-python = ">=3.11"
+dependencies = [
+    "mistune>=3.1",
+    "latex2mathml>=3.77",
+]
+
+[project.scripts]
+build = "website:build"
+serve = "website:serve"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14",
+    "ty>=0.0.1a1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff.lint]
+# Pinned explicitly so local runs and CI agree regardless of ruff's defaults.
+select = ["E", "F", "I", "UP", "B", "SIM"]

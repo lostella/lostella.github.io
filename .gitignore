@@ -1,2 +1,4 @@
-.hugo_build.lock
-public/*
+public/
+.venv/
+__pycache__/
+.ruff_cache/

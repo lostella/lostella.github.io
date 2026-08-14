@@ -1,0 +1,204 @@
+* {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    font-size: 17px;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+    color: #222;
+}
+
+a {
+    color: #482e92;
+}
+
+.title {
+    text-decoration: none;
+    border: 0;
+}
+
+.title span {
+    font-weight: 400;
+}
+
+nav a {
+    margin-right: 10px;
+}
+
+textarea {
+    width: 100%;
+    font-size: 16px;
+}
+
+input {
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.125;
+}
+
+p.pubdate time {
+    color: #888888;
+}
+
+content {
+    line-height: 1.5;
+}
+
+table {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+}
+
+div.highlight pre {
+    background-color: initial;
+    color: initial;
+    border-radius: 5px;
+}
+
+div.highlight code {
+    background-color: unset;
+    color: unset;
+}
+
+blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+footer {
+    padding-top: 25px;
+    text-align: left;
+    color: rgba(34, 34, 34, 0.5);
+}
+
+footer a {
+    color: rgba(73, 46, 146, 0.5);
+}
+
+.helptext {
+    color: #777;
+    font-size: small;
+}
+
+.errorlist {
+    color: #eba613;
+    font-size: small;
+}
+
+/* blog posts */
+ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.blog-posts li a {
+    margin-left: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #202020;
+        color: #f7f7f7;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+        color: #eee;
+    }
+
+    a {
+        color: #7eabf2;
+    }
+
+    code {
+        background-color: #555555;
+    }
+
+    pre code {
+        color: #ddd;
+    }
+
+    blockquote {
+        color: #ccc;
+    }
+
+    textarea,
+    input {
+        background-color: #252525;
+        color: #ddd;
+    }
+
+    .helptext {
+        color: #aaa;
+    }
+   
+    footer {
+        color: rgba(238, 238, 238, 0.5);
+    }
+
+    footer a {
+        color: rgba(126, 170, 242, 0.5);
+    }
+}
+
+/* math, rendered to MathML at build time */
+math {
+    font-size: 1em;
+}
+
+math[display="block"] {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
