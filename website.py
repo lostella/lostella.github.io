@@ -8,6 +8,8 @@ whole workflow is ``uv run build`` and ``uv run serve``.
 from __future__ import annotations
 
 import functools
+import html
+import logging
 import re
 import shutil
 import tomllib
@@ -36,18 +38,24 @@ STATIC = ROOT / "static"
 STYLESHEET = ROOT / "style.css"
 OUTPUT = ROOT / "public"
 
+logger = logging.getLogger("website")
+
+
+def configure_logging() -> None:
+    """Attach a handler. The console scripts are the only entry points."""
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+
 
 # --------------------------------------------------------------------------
 # Markdown
 # --------------------------------------------------------------------------
 
 
-def typographize(text: str) -> str:
-    """Curl quotes and turn dash/ellipsis runs into their typographic form.
+# Captured group, so re.split keeps the URL runs as odd-indexed segments.
+URL_RE = re.compile(r"((?:https?://|www\.)\S+)")
 
-    Applied to text nodes only, so code spans, code blocks and math are left
-    alone. This mirrors what Hugo's typographer did to the same content.
-    """
+
+def _typographize_prose(text: str) -> str:
     text = text.replace("---", "—").replace("--", "–").replace("...", "…")
     # Single quotes are apostrophes throughout this site's prose ("life's",
     # "hold 'em"), never quotation marks, so they always curl closing.
@@ -60,6 +68,19 @@ def typographize(text: str) -> str:
         previous = text[index - 1] if index else " "
         out.append("”" if previous.isalnum() or previous in ")]}’" else "“")
     return "".join(out)
+
+
+def typographize(text: str) -> str:
+    """Curl quotes and turn dash/ellipsis runs into their typographic form.
+
+    Applied to text nodes only, so code spans, code blocks and math are left
+    alone. This mirrors what Hugo's typographer did to the same content. Bare
+    URLs are skipped as well: a ``--`` inside a path is not an en dash.
+    """
+    return "".join(
+        part if index % 2 else _typographize_prose(part)
+        for index, part in enumerate(URL_RE.split(text))
+    )
 
 
 class Renderer(mistune.HTMLRenderer):
@@ -104,6 +125,7 @@ class Page:
 
 
 TAG_RE = re.compile(r"<[^>]+>")
+SUMMARY_SKIP_RE = re.compile(r"<(pre|math)\b.*?</\1>", re.DOTALL)
 SLUG_RE = re.compile(r"[^a-z0-9]+")
 
 
@@ -111,7 +133,10 @@ def parse_front_matter(text: str) -> tuple[dict[str, Any], str]:
     """Split a ``+++``-fenced TOML header from the Markdown body."""
     if not text.startswith("+++"):
         return {}, text
-    _, header, body = text.split("+++", 2)
+    parts = text.split("+++", 2)
+    if len(parts) < 3:
+        raise ValueError("unterminated +++ front matter")
+    _, header, body = parts
     return tomllib.loads(header), body.lstrip("\n")
 
 
@@ -124,20 +149,29 @@ def as_date(value: object) -> date | None:
 
 
 def summarize(body: str) -> str:
-    """First ``SUMMARY_WORDS`` words of the rendered body, as plain text."""
-    return " ".join(TAG_RE.sub(" ", body).split()[:SUMMARY_WORDS])
+    """First ``SUMMARY_WORDS`` words of the rendered body, as plain text.
+
+    Code blocks and math are dropped rather than flattened into the prose, and
+    entities are unescaped, so that the ``escape`` applied when the meta tags
+    are written is the only one this text ever sees.
+    """
+    prose = SUMMARY_SKIP_RE.sub(" ", body)
+    words = html.unescape(TAG_RE.sub(" ", prose)).split()
+    summary = " ".join(words[:SUMMARY_WORDS])
+    return f"{summary}…" if len(words) > SUMMARY_WORDS else summary
 
 
-def load_page(path: Path) -> Page:
+def _load_page(path: Path) -> Page:
     meta, text = parse_front_matter(path.read_text(encoding="utf-8"))
     relative = path.relative_to(CONTENT).with_suffix("")
     url = "/" if relative.name == "index" else f"/{relative.as_posix()}/"
     body = render_markdown(text)
+    description = meta.get("description")
     return Page(
         url=url,
-        title=meta.get("title", ""),
+        title=typographize(meta.get("title", "")),
         body=body,
-        description=meta.get("description") or summarize(body),
+        description=typographize(description) if description else summarize(body),
         date=as_date(meta.get("date")),
         updated=as_date(meta.get("updated")),
         tags=tuple(meta.get("tags", ())),
@@ -145,6 +179,14 @@ def load_page(path: Path) -> Page:
         in_menu=meta.get("menu") == "main",
         is_post=relative.parts[0] == "blog",
     )
+
+
+def load_page(path: Path) -> Page:
+    """Parse and render one Markdown file, naming it in whatever goes wrong."""
+    try:
+        return _load_page(path)
+    except Exception as exc:
+        raise ValueError(f"{path}: {exc}") from exc
 
 
 def load_content() -> tuple[list[Page], list[Path]]:
@@ -181,7 +223,6 @@ BASE = Template("""<!DOCTYPE html>
 <html lang="$lang">
 
 <head>
-  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -324,7 +365,7 @@ def navigation(menu: list[Page], url: str) -> str:
     entries = []
     for link, label in links:
         current = ' aria-current="page"' if is_current(link, url) else ""
-        entries.append(f'<a href="{link}"{current}>{label}</a>')
+        entries.append(f'<a href="{link}"{current}>{escape(label)}</a>')
     return "\n    ".join(entries)
 
 
@@ -396,7 +437,11 @@ def sitemap_entries(urls: list[tuple[str, date | None]]) -> str:
 
 def build() -> None:
     """Render the whole site into ``public/``."""
+    configure_logging()
     pages, assets = load_content()
+    logger.info(
+        "loaded %d pages and %d assets from %s", len(pages), len(assets), CONTENT
+    )
     home = next(page for page in pages if page.url == "/")
     menu = sorted((page for page in pages if page.in_menu), key=lambda page: page.title)
     posts = sorted(
@@ -410,7 +455,19 @@ def build() -> None:
         for tag in post.tags:
             tagged[tag].append(post)
     all_tags = tuple(sorted(tagged, key=tag_slug))
+    by_slug: dict[str, str] = {}
+    for tag in all_tags:
+        slug = tag_slug(tag)
+        if not slug:
+            raise ValueError(f"tag {tag!r} has no usable slug")
+        if by_slug.setdefault(slug, tag) != tag:
+            raise ValueError(
+                f"tags {by_slug[slug]!r} and {tag!r} share the slug {slug!r}"
+            )
     all_keywords = all_tags + ("",)
+
+    if not posts:
+        logger.warning("no posts found under %s", CONTENT / "blog")
 
     if OUTPUT.exists():
         shutil.rmtree(OUTPUT)
@@ -418,6 +475,8 @@ def build() -> None:
     shutil.copyfile(STYLESHEET, OUTPUT / STYLESHEET.name)
     if STATIC.is_dir():
         shutil.copytree(STATIC, OUTPUT, dirs_exist_ok=True)
+    else:
+        logger.warning("no static directory at %s, skipping", STATIC)
     for asset in assets:
         target = OUTPUT / asset.relative_to(CONTENT)
         target.parent.mkdir(parents=True, exist_ok=True)
@@ -477,7 +536,7 @@ def build() -> None:
                 title=tag_title(tag),
                 url=tag_url(tag),
                 body=LISTING.substitute(
-                    heading=FILTER_HEADING.substitute(title=tag_title(tag)),
+                    heading=FILTER_HEADING.substitute(title=escape(tag_title(tag))),
                     items="\n".join(post_item(post) for post in tag_posts),
                     footer="",
                 ),
@@ -510,12 +569,20 @@ def build() -> None:
     (OUTPUT / "robots.txt").write_text(ROBOTS, encoding="utf-8")
 
     count = len(list(OUTPUT.rglob("*.html")))
-    print(f"built {count} pages into {OUTPUT.relative_to(ROOT)}/")
+    try:
+        where = OUTPUT.relative_to(ROOT)
+    except ValueError:  # OUTPUT was pointed somewhere outside the repo
+        where = OUTPUT
+    logger.info("built %d pages into %s/", count, where)
 
 
 def serve() -> None:
     """Serve ``public/`` over HTTP. Builds nothing; run ``build`` first."""
+    configure_logging()
+    if not OUTPUT.is_dir():
+        logger.error("nothing to serve at %s, run build first", OUTPUT)
+        return
     handler = functools.partial(SimpleHTTPRequestHandler, directory=str(OUTPUT))
     with ThreadingHTTPServer(("127.0.0.1", SERVE_PORT), handler) as httpd:
-        print(f"serving http://127.0.0.1:{SERVE_PORT}/ — ctrl-c to stop")
+        logger.info("serving http://127.0.0.1:%d/ — ctrl-c to stop", SERVE_PORT)
         httpd.serve_forever()

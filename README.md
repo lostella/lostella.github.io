@@ -5,6 +5,7 @@ https://lostella.github.io
 ## Usage
 
 ```sh
+uv run pytest  # run tests
 uv run build   # render content/ into public/
 uv run serve   # serve public/ at http://127.0.0.1:8000/
 ```
@@ -25,12 +26,12 @@ Pages carry TOML front matter between `+++` fences:
 
 ```toml
 +++
-title = "Iterative methods done right"
-date = "2018-07-25"
-updated = "2023-03-12"
-description = "Notes on the implementation of iterative methods in Julia."
-tags = ["iterative methods", "julia"]
-aliases = ["/blog/2018/07/25/iterative-methods-done-right"]
+title = "A post about something"
+date = "2020-01-31"
+updated = "2020-02-14"
+description = "One or two sentences, used for the meta tags."
+tags = ["a tag", "another tag"]
+aliases = ["/blog/2020/01/31/an-older-url"]
 +++
 ```
 

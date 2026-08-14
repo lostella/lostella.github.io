@@ -4,8 +4,8 @@ version = "0"
 description = "Static site generator for lostella.github.io"
 requires-python = ">=3.11"
 dependencies = [
-    "mistune>=3.1",
-    "latex2mathml>=3.77",
+    "mistune>=3.3.4,<4",
+    "latex2mathml>=3.81.0,<4",
 ]
 
 [project.scripts]
@@ -14,13 +14,19 @@ serve = "website:serve"
 
 [dependency-groups]
 dev = [
-    "ruff>=0.14",
-    "ty>=0.0.1a1",
+    "pytest>=9.1.1,<10",
+    # ruff and ty are pre-1.0, so breaking changes land in the segment below.
+    "ruff>=0.16.3,<0.17",
+    "ty>=0.0.71,<0.1",
 ]
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+# The suite lives in a single test.py, which pytest's defaults do not collect.
+python_files = ["test.py", "test_*.py"]
 
 [tool.ruff.lint]
 # Pinned explicitly so local runs and CI agree regardless of ruff's defaults.
