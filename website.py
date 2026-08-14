@@ -208,11 +208,9 @@ $body
 POST = Template("""<h1>$title</h1>
 <p class="pubdate">
   <time datetime="$datetime" pubdate>$date</time>
-</p>
-$body
-<p>
 $tags
 </p>
+$body
 """)
 
 LISTING = Template("""$heading<ul class="blog-posts">
@@ -308,13 +306,26 @@ def meta_tags(
     return "\n".join("  " + line for line in lines)
 
 
-def navigation(menu: list[Page]) -> str:
+def is_current(link: str, url: str) -> bool:
+    """Whether a nav entry points at the page being rendered.
+
+    Posts and tag pages count as being under Blog, so the nav never goes blank
+    while you are reading one.
+    """
+    if link == "/blog/":
+        return url.startswith(("/blog/", "/tags/"))
+    return url == link
+
+
+def navigation(menu: list[Page], url: str) -> str:
     links = [("/", "Home")]
     links += [(page.url, page.title) for page in menu]
     links += [("/blog/", "Blog")]
-    return "".join(
-        f'<a href="{url}">{label}</a>\n    ' for url, label in links
-    ).rstrip()
+    entries = []
+    for link, label in links:
+        current = ' aria-current="page"' if is_current(link, url) else ""
+        entries.append(f'<a href="{link}"{current}>{label}</a>')
+    return "\n    ".join(entries)
 
 
 def render(
@@ -337,7 +348,7 @@ def render(
         meta=meta_tags(
             title=title, url=url, description=description, keywords=keywords, page=page
         ),
-        nav=navigation(menu),
+        nav=navigation(menu, url),
         body=body.strip("\n"),
     )
 

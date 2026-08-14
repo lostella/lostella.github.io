@@ -40,8 +40,17 @@ a {
     font-weight: 400;
 }
 
+header {
+    padding-bottom: 20px;
+}
+
 nav a {
     margin-right: 10px;
+}
+
+/* current page: a thicker underline, which costs nothing in layout */
+nav a[aria-current="page"] {
+    text-decoration-thickness: 3px;
 }
 
 textarea {
@@ -64,6 +73,10 @@ h6 {
 
 p.pubdate time {
     color: #888888;
+}
+
+p.pubdate a {
+    margin-left: 10px;
 }
 
 content {
@@ -183,7 +196,7 @@ ul.blog-posts li a {
     .helptext {
         color: #aaa;
     }
-   
+
     footer {
         color: rgba(238, 238, 238, 0.5);
     }
