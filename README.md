@@ -12,10 +12,11 @@ uv run serve   # serve public/ at http://127.0.0.1:8000/
 ## Layout
 
 ```
-content/       pages and posts; *.md is rendered, anything else is copied verbatim
+content/       pages and posts; *.md is rendered, anything else is copied alongside it
   index.md       the home page
   <name>.md      a page at /<name>/, listed in the nav if it has menu = "main"
   blog/<name>.md a post at /blog/<name>/
+static/        copied verbatim to the site root
 style.css      the stylesheet
 website.py     the generator
 ```

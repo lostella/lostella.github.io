@@ -32,6 +32,7 @@ SERVE_PORT = 8000
 
 ROOT = Path(__file__).resolve().parent
 CONTENT = ROOT / "content"
+STATIC = ROOT / "static"
 STYLESHEET = ROOT / "style.css"
 OUTPUT = ROOT / "public"
 
@@ -404,6 +405,8 @@ def build() -> None:
         shutil.rmtree(OUTPUT)
     OUTPUT.mkdir(parents=True)
     shutil.copyfile(STYLESHEET, OUTPUT / STYLESHEET.name)
+    if STATIC.is_dir():
+        shutil.copytree(STATIC, OUTPUT, dirs_exist_ok=True)
     for asset in assets:
         target = OUTPUT / asset.relative_to(CONTENT)
         target.parent.mkdir(parents=True, exist_ok=True)
