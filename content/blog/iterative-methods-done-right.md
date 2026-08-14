@@ -127,7 +127,7 @@ The conjugate gradient (CG) method solves linear systems
 
 $$Ax = b$$
 
-where $$A\in\mathbb{R}^{n\times n}$$ is a positive semidefinite, symmetric matrix.
+where $A\in\mathbb{R}^{n\times n}$ is a positive semidefinite, symmetric matrix.
 It is particularly useful when $n$ is very large and $A$ is sparse,
 in which case direct methods (Cholesky factorization) are computationally
 prohibitive. Instead, CG works by only applying matrix-vector products with

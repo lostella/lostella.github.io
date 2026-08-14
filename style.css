@@ -212,6 +212,7 @@ math {
 }
 
 math[display="block"] {
+    margin: 0.8em 0;
     overflow-x: auto;
     overflow-y: hidden;
 }
