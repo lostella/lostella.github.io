@@ -154,6 +154,8 @@ def write_page(content: Path, relative: str, text: str) -> Path:
         ("index.md", "/", False),
         ("projects.md", "/projects/", False),
         ("blog/hello.md", "/blog/hello/", True),
+        ("blog.md", "/blog/", False),
+        ("blog/index.md", "/blog/", False),
     ],
 )
 def test_load_page_urls(content: Path, relative: str, url: str, is_post: bool) -> None:

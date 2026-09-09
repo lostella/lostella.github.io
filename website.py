@@ -164,7 +164,12 @@ def summarize(body: str) -> str:
 def _load_page(path: Path) -> Page:
     meta, text = parse_front_matter(path.read_text(encoding="utf-8"))
     relative = path.relative_to(CONTENT).with_suffix("")
-    url = "/" if relative.name == "index" else f"/{relative.as_posix()}/"
+    if relative.parts == ("index",):
+        url = "/"
+    elif relative.name == "index":
+        url = f"/{relative.parent.as_posix()}/"
+    else:
+        url = f"/{relative.as_posix()}/"
     body = render_markdown(text)
     description = meta.get("description")
     return Page(
@@ -177,7 +182,11 @@ def _load_page(path: Path) -> Page:
         tags=tuple(meta.get("tags", ())),
         aliases=tuple(meta.get("aliases", ())),
         in_menu=meta.get("menu") == "main",
-        is_post=relative.parts[0] == "blog",
+        is_post=(
+            len(relative.parts) > 1
+            and relative.parts[0] == "blog"
+            and relative.name != "index"
+        ),
     )
 
 
