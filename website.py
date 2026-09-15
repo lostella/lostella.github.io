@@ -247,9 +247,9 @@ $meta
     </a>
     <nav>$nav</nav>
   </header>
-  <content>
+  <main>
 $body
-  </content>
+  </main>
 </body>
 
 </html>
