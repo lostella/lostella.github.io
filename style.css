@@ -72,14 +72,14 @@ h6 {
 }
 
 p.pubdate time {
-    color: #888888;
+    color: #666666;
 }
 
 p.pubdate a {
     margin-left: 10px;
 }
 
-content {
+main {
     line-height: 1.5;
 }
 
