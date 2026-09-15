@@ -1,7 +1,7 @@
 +++
 title = "Iterative methods done right (life's too short to write for-loops)"
 date = "2018-07-25"
-updated = "2023-03-12"
+updated = "2026-09-15"
 description = "Notes on the implementation of iterative methods in Julia, using iterables."
 tags = ["iterative methods", "julia", "iterables"]
 math = "katex"
@@ -32,7 +32,7 @@ quickly results in [spaghetti code](https://en.wikipedia.org/wiki/Spaghetti_code
 Instead, common patterns that show up when implementing iterative methods are
 much better exploited using *iterables*.
 I'll illustrate this by examples in [Julia](https://julialang.org/), using the
-[conjugate gradient method](https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf)
+[conjugate gradient method](https://en.wikipedia.org/wiki/Conjugate_gradient_method)
 for positive (semi)definite linear systems as guinea pig.
 
 *Note:* the examples that follow run on Julia 0.7 (as well as 1.0,
@@ -54,7 +54,7 @@ Unlike collections however, iterables do not hold all elements in memory: instea
 they only need to be able to generate them in sequence, one after the other.
 They're like *lazy* collections.
 In order to make
-[custom iterable types in Julia](https://docs.julialang.org/en/latest/manual/interfaces/#man-interface-iteration-1),
+[custom iterable types in Julia](https://docs.julialang.org/en/v1/manual/interfaces/#man-interface-iteration),
 it is sufficient to identify what the *state* of the iteration is,
 and define the `iterate` function returning the next element in the sequence
 and updated state.
@@ -257,7 +257,7 @@ for state in Iterators.take(CGIterable(A, b, x0), maxit)
 end
 ```
 
-Here we are using some of Julia's [built-in iteration utilities](https://docs.julialang.org/en/latest/base/iterators/):
+Here we are using some of Julia's [built-in iteration utilities](https://docs.julialang.org/en/v1/base/iterators/):
 * `enumerate` takes an iterable producing a sequence of `s`, and returns
 an iterable producing pairs `(k, s)`, where `k` is the (1-based) index of `s`
 in the original sequence;
@@ -377,7 +377,7 @@ sample(iter, period) = SamplingIterable(iter, period)
 
 Just like `enumerate` counts the elements as a sequence unfolds,
 here `stopwatch` measures time elapsed from the beginning
-([in nanoseconds](https://docs.julialang.org/en/latest/base/base/#Base.time_ns)).
+([in nanoseconds](https://docs.julialang.org/en/v1/base/base/#Base.time_ns)).
 
 ```julia
 struct StopwatchIterable{I}
