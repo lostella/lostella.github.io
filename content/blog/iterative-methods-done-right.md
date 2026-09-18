@@ -5,7 +5,7 @@ updated = "2026-09-15"
 description = "Notes on the implementation of iterative methods in Julia, using iterables."
 tags = ["iterative methods", "julia", "iterables"]
 math = "katex"
-aliases = ["/blog/2018/07/25/iterative-methods-done-right"]
+aliases = ["/blog/2018/07/25/iterative-methods-done-right", "/2018/07/25/iterative-methods-done-right"]
 +++
 
 Iterative methods are a class of numerical algorithms that produce a sequence of
